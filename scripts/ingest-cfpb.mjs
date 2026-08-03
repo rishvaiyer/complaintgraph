@@ -23,7 +23,7 @@ const API = 'https://www.consumerfinance.gov/data-research/consumer-complaints/s
 const MONTHS = Number(process.env.CG_MONTHS || 18);
 const MAX_PER_COMPANY = Number(process.env.CG_MAX_PER_COMPANY || 2000);
 const PAGE = 100;
-const REQUEST_TIMEOUT_MS = Number(process.env.CG_REQUEST_TIMEOUT_MS || 20000);
+const REQUEST_TIMEOUT_MS = Number(process.env.CG_REQUEST_TIMEOUT_MS || 30000);
 // Hard wall-clock budget for the whole ingest so a slow/hanging API can never
 // stall the deploy. When it trips, whatever was fetched so far is used and the
 // rest falls back to committed sample data.
@@ -92,7 +92,22 @@ async function fetchCompany(company, window) {
       console.warn(`  (time budget reached — stopping ${company.displayName} at ${records.length})`);
       break;
     }
-    const { hits, total: t } = await fetchPage(company.name, window, frm);
+    // A single slow/failed page must not sink the whole ingest: retry once,
+    // then keep whatever we already have for this company.
+    let page;
+    try {
+      page = await fetchPage(company.name, window, frm);
+    } catch (err) {
+      console.warn(`  (page frm=${frm} failed: ${err.message} — retrying once)`);
+      await new Promise((r) => setTimeout(r, 2000));
+      try {
+        page = await fetchPage(company.name, window, frm);
+      } catch (err2) {
+        console.warn(`  (retry failed: ${err2.message} — keeping ${records.length} records)`);
+        break;
+      }
+    }
+    const { hits, total: t } = page;
     total = t;
     if (!hits.length) break;
     for (const h of hits) records.push(normalize(h._source || {}));
