@@ -1,0 +1,15 @@
+# Netlify deploy config for ComplaintGraph (off-GitHub-Pages hosting).
+#
+# In Netlify: "Add new site" -> "Import an existing project" -> pick this repo.
+# Set the base directory to `complaintgraph` (or rely on the values below).
+# Netlify reads this file, runs a fresh CFPB ingest (falling back to the
+# committed sample if the API is slow), assembles the static site, and
+# publishes complaintgraph/dist. Works with private repos, no plan upgrade.
+
+[build]
+  base = "complaintgraph"
+  command = "npm run build:live"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"

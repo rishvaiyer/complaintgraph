@@ -1,0 +1,19 @@
+{
+  "name": "complaintgraph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public complaint intelligence for consumer-finance companies, built on the CFPB Consumer Complaint Database.",
+  "scripts": {
+    "sample": "node scripts/gen-sample.mjs",
+    "ingest": "node scripts/ingest-cfpb.mjs",
+    "ingest:regulatory": "node scripts/ingest-regulatory.mjs",
+    "ingest:all": "node scripts/ingest-cfpb.mjs && node scripts/ingest-regulatory.mjs",
+    "build": "node build-site.mjs",
+    "build:live": "node scripts/ingest-cfpb.mjs || true && node build-site.mjs",
+    "preview": "node build-site.mjs && npx -y serve dist -l 5055"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

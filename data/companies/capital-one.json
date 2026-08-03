@@ -1,0 +1,326 @@
+{
+  "slug": "capital-one",
+  "name": "CAPITAL ONE FINANCIAL CORPORATION",
+  "display_name": "Capital One",
+  "data_source": "sample",
+  "snapshot_date": "2026-06-29",
+  "window": {
+    "min": "2025-01-01",
+    "max": "2026-06-29"
+  },
+  "total_complaints": 1081,
+  "monthly": [
+    {
+      "month": "2025-01",
+      "count": 45
+    },
+    {
+      "month": "2025-02",
+      "count": 41
+    },
+    {
+      "month": "2025-03",
+      "count": 57
+    },
+    {
+      "month": "2025-04",
+      "count": 42
+    },
+    {
+      "month": "2025-05",
+      "count": 66
+    },
+    {
+      "month": "2025-06",
+      "count": 49
+    },
+    {
+      "month": "2025-07",
+      "count": 71
+    },
+    {
+      "month": "2025-08",
+      "count": 61
+    },
+    {
+      "month": "2025-09",
+      "count": 58
+    },
+    {
+      "month": "2025-10",
+      "count": 72
+    },
+    {
+      "month": "2025-11",
+      "count": 61
+    },
+    {
+      "month": "2025-12",
+      "count": 72
+    },
+    {
+      "month": "2026-01",
+      "count": 74
+    },
+    {
+      "month": "2026-02",
+      "count": 58
+    },
+    {
+      "month": "2026-03",
+      "count": 61
+    },
+    {
+      "month": "2026-04",
+      "count": 66
+    },
+    {
+      "month": "2026-05",
+      "count": 65
+    },
+    {
+      "month": "2026-06",
+      "count": 62
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Credit card or prepaid card",
+      "count": 685
+    },
+    {
+      "name": "Checking or savings account",
+      "count": 238
+    },
+    {
+      "name": "Debt collection",
+      "count": 97
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 61
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Problem with a purchase shown on your statement",
+      "count": 258
+    },
+    {
+      "name": "Fraud or scam",
+      "count": 186
+    },
+    {
+      "name": "Problem when making payments",
+      "count": 171
+    },
+    {
+      "name": "Closing your account",
+      "count": 159
+    },
+    {
+      "name": "Other features, terms, or problems",
+      "count": 158
+    },
+    {
+      "name": "Getting a credit card",
+      "count": 149
+    }
+  ],
+  "top_states": [
+    {
+      "name": "CA",
+      "count": 174
+    },
+    {
+      "name": "TX",
+      "count": 144
+    },
+    {
+      "name": "FL",
+      "count": 136
+    },
+    {
+      "name": "NY",
+      "count": 133
+    },
+    {
+      "name": "GA",
+      "count": 104
+    },
+    {
+      "name": "IL",
+      "count": 62
+    },
+    {
+      "name": "NC",
+      "count": 57
+    },
+    {
+      "name": "PA",
+      "count": 51
+    },
+    {
+      "name": "VA",
+      "count": 44
+    },
+    {
+      "name": "OH",
+      "count": 42
+    }
+  ],
+  "timely_response_rate": 0.9695,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 647
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 280
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 116
+    },
+    {
+      "name": "In progress",
+      "count": 38
+    }
+  ],
+  "narrative_count": 406,
+  "sample_narratives": [
+    {
+      "date": "2026-06-28",
+      "product": "Checking or savings account",
+      "issue": "Other features, terms, or problems",
+      "state": "CA",
+      "text": "A purchase I did not make showed up on my statement. I reported it as fraud and the dispute was closed against me with no evidence shared."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Credit card or prepaid card",
+      "issue": "Problem with a purchase shown on your statement",
+      "state": "NY",
+      "text": "A purchase I did not make showed up on my statement. I reported it as fraud and the dispute was closed against me with no evidence shared."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Checking or savings account",
+      "issue": "Other features, terms, or problems",
+      "state": "CA",
+      "text": "I have been trying to get a refund for a transaction that was clearly a scam, and the company keeps closing my case with an explanation that does not address it."
+    },
+    {
+      "date": "2026-06-24",
+      "product": "Checking or savings account",
+      "issue": "Fraud or scam",
+      "state": "FL",
+      "text": "A purchase I did not make showed up on my statement. I reported it as fraud and the dispute was closed against me with no evidence shared."
+    },
+    {
+      "date": "2026-06-24",
+      "product": "Credit card or prepaid card",
+      "issue": "Problem with a purchase shown on your statement",
+      "state": "CA",
+      "text": "My payment was processed late through no fault of mine, triggering a fee and an interest charge I should not owe."
+    }
+  ],
+  "signal": {
+    "score": 44,
+    "band": "Moderate",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 3.1,
+        "evidence": "3.1% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 62,
+        "evidence": "62% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 23.9,
+        "evidence": "23.9% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 50,
+        "evidence": "last 3 months avg 64.3/mo vs prior 64.3/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 66.7,
+        "evidence": "66.7% of 406 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-01-01 and 2026-06-29, the CFPB published 1,081 complaints about Capital One. Volume is steady (last 3 months averaged 64 per month versus 64 before). The most common issue is \"Problem with a purchase shown on your statement\" (24% of complaints), concentrated in credit card or prepaid card. The company responded on time to 97% of cases; 62% of closed cases ended without relief. Overall risk signal: Moderate (44/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "sample",
+    "fdic": {
+      "cert": 4297,
+      "name": "Capital One, National Association",
+      "city": "McLean",
+      "state": "VA",
+      "active": true,
+      "asset_thousands": 478000000,
+      "established": "1933-07-07"
+    },
+    "sec": {
+      "cik": "0000927628",
+      "entity_name": "CAPITAL ONE FINANCIAL CORP",
+      "recent_filings": [
+        {
+          "form": "10-K",
+          "date": "2026-02-20",
+          "primary_doc": "cof-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "date": "2026-05-01",
+          "primary_doc": "cof-20260331.htm"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-04-22",
+          "primary_doc": "cof-8k.htm"
+        }
+      ]
+    },
+    "lei": {
+      "lei": "6J1FOLBNV4Q1KYT3X664",
+      "legal_name": "Capital One Financial Corporation",
+      "jurisdiction": "US-DE",
+      "status": "ACTIVE",
+      "registration_status": "ISSUED"
+    },
+    "sources": [
+      {
+        "label": "FDIC BankFind Suite",
+        "url": "https://banks.data.fdic.gov/bankfind-suite/bankfind"
+      },
+      {
+        "label": "SEC EDGAR",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+      },
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "SAMPLE public-record cross-reference — synthetic, illustrative values for offline demo. Replaced by live FDIC / SEC EDGAR / GLEIF lookups when ingested in CI."
+  }
+}

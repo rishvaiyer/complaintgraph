@@ -1,0 +1,301 @@
+{
+  "slug": "transunion",
+  "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+  "display_name": "TransUnion",
+  "data_source": "sample",
+  "snapshot_date": "2026-06-29",
+  "window": {
+    "min": "2025-01-01",
+    "max": "2026-06-29"
+  },
+  "total_complaints": 1757,
+  "monthly": [
+    {
+      "month": "2025-01",
+      "count": 21
+    },
+    {
+      "month": "2025-02",
+      "count": 47
+    },
+    {
+      "month": "2025-03",
+      "count": 73
+    },
+    {
+      "month": "2025-04",
+      "count": 63
+    },
+    {
+      "month": "2025-05",
+      "count": 79
+    },
+    {
+      "month": "2025-06",
+      "count": 75
+    },
+    {
+      "month": "2025-07",
+      "count": 80
+    },
+    {
+      "month": "2025-08",
+      "count": 102
+    },
+    {
+      "month": "2025-09",
+      "count": 105
+    },
+    {
+      "month": "2025-10",
+      "count": 104
+    },
+    {
+      "month": "2025-11",
+      "count": 107
+    },
+    {
+      "month": "2025-12",
+      "count": 123
+    },
+    {
+      "month": "2026-01",
+      "count": 117
+    },
+    {
+      "month": "2026-02",
+      "count": 123
+    },
+    {
+      "month": "2026-03",
+      "count": 143
+    },
+    {
+      "month": "2026-04",
+      "count": 107
+    },
+    {
+      "month": "2026-05",
+      "count": 155
+    },
+    {
+      "month": "2026-06",
+      "count": 133
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Credit reporting, credit repair services, or other personal consumer reports",
+      "count": 1615
+    },
+    {
+      "name": "Debt collection",
+      "count": 101
+    },
+    {
+      "name": "Credit card or prepaid card",
+      "count": 41
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Incorrect information on your report",
+      "count": 834
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 515
+    },
+    {
+      "name": "Improper use of your report",
+      "count": 233
+    },
+    {
+      "name": "Unable to get your credit report or credit score",
+      "count": 104
+    },
+    {
+      "name": "Problem with fraud alerts or security freezes",
+      "count": 71
+    }
+  ],
+  "top_states": [
+    {
+      "name": "CA",
+      "count": 287
+    },
+    {
+      "name": "TX",
+      "count": 260
+    },
+    {
+      "name": "FL",
+      "count": 238
+    },
+    {
+      "name": "NY",
+      "count": 178
+    },
+    {
+      "name": "GA",
+      "count": 150
+    },
+    {
+      "name": "NC",
+      "count": 104
+    },
+    {
+      "name": "PA",
+      "count": 89
+    },
+    {
+      "name": "IL",
+      "count": 88
+    },
+    {
+      "name": "NJ",
+      "count": 75
+    },
+    {
+      "name": "VA",
+      "count": 70
+    }
+  ],
+  "timely_response_rate": 0.9829,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 1502
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 202
+    },
+    {
+      "name": "In progress",
+      "count": 38
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 15
+    }
+  ],
+  "narrative_count": 642,
+  "sample_narratives": [
+    {
+      "date": "2026-06-27",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Unable to get your credit report or credit score",
+      "state": "CA",
+      "text": "I sent a dispute about incorrect information but the investigation came back \"verified\" without any real review. The wrong balance is still showing."
+    },
+    {
+      "date": "2026-06-27",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Incorrect information on your report",
+      "state": "WA",
+      "text": "I sent a dispute about incorrect information but the investigation came back \"verified\" without any real review. The wrong balance is still showing."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Incorrect information on your report",
+      "state": "NC",
+      "text": "A fraudulent account was opened in my name. Despite a police report and a fraud alert, the item has not been removed from my report."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Incorrect information on your report",
+      "state": "TX",
+      "text": "My report shows a late payment that I never had. This error is hurting my score and I was denied a loan because of it."
+    },
+    {
+      "date": "2026-06-25",
+      "product": "Debt collection",
+      "issue": "Problem with a company's investigation into an existing problem",
+      "state": "CA",
+      "text": "There is an account on my credit report that is not mine. I believe this is the result of identity theft and I have disputed it twice with no correction."
+    }
+  ],
+  "signal": {
+    "score": 57,
+    "band": "Elevated",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 1.7,
+        "evidence": "1.7% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 87.4,
+        "evidence": "87.4% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 47.5,
+        "evidence": "47.5% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 51.6,
+        "evidence": "last 3 months avg 131.7/mo vs prior 127.7/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 74.3,
+        "evidence": "74.3% of 642 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-01-01 and 2026-06-29, the CFPB published 1,757 complaints about TransUnion. Volume is steady (last 3 months averaged 132 per month versus 128 before). The most common issue is \"Incorrect information on your report\" (47% of complaints), concentrated in credit reporting, credit repair services, or other personal consumer reports. The company responded on time to 98% of cases; 87.4% of closed cases ended without relief. Overall risk signal: Elevated (57/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "sample",
+    "fdic": null,
+    "sec": {
+      "cik": "0001552033",
+      "entity_name": "TransUnion",
+      "recent_filings": [
+        {
+          "form": "10-K",
+          "date": "2026-02-12",
+          "primary_doc": "tru-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "date": "2026-05-09",
+          "primary_doc": "tru-20260331.htm"
+        }
+      ]
+    },
+    "lei": {
+      "lei": "529900XSTAS5T2ELEW68",
+      "legal_name": "TransUnion",
+      "jurisdiction": "US-DE",
+      "status": "ACTIVE",
+      "registration_status": "ISSUED"
+    },
+    "sources": [
+      {
+        "label": "SEC EDGAR",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+      },
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "SAMPLE public-record cross-reference — synthetic, illustrative values for offline demo. Replaced by live FDIC / SEC EDGAR / GLEIF lookups when ingested in CI."
+  }
+}

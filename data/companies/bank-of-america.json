@@ -1,0 +1,333 @@
+{
+  "slug": "bank-of-america",
+  "name": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+  "display_name": "Bank of America",
+  "data_source": "sample",
+  "snapshot_date": "2026-06-29",
+  "window": {
+    "min": "2025-01-01",
+    "max": "2026-06-29"
+  },
+  "total_complaints": 1139,
+  "monthly": [
+    {
+      "month": "2025-01",
+      "count": 51
+    },
+    {
+      "month": "2025-02",
+      "count": 67
+    },
+    {
+      "month": "2025-03",
+      "count": 55
+    },
+    {
+      "month": "2025-04",
+      "count": 73
+    },
+    {
+      "month": "2025-05",
+      "count": 57
+    },
+    {
+      "month": "2025-06",
+      "count": 64
+    },
+    {
+      "month": "2025-07",
+      "count": 66
+    },
+    {
+      "month": "2025-08",
+      "count": 70
+    },
+    {
+      "month": "2025-09",
+      "count": 62
+    },
+    {
+      "month": "2025-10",
+      "count": 57
+    },
+    {
+      "month": "2025-11",
+      "count": 65
+    },
+    {
+      "month": "2025-12",
+      "count": 66
+    },
+    {
+      "month": "2026-01",
+      "count": 66
+    },
+    {
+      "month": "2026-02",
+      "count": 58
+    },
+    {
+      "month": "2026-03",
+      "count": 65
+    },
+    {
+      "month": "2026-04",
+      "count": 69
+    },
+    {
+      "month": "2026-05",
+      "count": 66
+    },
+    {
+      "month": "2026-06",
+      "count": 62
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Checking or savings account",
+      "count": 379
+    },
+    {
+      "name": "Mortgage",
+      "count": 291
+    },
+    {
+      "name": "Credit card or prepaid card",
+      "count": 238
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 134
+    },
+    {
+      "name": "Vehicle loan or lease",
+      "count": 62
+    },
+    {
+      "name": "Debt collection",
+      "count": 35
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Managing an account",
+      "count": 281
+    },
+    {
+      "name": "Trouble during payment process",
+      "count": 174
+    },
+    {
+      "name": "Problem with a purchase shown on your statement",
+      "count": 168
+    },
+    {
+      "name": "Applying for a mortgage or refinancing an existing mortgage",
+      "count": 143
+    },
+    {
+      "name": "Fraud or scam",
+      "count": 136
+    },
+    {
+      "name": "Closing an account",
+      "count": 122
+    },
+    {
+      "name": "Struggling to pay your loan",
+      "count": 115
+    }
+  ],
+  "top_states": [
+    {
+      "name": "CA",
+      "count": 176
+    },
+    {
+      "name": "FL",
+      "count": 156
+    },
+    {
+      "name": "TX",
+      "count": 155
+    },
+    {
+      "name": "NY",
+      "count": 128
+    },
+    {
+      "name": "GA",
+      "count": 102
+    },
+    {
+      "name": "PA",
+      "count": 64
+    },
+    {
+      "name": "IL",
+      "count": 59
+    },
+    {
+      "name": "NC",
+      "count": 55
+    },
+    {
+      "name": "OH",
+      "count": 55
+    },
+    {
+      "name": "VA",
+      "count": 44
+    }
+  ],
+  "timely_response_rate": 0.9561,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 686
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 284
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 119
+    },
+    {
+      "name": "In progress",
+      "count": 50
+    }
+  ],
+  "narrative_count": 428,
+  "sample_narratives": [
+    {
+      "date": "2026-06-28",
+      "product": "Mortgage",
+      "issue": "Trouble during payment process",
+      "state": "CA",
+      "text": "I tried to close my account and was still charged fees afterward. The representative could not explain the charges."
+    },
+    {
+      "date": "2026-06-27",
+      "product": "Credit card or prepaid card",
+      "issue": "Fraud or scam",
+      "state": "MI",
+      "text": "During the payment process my mortgage payment was misapplied, and now I am being reported as delinquent for a payment I actually made."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Checking or savings account",
+      "issue": "Trouble during payment process",
+      "state": "TX",
+      "text": "Unauthorized charges appeared on my account and the bank denied my claim without explanation. I am out the money and getting no help."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Checking or savings account",
+      "issue": "Fraud or scam",
+      "state": "FL",
+      "text": "Unauthorized charges appeared on my account and the bank denied my claim without explanation. I am out the money and getting no help."
+    },
+    {
+      "date": "2026-06-25",
+      "product": "Credit card or prepaid card",
+      "issue": "Fraud or scam",
+      "state": "MI",
+      "text": "I tried to close my account and was still charged fees afterward. The representative could not explain the charges."
+    }
+  ],
+  "signal": {
+    "score": 38,
+    "band": "Moderate",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 4.4,
+        "evidence": "4.4% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 63,
+        "evidence": "63% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 24.7,
+        "evidence": "24.7% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 52.1,
+        "evidence": "last 3 months avg 65.7/mo vs prior 63/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 21.7,
+        "evidence": "21.7% of 428 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-01-01 and 2026-06-29, the CFPB published 1,139 complaints about Bank of America. Volume is steady (last 3 months averaged 66 per month versus 63 before). The most common issue is \"Managing an account\" (25% of complaints), concentrated in checking or savings account. The company responded on time to 96% of cases; 63% of closed cases ended without relief. Overall risk signal: Moderate (38/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "sample",
+    "fdic": {
+      "cert": 3510,
+      "name": "Bank of America, National Association",
+      "city": "Charlotte",
+      "state": "NC",
+      "active": true,
+      "asset_thousands": 2550000000,
+      "established": "1879-01-01"
+    },
+    "sec": {
+      "cik": "0000070858",
+      "entity_name": "BANK OF AMERICA CORP",
+      "recent_filings": [
+        {
+          "form": "10-K",
+          "date": "2026-02-24",
+          "primary_doc": "bac-20251231.htm"
+        },
+        {
+          "form": "10-Q",
+          "date": "2026-05-02",
+          "primary_doc": "bac-20260331.htm"
+        }
+      ]
+    },
+    "lei": {
+      "lei": "B4TYDEB6GKMZO031MB27",
+      "legal_name": "Bank of America Corporation",
+      "jurisdiction": "US-DE",
+      "status": "ACTIVE",
+      "registration_status": "ISSUED"
+    },
+    "sources": [
+      {
+        "label": "FDIC BankFind Suite",
+        "url": "https://banks.data.fdic.gov/bankfind-suite/bankfind"
+      },
+      {
+        "label": "SEC EDGAR",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+      },
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "SAMPLE public-record cross-reference — synthetic, illustrative values for offline demo. Replaced by live FDIC / SEC EDGAR / GLEIF lookups when ingested in CI."
+  }
+}

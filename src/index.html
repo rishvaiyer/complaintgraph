@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComplaintGraph — public complaint intelligence for consumer finance</title>
+<meta name="description" content="Search a financial company and see complaint trends, top issues, response quality, and a transparent risk signal — built entirely on the public CFPB Consumer Complaint Database.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="orb"></div>
+<div class="wrap">
+
+  <nav class="nav">
+    <a class="nav-l" href="../">
+      <span class="nav-logo">📊</span>
+      <span class="nav-name">Complaint<span>Graph</span></span>
+    </a>
+    <a class="nav-r" href="../">unEvilGenius Labs ↗</a>
+  </nav>
+
+  <header class="hero">
+    <div class="badge" id="sourceBadge">Loading…</div>
+    <h1>Should you worry about this <em>financial company?</em></h1>
+    <p class="hero-sub">
+      Search a bank, credit bureau, lender, or card issuer to see its
+      <strong>complaint trend, top issues, response quality, and a transparent risk signal</strong> —
+      built entirely on the public <strong>CFPB Consumer Complaint Database</strong>.
+      A public-data signal explorer, not a legal, investment, or regulatory conclusion.
+    </p>
+  </header>
+
+  <!-- Controls -->
+  <section class="controls">
+    <div class="search-row">
+      <input id="search" type="search" autocomplete="off" placeholder="Search a company…" aria-label="Search company">
+      <label class="compare-toggle">
+        <input type="checkbox" id="compareToggle"> Compare two
+      </label>
+    </div>
+    <div id="companyChips" class="chips"></div>
+  </section>
+
+  <div class="sl" id="boardLabel">Risk leaderboard</div>
+  <section id="leaderboard" class="leaderboard"></section>
+
+  <main id="detail" hidden></main>
+  <section id="compare" class="compare" hidden></section>
+
+  <footer class="foot">
+    <p>
+      <strong>Source:</strong> public
+      <a href="https://www.consumerfinance.gov/data-research/consumer-complaints/" target="_blank" rel="noopener">CFPB Consumer Complaint Database</a>.
+      Complaints are published after the company responds or after 15 days. Narratives appear only with consumer consent and CFPB scrubbing.
+    </p>
+    <p class="disclaimer">
+      Every score here is an <strong>exploratory signal</strong> derived from public complaint statistics — not a statement that a
+      company is good, bad, fraudulent, or in violation of any law. Complaint volume reflects company size and customer base, not just conduct.
+      Nothing here is legal, financial, or investment advice.
+    </p>
+  </footer>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

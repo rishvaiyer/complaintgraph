@@ -1,0 +1,74 @@
+{
+  "generated": "2026-06-29",
+  "data_source": "sample",
+  "window": {
+    "min": "2025-01-01",
+    "max": "2026-06-29"
+  },
+  "note": "SAMPLE data — synthetic, for demo only. Replaced by live CFPB data when ingested in CI.",
+  "companies": [
+    {
+      "slug": "experian",
+      "display_name": "Experian",
+      "name": "Experian Information Solutions Inc.",
+      "kind": "bureau",
+      "total_complaints": 1600,
+      "signal_score": 58,
+      "signal_band": "Elevated"
+    },
+    {
+      "slug": "equifax",
+      "display_name": "Equifax",
+      "name": "EQUIFAX, INC.",
+      "kind": "bureau",
+      "total_complaints": 1815,
+      "signal_score": 57,
+      "signal_band": "Elevated"
+    },
+    {
+      "slug": "transunion",
+      "display_name": "TransUnion",
+      "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+      "kind": "bureau",
+      "total_complaints": 1757,
+      "signal_score": 57,
+      "signal_band": "Elevated"
+    },
+    {
+      "slug": "capital-one",
+      "display_name": "Capital One",
+      "name": "CAPITAL ONE FINANCIAL CORPORATION",
+      "kind": "card",
+      "total_complaints": 1081,
+      "signal_score": 44,
+      "signal_band": "Moderate"
+    },
+    {
+      "slug": "jpmorgan-chase",
+      "display_name": "JPMorgan Chase",
+      "name": "JPMORGAN CHASE & CO.",
+      "kind": "bank",
+      "total_complaints": 1053,
+      "signal_score": 43,
+      "signal_band": "Moderate"
+    },
+    {
+      "slug": "bank-of-america",
+      "display_name": "Bank of America",
+      "name": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+      "kind": "bank",
+      "total_complaints": 1139,
+      "signal_score": 38,
+      "signal_band": "Moderate"
+    },
+    {
+      "slug": "wells-fargo",
+      "display_name": "Wells Fargo",
+      "name": "WELLS FARGO & COMPANY",
+      "kind": "bank",
+      "total_complaints": 878,
+      "signal_score": 38,
+      "signal_band": "Moderate"
+    }
+  ]
+}

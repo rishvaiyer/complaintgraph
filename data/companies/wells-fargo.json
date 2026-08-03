@@ -1,0 +1,333 @@
+{
+  "slug": "wells-fargo",
+  "name": "WELLS FARGO & COMPANY",
+  "display_name": "Wells Fargo",
+  "data_source": "sample",
+  "snapshot_date": "2026-06-29",
+  "window": {
+    "min": "2025-01-01",
+    "max": "2026-06-29"
+  },
+  "total_complaints": 878,
+  "monthly": [
+    {
+      "month": "2025-01",
+      "count": 39
+    },
+    {
+      "month": "2025-02",
+      "count": 44
+    },
+    {
+      "month": "2025-03",
+      "count": 47
+    },
+    {
+      "month": "2025-04",
+      "count": 53
+    },
+    {
+      "month": "2025-05",
+      "count": 50
+    },
+    {
+      "month": "2025-06",
+      "count": 46
+    },
+    {
+      "month": "2025-07",
+      "count": 62
+    },
+    {
+      "month": "2025-08",
+      "count": 45
+    },
+    {
+      "month": "2025-09",
+      "count": 46
+    },
+    {
+      "month": "2025-10",
+      "count": 62
+    },
+    {
+      "month": "2025-11",
+      "count": 43
+    },
+    {
+      "month": "2025-12",
+      "count": 59
+    },
+    {
+      "month": "2026-01",
+      "count": 59
+    },
+    {
+      "month": "2026-02",
+      "count": 46
+    },
+    {
+      "month": "2026-03",
+      "count": 45
+    },
+    {
+      "month": "2026-04",
+      "count": 48
+    },
+    {
+      "month": "2026-05",
+      "count": 43
+    },
+    {
+      "month": "2026-06",
+      "count": 41
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Checking or savings account",
+      "count": 273
+    },
+    {
+      "name": "Mortgage",
+      "count": 206
+    },
+    {
+      "name": "Credit card or prepaid card",
+      "count": 196
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 124
+    },
+    {
+      "name": "Vehicle loan or lease",
+      "count": 47
+    },
+    {
+      "name": "Debt collection",
+      "count": 32
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Managing an account",
+      "count": 258
+    },
+    {
+      "name": "Trouble during payment process",
+      "count": 121
+    },
+    {
+      "name": "Problem with a purchase shown on your statement",
+      "count": 119
+    },
+    {
+      "name": "Fraud or scam",
+      "count": 104
+    },
+    {
+      "name": "Applying for a mortgage or refinancing an existing mortgage",
+      "count": 103
+    },
+    {
+      "name": "Closing an account",
+      "count": 93
+    },
+    {
+      "name": "Struggling to pay your loan",
+      "count": 80
+    }
+  ],
+  "top_states": [
+    {
+      "name": "CA",
+      "count": 140
+    },
+    {
+      "name": "TX",
+      "count": 132
+    },
+    {
+      "name": "FL",
+      "count": 116
+    },
+    {
+      "name": "GA",
+      "count": 72
+    },
+    {
+      "name": "NY",
+      "count": 71
+    },
+    {
+      "name": "PA",
+      "count": 60
+    },
+    {
+      "name": "IL",
+      "count": 53
+    },
+    {
+      "name": "NC",
+      "count": 50
+    },
+    {
+      "name": "NJ",
+      "count": 47
+    },
+    {
+      "name": "OH",
+      "count": 34
+    }
+  ],
+  "timely_response_rate": 0.9738,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 542
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 207
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 93
+    },
+    {
+      "name": "In progress",
+      "count": 36
+    }
+  ],
+  "narrative_count": 343,
+  "sample_narratives": [
+    {
+      "date": "2026-06-28",
+      "product": "Money transfer, virtual currency, or money service",
+      "issue": "Fraud or scam",
+      "state": "NY",
+      "text": "Unauthorized charges appeared on my account and the bank denied my claim without explanation. I am out the money and getting no help."
+    },
+    {
+      "date": "2026-06-27",
+      "product": "Mortgage",
+      "issue": "Problem with a purchase shown on your statement",
+      "state": "FL",
+      "text": "Unauthorized charges appeared on my account and the bank denied my claim without explanation. I am out the money and getting no help."
+    },
+    {
+      "date": "2026-06-27",
+      "product": "Checking or savings account",
+      "issue": "Managing an account",
+      "state": "NC",
+      "text": "Unauthorized charges appeared on my account and the bank denied my claim without explanation. I am out the money and getting no help."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Credit card or prepaid card",
+      "issue": "Fraud or scam",
+      "state": "TX",
+      "text": "I tried to close my account and was still charged fees afterward. The representative could not explain the charges."
+    },
+    {
+      "date": "2026-06-23",
+      "product": "Checking or savings account",
+      "issue": "Managing an account",
+      "state": "CA",
+      "text": "I was charged repeated overdraft fees in a way I do not understand. When I called, I was transferred multiple times and never got a resolution."
+    }
+  ],
+  "signal": {
+    "score": 38,
+    "band": "Moderate",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 2.6,
+        "evidence": "2.6% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 64.4,
+        "evidence": "64.4% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 29.4,
+        "evidence": "29.4% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 44,
+        "evidence": "last 3 months avg 44/mo vs prior 50/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 23.6,
+        "evidence": "23.6% of 343 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-01-01 and 2026-06-29, the CFPB published 878 complaints about Wells Fargo. Volume is steady (last 3 months averaged 44 per month versus 50 before). The most common issue is \"Managing an account\" (29% of complaints), concentrated in checking or savings account. The company responded on time to 97% of cases; 64.4% of closed cases ended without relief. Overall risk signal: Moderate (38/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "sample",
+    "fdic": {
+      "cert": 3511,
+      "name": "Wells Fargo Bank, National Association",
+      "city": "Sioux Falls",
+      "state": "SD",
+      "active": true,
+      "asset_thousands": 1720000000,
+      "established": "1870-01-01"
+    },
+    "sec": {
+      "cik": "0000072971",
+      "entity_name": "WELLS FARGO & COMPANY",
+      "recent_filings": [
+        {
+          "form": "10-K",
+          "date": "2026-02-18",
+          "primary_doc": "wfc-20251231.htm"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-04-11",
+          "primary_doc": "wfc-8k.htm"
+        }
+      ]
+    },
+    "lei": {
+      "lei": "PBLD0EJDB5FWOLXP3B76",
+      "legal_name": "Wells Fargo & Company",
+      "jurisdiction": "US-DE",
+      "status": "ACTIVE",
+      "registration_status": "ISSUED"
+    },
+    "sources": [
+      {
+        "label": "FDIC BankFind Suite",
+        "url": "https://banks.data.fdic.gov/bankfind-suite/bankfind"
+      },
+      {
+        "label": "SEC EDGAR",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+      },
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "SAMPLE public-record cross-reference — synthetic, illustrative values for offline demo. Replaced by live FDIC / SEC EDGAR / GLEIF lookups when ingested in CI."
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "slug": "equifax",
+  "name": "EQUIFAX, INC.",
+  "display_name": "Equifax",
+  "data_source": "sample",
+  "snapshot_date": "2026-06-29",
+  "window": {
+    "min": "2025-01-01",
+    "max": "2026-06-29"
+  },
+  "total_complaints": 1815,
+  "monthly": [
+    {
+      "month": "2025-01",
+      "count": 26
+    },
+    {
+      "month": "2025-02",
+      "count": 64
+    },
+    {
+      "month": "2025-03",
+      "count": 74
+    },
+    {
+      "month": "2025-04",
+      "count": 56
+    },
+    {
+      "month": "2025-05",
+      "count": 80
+    },
+    {
+      "month": "2025-06",
+      "count": 82
+    },
+    {
+      "month": "2025-07",
+      "count": 99
+    },
+    {
+      "month": "2025-08",
+      "count": 115
+    },
+    {
+      "month": "2025-09",
+      "count": 83
+    },
+    {
+      "month": "2025-10",
+      "count": 114
+    },
+    {
+      "month": "2025-11",
+      "count": 122
+    },
+    {
+      "month": "2025-12",
+      "count": 120
+    },
+    {
+      "month": "2026-01",
+      "count": 130
+    },
+    {
+      "month": "2026-02",
+      "count": 118
+    },
+    {
+      "month": "2026-03",
+      "count": 140
+    },
+    {
+      "month": "2026-04",
+      "count": 125
+    },
+    {
+      "month": "2026-05",
+      "count": 141
+    },
+    {
+      "month": "2026-06",
+      "count": 126
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Credit reporting, credit repair services, or other personal consumer reports",
+      "count": 1668
+    },
+    {
+      "name": "Debt collection",
+      "count": 97
+    },
+    {
+      "name": "Credit card or prepaid card",
+      "count": 50
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Incorrect information on your report",
+      "count": 832
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 567
+    },
+    {
+      "name": "Improper use of your report",
+      "count": 254
+    },
+    {
+      "name": "Unable to get your credit report or credit score",
+      "count": 92
+    },
+    {
+      "name": "Problem with fraud alerts or security freezes",
+      "count": 70
+    }
+  ],
+  "top_states": [
+    {
+      "name": "CA",
+      "count": 320
+    },
+    {
+      "name": "TX",
+      "count": 236
+    },
+    {
+      "name": "FL",
+      "count": 220
+    },
+    {
+      "name": "NY",
+      "count": 178
+    },
+    {
+      "name": "GA",
+      "count": 151
+    },
+    {
+      "name": "NC",
+      "count": 119
+    },
+    {
+      "name": "PA",
+      "count": 107
+    },
+    {
+      "name": "VA",
+      "count": 95
+    },
+    {
+      "name": "IL",
+      "count": 83
+    },
+    {
+      "name": "OH",
+      "count": 74
+    }
+  ],
+  "timely_response_rate": 0.9802,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 1576
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 196
+    },
+    {
+      "name": "In progress",
+      "count": 27
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 16
+    }
+  ],
+  "narrative_count": 666,
+  "sample_narratives": [
+    {
+      "date": "2026-06-28",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Problem with a company's investigation into an existing problem",
+      "state": "MI",
+      "text": "There is an account on my credit report that is not mine. I believe this is the result of identity theft and I have disputed it twice with no correction."
+    },
+    {
+      "date": "2026-06-28",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Improper use of your report",
+      "state": "CA",
+      "text": "There is an account on my credit report that is not mine. I believe this is the result of identity theft and I have disputed it twice with no correction."
+    },
+    {
+      "date": "2026-06-27",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Incorrect information on your report",
+      "state": "MI",
+      "text": "My report shows a late payment that I never had. This error is hurting my score and I was denied a loan because of it."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Problem with a company's investigation into an existing problem",
+      "state": "MI",
+      "text": "A fraudulent account was opened in my name. Despite a police report and a fraud alert, the item has not been removed from my report."
+    },
+    {
+      "date": "2026-06-26",
+      "product": "Credit reporting, credit repair services, or other personal consumer reports",
+      "issue": "Problem with a company's investigation into an existing problem",
+      "state": "OH",
+      "text": "I sent a dispute about incorrect information but the investigation came back \"verified\" without any real review. The wrong balance is still showing."
+    }
+  ],
+  "signal": {
+    "score": 57,
+    "band": "Elevated",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 2,
+        "evidence": "2% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 88.1,
+        "evidence": "88.1% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 45.8,
+        "evidence": "45.8% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 50.5,
+        "evidence": "last 3 months avg 130.7/mo vs prior 129.3/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 73.7,
+        "evidence": "73.7% of 666 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-01-01 and 2026-06-29, the CFPB published 1,815 complaints about Equifax. Volume is steady (last 3 months averaged 131 per month versus 129 before). The most common issue is \"Incorrect information on your report\" (46% of complaints), concentrated in credit reporting, credit repair services, or other personal consumer reports. The company responded on time to 98% of cases; 88.1% of closed cases ended without relief. Overall risk signal: Elevated (57/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "sample",
+    "fdic": null,
+    "sec": {
+      "cik": "0000033185",
+      "entity_name": "EQUIFAX INC",
+      "recent_filings": [
+        {
+          "form": "10-K",
+          "date": "2026-02-25",
+          "primary_doc": "efx-20251231.htm"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-04-16",
+          "primary_doc": "efx-8k.htm"
+        }
+      ]
+    },
+    "lei": {
+      "lei": "L13RU0RZ8NU6RWFW1Y26",
+      "legal_name": "Equifax Inc.",
+      "jurisdiction": "US-GA",
+      "status": "ACTIVE",
+      "registration_status": "ISSUED"
+    },
+    "sources": [
+      {
+        "label": "SEC EDGAR",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+      },
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "SAMPLE public-record cross-reference — synthetic, illustrative values for offline demo. Replaced by live FDIC / SEC EDGAR / GLEIF lookups when ingested in CI."
+  }
+}
