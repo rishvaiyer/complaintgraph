@@ -50,8 +50,9 @@ async function fetchPage(companyName, window, frm) {
   url.searchParams.set('size', String(PAGE));
   url.searchParams.set('frm', String(frm));
   url.searchParams.set('no_aggs', 'true');
+  // NOTE: no `format` param — that switches the API into export mode, which
+  // rejects any company whose full result set exceeds 100k rows (HTTP 400).
   url.searchParams.set('sort', 'created_date_desc');
-  url.searchParams.set('format', 'json');
 
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), REQUEST_TIMEOUT_MS);
