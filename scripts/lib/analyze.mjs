@@ -264,6 +264,10 @@ export const COMPANIES = [
   { slug: 'wells-fargo', displayName: 'Wells Fargo', name: 'WELLS FARGO & COMPANY', kind: 'bank' },
   { slug: 'jpmorgan-chase', displayName: 'JPMorgan Chase', name: 'JPMORGAN CHASE & CO.', kind: 'bank' },
   { slug: 'capital-one', displayName: 'Capital One', name: 'CAPITAL ONE FINANCIAL CORPORATION', kind: 'card' },
+  { slug: 'citibank', displayName: 'Citibank', name: 'CITIBANK, N.A.', kind: 'bank' },
+  { slug: 'discover', displayName: 'Discover', name: 'DISCOVER BANK', kind: 'card' },
+  { slug: 'synchrony', displayName: 'Synchrony', name: 'SYNCHRONY FINANCIAL', kind: 'card' },
+  { slug: 'navient', displayName: 'Navient', name: 'Navient Solutions, LLC.', kind: 'lender' },
 ];
 
 export { clamp, round };
