@@ -13,6 +13,8 @@ customer base, not just its conduct, and every score is labeled as an estimate.
 
 **Live:** https://unevil-warden-port2-production.up.railway.app/complaintgraph/
 
+**Original home:** https://unevil-warden.github.io/unevil/complaintgraph/ — my earlier GitHub account (unevil-warden), since retired; kept here as provenance.
+
 ![ComplaintGraph dashboard](./docs/preview.png)
 
 ---
