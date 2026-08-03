@@ -11,7 +11,7 @@ ComplaintGraph is a **public-data signal explorer**, not a legal, investment, or
 regulatory conclusion tool. Complaint volume reflects a company's size and
 customer base, not just its conduct, and every score is labeled as an estimate.
 
-**Live:** https://unevil-warden-port2-production.up.railway.app/complaintgraph/
+**Live:** https://rishiyer.up.railway.app/complaintgraph/
 
 **Original home:** https://unevil-warden.github.io/unevil/complaintgraph/ — my earlier GitHub account (unevil-warden), since retired; kept here as provenance.
 
