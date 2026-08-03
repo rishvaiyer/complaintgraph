@@ -127,6 +127,14 @@ and CFPB scrubbing is applied. No API key is required.
 
 API docs: <https://cfpb.github.io/api/ccdb/api.html>
 
+**Regulatory cross-reference sources** (merged into each company page by
+`scripts/ingest-regulatory.mjs`, all key-free public records):
+
+- [FDIC BankFind Suite](https://banks.data.fdic.gov/bankfind-suite/bankfind) — charter, location, assets
+- [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany) — filer identity + recent filings
+- [GLEIF LEI](https://search.gleif.org/) — legal-entity identifier and registration status
+- [Federal Reserve Enforcement Actions](https://www.federalreserve.gov/supervisionreg/enforcementactions.htm) — public enforcement records (counts + most recent action)
+
 ---
 
 ## Honest limits

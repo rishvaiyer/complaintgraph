@@ -31,6 +31,7 @@ export const SOURCE_LINKS = {
   fdic: { label: 'FDIC BankFind Suite', url: 'https://banks.data.fdic.gov/bankfind-suite/bankfind' },
   sec: { label: 'SEC EDGAR', url: 'https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany' },
   lei: { label: 'GLEIF LEI Search', url: 'https://search.gleif.org/' },
+  fed: { label: 'Federal Reserve Enforcement Actions', url: 'https://www.federalreserve.gov/supervisionreg/enforcementactions.htm' },
 };
 
 // Descriptive User-Agent required by SEC EDGAR policy. Includes a contact.
@@ -162,11 +163,12 @@ const SAMPLE_NOTE =
   'Replaced by live FDIC / SEC EDGAR / GLEIF lookups when ingested in CI.';
 
 // Build the `sources` list from whichever facts are present.
-function sourcesFor({ fdic, sec, lei }) {
+function sourcesFor({ fdic, sec, lei, fed }) {
   const out = [];
   if (fdic) out.push(SOURCE_LINKS.fdic);
   if (sec) out.push(SOURCE_LINKS.sec);
   if (lei) out.push(SOURCE_LINKS.lei);
+  if (fed) out.push(SOURCE_LINKS.fed);
   return out;
 }
 
@@ -177,12 +179,14 @@ export function sampleRegulatory(company) {
   const fdic = base.fdic || null;
   const sec = base.sec || null;
   const lei = base.lei || null;
+  const fed = base.fed || null;
   return {
     data_source: 'sample',
     fdic,
     sec,
     lei,
-    sources: sourcesFor({ fdic, sec, lei }),
+    fed,
+    sources: sourcesFor({ fdic, sec, lei, fed }),
     note: SAMPLE_NOTE,
   };
 }
@@ -335,21 +339,108 @@ async function fetchLEI(company, opts) {
   }
 }
 
+// Federal Reserve enforcement actions — one public CSV covering all orgs, so it
+// is fetched once per run and cached. Matches on the Banking Organization
+// column. Returns null on no-match or error.
+const FED_CSV_URL = 'https://www.federalreserve.gov/supervisionreg/files/enforcementactions.csv';
+let _fedCache = null;
+
+// Minimal CSV parser that handles quoted fields with embedded commas.
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"') {
+        if (text[i + 1] === '"') { field += '"'; i++; }
+        else inQuotes = false;
+      } else field += ch;
+    } else if (ch === '"') inQuotes = true;
+    else if (ch === ',') { row.push(field); field = ''; }
+    else if (ch === '\n' || ch === '\r') {
+      if (field !== '' || row.length) { row.push(field); rows.push(row); row = []; field = ''; }
+      if (ch === '\r' && text[i + 1] === '\n') i++;
+    } else field += ch;
+  }
+  if (field !== '' || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+async function loadFedActions(opts) {
+  if (_fedCache) return _fedCache;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), opts.timeoutMs);
+  let text;
+  try {
+    const res = await fetch(FED_CSV_URL, { signal: ctrl.signal });
+    if (!res.ok) throw new Error(`HTTP ${res.status} for Fed enforcement CSV`);
+    text = await res.text();
+  } finally {
+    clearTimeout(timer);
+  }
+  const rows = parseCSV(text.replace(/^﻿/, ''));
+  const header = rows[0].map((h) => h.trim().toLowerCase());
+  const idx = (name) => header.indexOf(name);
+  const col = {
+    effective: idx('effective date'),
+    termination: idx('termination date'),
+    org: idx('banking organization'),
+    action: idx('action'),
+    url: idx('url'),
+  };
+  _fedCache = rows.slice(1).map((r) => ({
+    effective: (r[col.effective] || '').trim(),
+    termination: (r[col.termination] || '').trim(),
+    org: (r[col.org] || '').trim(),
+    action: (r[col.action] || '').trim(),
+    url: (r[col.url] || '').trim(),
+  })).filter((r) => r.org);
+  return _fedCache;
+}
+
+async function fetchFed(company, opts) {
+  try {
+    const actions = await loadFedActions(opts);
+    const key = (company.displayName || '').toUpperCase();
+    if (!key) return null;
+    const matches = actions.filter((a) => a.org.toUpperCase().includes(key));
+    if (!matches.length) return null;
+    matches.sort((a, b) => (b.effective || '').localeCompare(a.effective || ''));
+    const active = matches.filter((a) => !a.termination);
+    return {
+      organization: matches[0].org,
+      total_actions: matches.length,
+      active_actions: active.length,
+      most_recent: {
+        date: matches[0].effective || '',
+        action: matches[0].action || '',
+        url: matches[0].url || '',
+      },
+    };
+  } catch (err) {
+    console.warn(`  (Fed enforcement lookup failed for ${company.displayName}: ${err.message})`);
+    return null;
+  }
+}
+
 // Live enrichment for one company. Each source is independent; any failure just
 // yields null for that source. Never throws.
 export async function fetchRegulatory(company, opts = {}) {
   const timeoutMs = opts.timeoutMs ?? 15000;
-  const [fdic, sec, lei] = await Promise.all([
+  const [fdic, sec, lei, fed] = await Promise.all([
     fetchFDIC(company, { timeoutMs }),
     fetchSEC(company, { timeoutMs }),
     fetchLEI(company, { timeoutMs }),
+    fetchFed(company, { timeoutMs }),
   ]);
   return {
     data_source: 'live',
     fdic,
     sec,
     lei,
-    sources: sourcesFor({ fdic, sec, lei }),
-    note: 'Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict.',
+    fed,
+    sources: sourcesFor({ fdic, sec, lei, fed }),
+    note: 'Live public-record cross-reference from FDIC BankFind, SEC EDGAR, GLEIF, and Federal Reserve enforcement actions. Public records only — not a verdict.',
   };
 }

@@ -164,16 +164,31 @@ function regCardLEI(l) {
     </div>`;
 }
 
+function regCardFed(f) {
+  if (!f) return '';
+  return `
+    <div class="reg-src">
+      <div class="reg-src-head">
+        <span class="reg-tag">Fed Enforcement</span>
+        <a href="https://www.federalreserve.gov/supervisionreg/enforcementactions.htm" target="_blank" rel="noopener">view ↗</a>
+      </div>
+      ${regFactRow('Organization', esc(f.organization || '—'))}
+      ${regFactRow('Actions on record', String(f.total_actions ?? 0))}
+      ${regFactRow('Not yet terminated', String(f.active_actions ?? 0))}
+      ${f.most_recent && f.most_recent.date ? regFactRow('Most recent', `${esc(f.most_recent.date)} · ${esc(f.most_recent.action || '')}`) : ''}
+    </div>`;
+}
+
 function regulatoryPanel(c) {
   const reg = c.regulatory;
   const isSample = !reg || reg.data_source === 'sample';
   const tagClass = isSample ? 'reg-badge sample' : 'reg-badge';
   const tagText = isSample ? 'SAMPLE public records' : 'Public records';
-  const hasMatch = reg && (reg.fdic || reg.sec || reg.lei);
+  const hasMatch = reg && (reg.fdic || reg.sec || reg.lei || reg.fed);
 
   const body = hasMatch
-    ? `<div class="reg-grid">${regCardFDIC(reg.fdic)}${regCardSEC(reg.sec)}${regCardLEI(reg.lei)}</div>`
-    : `<div class="reg-empty">No public regulatory match found in FDIC BankFind, SEC EDGAR, or GLEIF for this entity.
+    ? `<div class="reg-grid">${regCardFDIC(reg.fdic)}${regCardSEC(reg.sec)}${regCardLEI(reg.lei)}${regCardFed(reg.fed)}</div>`
+    : `<div class="reg-empty">No public regulatory match found in FDIC BankFind, SEC EDGAR, GLEIF, or Federal Reserve enforcement records for this entity.
         Many non-bank companies (e.g. credit bureaus and privately-held firms) have no FDIC charter or US SEC filer record.</div>`;
 
   return `
@@ -182,8 +197,9 @@ function regulatoryPanel(c) {
         <h3>Regulatory footprint</h3>
         <span class="${tagClass}">${tagText}</span>
       </div>
-      <p class="reg-note">Open public-record cross-reference from independent government / registry sources, shown for context.
-        These are identity and registration facts only — <strong>not</strong> findings of wrongdoing and not part of the complaint signal.</p>
+      <p class="reg-note">Open public-record cross-reference from independent government / registry sources, shown for context:
+        identity, registration, and public enforcement records. Enforcement entries are public regulator actions as published —
+        shown for context only and <strong>not</strong> part of the complaint signal.</p>
       ${body}
       ${reg && reg.note ? `<div class="reg-prov">${esc(reg.note)}</div>` : ''}
     </div>`;

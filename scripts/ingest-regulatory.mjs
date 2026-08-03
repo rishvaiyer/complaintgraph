@@ -33,7 +33,7 @@ const START = Date.now();
 // Is the freshly-fetched live block worth keeping? Only if at least one of the
 // public sources actually matched — otherwise we leave existing data untouched.
 function hasAnyMatch(reg) {
-  return Boolean(reg && (reg.fdic || reg.sec || reg.lei));
+  return Boolean(reg && (reg.fdic || reg.sec || reg.lei || reg.fed));
 }
 
 async function main() {
