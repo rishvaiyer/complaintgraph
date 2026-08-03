@@ -309,6 +309,16 @@
       "status": "ACTIVE",
       "registration_status": "LAPSED"
     },
+    "fed": {
+      "organization": "Wells Fargo & Company, San Francisco, California",
+      "total_actions": 8,
+      "active_actions": 4,
+      "most_recent": {
+        "date": "2023-03-24",
+        "action": "Civil Money Penalty",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20230330a.htm"
+      }
+    },
     "sources": [
       {
         "label": "FDIC BankFind Suite",
@@ -321,8 +331,12 @@
       {
         "label": "GLEIF LEI Search",
         "url": "https://search.gleif.org/"
+      },
+      {
+        "label": "Federal Reserve Enforcement Actions",
+        "url": "https://www.federalreserve.gov/supervisionreg/enforcementactions.htm"
       }
     ],
-    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, GLEIF, and Federal Reserve enforcement actions. Public records only — not a verdict."
   }
 }

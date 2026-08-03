@@ -297,6 +297,16 @@
       "status": "ACTIVE",
       "registration_status": "ISSUED"
     },
+    "fed": {
+      "organization": "JPMorgan Chase & Co., New York, New York",
+      "total_actions": 12,
+      "active_actions": 4,
+      "most_recent": {
+        "date": "2024-03-08",
+        "action": "Cease and Desist Order, Civil Money Penalty",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20240314a.htm"
+      }
+    },
     "sources": [
       {
         "label": "FDIC BankFind Suite",
@@ -309,8 +319,12 @@
       {
         "label": "GLEIF LEI Search",
         "url": "https://search.gleif.org/"
+      },
+      {
+        "label": "Federal Reserve Enforcement Actions",
+        "url": "https://www.federalreserve.gov/supervisionreg/enforcementactions.htm"
       }
     ],
-    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, GLEIF, and Federal Reserve enforcement actions. Public records only — not a verdict."
   }
 }

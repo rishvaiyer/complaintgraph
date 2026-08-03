@@ -293,6 +293,16 @@
       "status": "ACTIVE",
       "registration_status": "ISSUED"
     },
+    "fed": {
+      "organization": "Capital One Financial Corporation, McLean, Virginia",
+      "total_actions": 1,
+      "active_actions": 0,
+      "most_recent": {
+        "date": "2020-08-04",
+        "action": "Cease and Desist Order",
+        "url": "/newsevents/pressreleases/enforcement20200806a.htm"
+      }
+    },
     "sources": [
       {
         "label": "FDIC BankFind Suite",
@@ -305,8 +315,12 @@
       {
         "label": "GLEIF LEI Search",
         "url": "https://search.gleif.org/"
+      },
+      {
+        "label": "Federal Reserve Enforcement Actions",
+        "url": "https://www.federalreserve.gov/supervisionreg/enforcementactions.htm"
       }
     ],
-    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, GLEIF, and Federal Reserve enforcement actions. Public records only — not a verdict."
   }
 }

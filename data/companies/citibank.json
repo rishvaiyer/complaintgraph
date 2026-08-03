@@ -297,6 +297,7 @@
       "status": "ACTIVE",
       "registration_status": "ISSUED"
     },
+    "fed": null,
     "sources": [
       {
         "label": "FDIC BankFind Suite",
@@ -311,6 +312,6 @@
         "url": "https://search.gleif.org/"
       }
     ],
-    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, GLEIF, and Federal Reserve enforcement actions. Public records only — not a verdict."
   }
 }

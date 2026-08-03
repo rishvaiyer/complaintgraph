@@ -301,6 +301,16 @@
       "status": "INACTIVE",
       "registration_status": "RETIRED"
     },
+    "fed": {
+      "organization": "BANK OF AMERICA CORPORATION, Charlotte, North Carolina",
+      "total_actions": 7,
+      "active_actions": 2,
+      "most_recent": {
+        "date": "2015-05-20",
+        "action": "Civil Money Penalty,  $205,000,000",
+        "url": "/newsevents/pressreleases/enforcement20150520a.htm"
+      }
+    },
     "sources": [
       {
         "label": "FDIC BankFind Suite",
@@ -313,8 +323,12 @@
       {
         "label": "GLEIF LEI Search",
         "url": "https://search.gleif.org/"
+      },
+      {
+        "label": "Federal Reserve Enforcement Actions",
+        "url": "https://www.federalreserve.gov/supervisionreg/enforcementactions.htm"
       }
     ],
-    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, GLEIF, and Federal Reserve enforcement actions. Public records only — not a verdict."
   }
 }
