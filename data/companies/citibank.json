@@ -1,7 +1,7 @@
 {
-  "slug": "capital-one",
-  "name": "CAPITAL ONE FINANCIAL CORPORATION",
-  "display_name": "Capital One",
+  "slug": "citibank",
+  "name": "CITIBANK, N.A.",
+  "display_name": "Citibank",
   "data_source": "cfpb",
   "snapshot_date": "2026-08-03",
   "window": {
@@ -90,98 +90,102 @@
   "top_products": [
     {
       "name": "Credit card",
-      "count": 940
+      "count": 1060
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 600
+      "count": 400
     },
     {
       "name": "Debt collection",
-      "count": 380
+      "count": 260
     },
     {
       "name": "Checking or savings account",
-      "count": 60
+      "count": 240
     },
     {
-      "name": "Debt or credit management",
+      "name": "Mortgage",
+      "count": 20
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
       "count": 20
     }
   ],
   "top_issues": [
     {
-      "name": "Incorrect information on your report",
-      "count": 420
+      "name": "Problem with a purchase shown on your statement",
+      "count": 400
     },
     {
-      "name": "Problem with a purchase shown on your statement",
+      "name": "Incorrect information on your report",
       "count": 260
     },
     {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 240
-    },
-    {
-      "name": "Took or threatened to take negative or legal action",
+      "name": "Fees or interest",
       "count": 180
     },
     {
-      "name": "Fees or interest",
+      "name": "Took or threatened to take negative or legal action",
       "count": 140
     },
     {
-      "name": "Other features, terms, or problems",
+      "name": "Managing an account",
       "count": 120
     },
     {
       "name": "Improper use of your report",
-      "count": 100
+      "count": 120
     },
     {
       "name": "Closing your account",
-      "count": 80
+      "count": 100
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 100
     }
   ],
   "top_states": [
+    {
+      "name": "CA",
+      "count": 380
+    },
     {
       "name": "FL",
       "count": 280
     },
     {
       "name": "TX",
-      "count": 280
+      "count": 160
     },
     {
-      "name": "CA",
-      "count": 260
-    },
-    {
-      "name": "NY",
-      "count": 180
-    },
-    {
-      "name": "MD",
+      "name": "IL",
       "count": 140
     },
     {
-      "name": "GA",
+      "name": "TN",
       "count": 100
     },
     {
-      "name": "SC",
+      "name": "GA",
       "count": 80
     },
     {
-      "name": "TN",
-      "count": 60
+      "name": "NJ",
+      "count": 80
     },
     {
       "name": "PA",
+      "count": 80
+    },
+    {
+      "name": "NY",
       "count": 60
     },
     {
-      "name": "OH",
+      "name": "AZ",
       "count": 60
     }
   ],
@@ -189,21 +193,21 @@
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1820
+      "count": 1340
     },
     {
       "name": "Closed with non-monetary relief",
-      "count": 120
+      "count": 340
     },
     {
       "name": "Closed with monetary relief",
-      "count": 60
+      "count": 320
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 42,
+    "score": 34,
     "band": "Moderate",
     "components": [
       {
@@ -217,15 +221,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 91,
-        "evidence": "91% of closed cases ended without monetary or non-monetary relief"
+        "value": 67,
+        "evidence": "67% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 21,
-        "evidence": "21% of complaints share one top issue"
+        "value": 20,
+        "evidence": "20% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -243,53 +247,53 @@
       }
     ]
   },
-  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (21% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 91% of closed cases ended without relief. Overall risk signal: Moderate (42/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 2,000 complaints about Citibank. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (20% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 67% of closed cases ended without relief. Overall risk signal: Moderate (34/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
-      "cert": 4297,
-      "name": "Capital One, National Association",
-      "city": "Mclean",
-      "state": "VA",
+      "cert": 7213,
+      "name": "Citibank, National Association",
+      "city": "Sioux Falls",
+      "state": "SD",
       "active": true,
-      "asset_thousands": 672010000,
+      "asset_thousands": 1933622000,
       "established": ""
     },
     "sec": {
-      "cik": "0000927628",
-      "entity_name": "CAPITAL ONE FINANCIAL CORP",
+      "cik": "0001472033",
+      "entity_name": "Citibank,N.A./ADR",
       "recent_filings": [
         {
-          "form": "144",
+          "form": "F-6",
           "date": "2026-08-03",
-          "primary_doc": "xsl144X01/primary_doc.xml"
+          "primary_doc": "e665677_f6-agilyx.htm"
         },
         {
-          "form": "4",
-          "date": "2026-08-03",
-          "primary_doc": "xslF345X06/wk-form4_1785787808.xml"
-        },
-        {
-          "form": "144",
-          "date": "2026-07-31",
-          "primary_doc": "xsl144X01/primary_doc.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-07-30",
-          "primary_doc": "xslF345X06/wk-form4_1785444712.xml"
-        },
-        {
-          "form": "144",
+          "form": "F-6 POS",
           "date": "2026-07-29",
-          "primary_doc": "xsl144X01/primary_doc.xml"
+          "primary_doc": "e665672_f6pos-tpil.htm"
+        },
+        {
+          "form": "F-6EF",
+          "date": "2026-07-23",
+          "primary_doc": "e665669_f6ef-hmpcl.htm"
+        },
+        {
+          "form": "F-6EF",
+          "date": "2026-07-10",
+          "primary_doc": "e665649_f6ef-ct.htm"
+        },
+        {
+          "form": "F-6 POS",
+          "date": "2026-07-10",
+          "primary_doc": "e665647_f6pos-nepi.htm"
         }
       ]
     },
     "lei": {
-      "lei": "549300C70ANM18M14N91",
-      "legal_name": "CAPITAL ONE",
-      "jurisdiction": "BE",
+      "lei": "984500E7FX6880WAFF95",
+      "legal_name": "Citibank N.A.",
+      "jurisdiction": "US",
       "status": "ACTIVE",
       "registration_status": "ISSUED"
     },

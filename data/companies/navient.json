@@ -1,0 +1,328 @@
+{
+  "slug": "navient",
+  "name": "Navient Solutions, LLC.",
+  "display_name": "Navient",
+  "data_source": "cfpb",
+  "snapshot_date": "2026-08-03",
+  "window": {
+    "min": "2025-02-03",
+    "max": "2026-08-03"
+  },
+  "total_complaints": 1300,
+  "monthly": [
+    {
+      "month": "2025-02",
+      "count": 0
+    },
+    {
+      "month": "2025-03",
+      "count": 0
+    },
+    {
+      "month": "2025-04",
+      "count": 0
+    },
+    {
+      "month": "2025-05",
+      "count": 0
+    },
+    {
+      "month": "2025-06",
+      "count": 0
+    },
+    {
+      "month": "2025-07",
+      "count": 0
+    },
+    {
+      "month": "2025-08",
+      "count": 0
+    },
+    {
+      "month": "2025-09",
+      "count": 0
+    },
+    {
+      "month": "2025-10",
+      "count": 0
+    },
+    {
+      "month": "2025-11",
+      "count": 0
+    },
+    {
+      "month": "2025-12",
+      "count": 0
+    },
+    {
+      "month": "2026-01",
+      "count": 0
+    },
+    {
+      "month": "2026-02",
+      "count": 0
+    },
+    {
+      "month": "2026-03",
+      "count": 0
+    },
+    {
+      "month": "2026-04",
+      "count": 0
+    },
+    {
+      "month": "2026-05",
+      "count": 130
+    },
+    {
+      "month": "2026-06",
+      "count": 572
+    },
+    {
+      "month": "2026-07",
+      "count": 559
+    },
+    {
+      "month": "2026-08",
+      "count": 39
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Student loan",
+      "count": 910
+    },
+    {
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 273
+    },
+    {
+      "name": "Debt collection",
+      "count": 117
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Dealing with your lender or servicer",
+      "count": 715
+    },
+    {
+      "name": "Incorrect information on your report",
+      "count": 221
+    },
+    {
+      "name": "Struggling to repay your loan",
+      "count": 130
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 78
+    },
+    {
+      "name": "Attempts to collect debt not owed",
+      "count": 39
+    },
+    {
+      "name": "Took or threatened to take negative or legal action",
+      "count": 39
+    },
+    {
+      "name": "Getting a loan",
+      "count": 26
+    },
+    {
+      "name": "False statements or representation",
+      "count": 13
+    }
+  ],
+  "top_states": [
+    {
+      "name": "TX",
+      "count": 169
+    },
+    {
+      "name": "CA",
+      "count": 169
+    },
+    {
+      "name": "IL",
+      "count": 156
+    },
+    {
+      "name": "GA",
+      "count": 117
+    },
+    {
+      "name": "MD",
+      "count": 78
+    },
+    {
+      "name": "FL",
+      "count": 65
+    },
+    {
+      "name": "MS",
+      "count": 52
+    },
+    {
+      "name": "MI",
+      "count": 39
+    },
+    {
+      "name": "PA",
+      "count": 39
+    },
+    {
+      "name": "NV",
+      "count": 39
+    }
+  ],
+  "timely_response_rate": 1,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 1274
+    },
+    {
+      "name": "In progress",
+      "count": 13
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 13
+    }
+  ],
+  "narrative_count": 39,
+  "sample_narratives": [
+    {
+      "date": "2026-06-01",
+      "product": "Student loan",
+      "issue": "Incorrect information on your report",
+      "state": "GA",
+      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+    },
+    {
+      "date": "2026-06-01",
+      "product": "Student loan",
+      "issue": "Incorrect information on your report",
+      "state": "GA",
+      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+    },
+    {
+      "date": "2026-06-01",
+      "product": "Student loan",
+      "issue": "Incorrect information on your report",
+      "state": "GA",
+      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+    },
+    {
+      "date": "2026-06-01",
+      "product": "Student loan",
+      "issue": "Incorrect information on your report",
+      "state": "GA",
+      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+    },
+    {
+      "date": "2026-06-01",
+      "product": "Student loan",
+      "issue": "Incorrect information on your report",
+      "state": "GA",
+      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+    }
+  ],
+  "signal": {
+    "score": 61,
+    "band": "Elevated",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 0,
+        "evidence": "0% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 99,
+        "evidence": "99% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 55,
+        "evidence": "55% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 100,
+        "evidence": "last 3 months avg 390/mo vs prior 43.3/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 0,
+        "evidence": "0% of 39 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 1,300 complaints about Navient. Volume is rising (last 3 months averaged 390 per month versus 43 before). The most common issue is \"Dealing with your lender or servicer\" (55% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 99% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "live",
+    "fdic": null,
+    "sec": {
+      "cik": "0001593538",
+      "entity_name": "NAVIENT CORP",
+      "recent_filings": [
+        {
+          "form": "SCHEDULE 13G/A",
+          "date": "2026-07-14",
+          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-07-02",
+          "primary_doc": "ef20077249_8k.htm"
+        },
+        {
+          "form": "11-K",
+          "date": "2026-06-23",
+          "primary_doc": "ef20076500_11k.htm"
+        },
+        {
+          "form": "4",
+          "date": "2026-06-05",
+          "primary_doc": "xslF345X06/form4.xml"
+        },
+        {
+          "form": "4",
+          "date": "2026-06-05",
+          "primary_doc": "xslF345X06/form4.xml"
+        }
+      ]
+    },
+    "lei": {
+      "lei": "5493001WQKQWK1O18B04",
+      "legal_name": "Navient Corporation",
+      "jurisdiction": "US",
+      "status": "NULL",
+      "registration_status": "DUPLICATE"
+    },
+    "sources": [
+      {
+        "label": "SEC EDGAR",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+      },
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+  }
+}

@@ -8,6 +8,15 @@
   "note": "Public CFPB Consumer Complaint Database snapshot. Signals are exploratory, not verdicts.",
   "companies": [
     {
+      "slug": "navient",
+      "display_name": "Navient",
+      "name": "Navient Solutions, LLC.",
+      "kind": "lender",
+      "total_complaints": 1300,
+      "signal_score": 61,
+      "signal_band": "Elevated"
+    },
+    {
       "slug": "equifax",
       "display_name": "Equifax",
       "name": "EQUIFAX, INC.",
@@ -21,7 +30,7 @@
       "display_name": "Capital One",
       "name": "CAPITAL ONE FINANCIAL CORPORATION",
       "kind": "card",
-      "total_complaints": 500,
+      "total_complaints": 2000,
       "signal_score": 42,
       "signal_band": "Moderate"
     },
@@ -44,12 +53,39 @@
       "signal_band": "Moderate"
     },
     {
+      "slug": "synchrony",
+      "display_name": "Synchrony",
+      "name": "SYNCHRONY FINANCIAL",
+      "kind": "card",
+      "total_complaints": 2000,
+      "signal_score": 40,
+      "signal_band": "Moderate"
+    },
+    {
       "slug": "jpmorgan-chase",
       "display_name": "JPMorgan Chase",
       "name": "JPMORGAN CHASE & CO.",
       "kind": "bank",
       "total_complaints": 2000,
       "signal_score": 39,
+      "signal_band": "Moderate"
+    },
+    {
+      "slug": "discover",
+      "display_name": "Discover",
+      "name": "DISCOVER BANK",
+      "kind": "card",
+      "total_complaints": 2000,
+      "signal_score": 37,
+      "signal_band": "Moderate"
+    },
+    {
+      "slug": "citibank",
+      "display_name": "Citibank",
+      "name": "CITIBANK, N.A.",
+      "kind": "bank",
+      "total_complaints": 2000,
+      "signal_score": 34,
       "signal_band": "Moderate"
     },
     {

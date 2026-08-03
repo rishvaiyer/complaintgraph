@@ -1,0 +1,306 @@
+{
+  "slug": "discover",
+  "name": "DISCOVER BANK",
+  "display_name": "Discover",
+  "data_source": "cfpb",
+  "snapshot_date": "2026-08-03",
+  "window": {
+    "min": "2025-02-03",
+    "max": "2026-08-03"
+  },
+  "total_complaints": 2000,
+  "monthly": [
+    {
+      "month": "2025-02",
+      "count": 0
+    },
+    {
+      "month": "2025-03",
+      "count": 0
+    },
+    {
+      "month": "2025-04",
+      "count": 0
+    },
+    {
+      "month": "2025-05",
+      "count": 0
+    },
+    {
+      "month": "2025-06",
+      "count": 0
+    },
+    {
+      "month": "2025-07",
+      "count": 0
+    },
+    {
+      "month": "2025-08",
+      "count": 0
+    },
+    {
+      "month": "2025-09",
+      "count": 0
+    },
+    {
+      "month": "2025-10",
+      "count": 0
+    },
+    {
+      "month": "2025-11",
+      "count": 0
+    },
+    {
+      "month": "2025-12",
+      "count": 0
+    },
+    {
+      "month": "2026-01",
+      "count": 0
+    },
+    {
+      "month": "2026-02",
+      "count": 0
+    },
+    {
+      "month": "2026-03",
+      "count": 2000
+    },
+    {
+      "month": "2026-04",
+      "count": 0
+    },
+    {
+      "month": "2026-05",
+      "count": 0
+    },
+    {
+      "month": "2026-06",
+      "count": 0
+    },
+    {
+      "month": "2026-07",
+      "count": 0
+    },
+    {
+      "month": "2026-08",
+      "count": 0
+    }
+  ],
+  "top_products": [
+    {
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 860
+    },
+    {
+      "name": "Credit card",
+      "count": 740
+    },
+    {
+      "name": "Debt collection",
+      "count": 220
+    },
+    {
+      "name": "Checking or savings account",
+      "count": 120
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 40
+    },
+    {
+      "name": "Debt or credit management",
+      "count": 20
+    }
+  ],
+  "top_issues": [
+    {
+      "name": "Incorrect information on your report",
+      "count": 460
+    },
+    {
+      "name": "Problem with a purchase shown on your statement",
+      "count": 400
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 340
+    },
+    {
+      "name": "Improper use of your report",
+      "count": 140
+    },
+    {
+      "name": "Managing an account",
+      "count": 80
+    },
+    {
+      "name": "Closing your account",
+      "count": 80
+    },
+    {
+      "name": "Written notification about debt",
+      "count": 60
+    },
+    {
+      "name": "False statements or representation",
+      "count": 60
+    }
+  ],
+  "top_states": [
+    {
+      "name": "FL",
+      "count": 280
+    },
+    {
+      "name": "CA",
+      "count": 260
+    },
+    {
+      "name": "NY",
+      "count": 240
+    },
+    {
+      "name": "TX",
+      "count": 140
+    },
+    {
+      "name": "MD",
+      "count": 120
+    },
+    {
+      "name": "PA",
+      "count": 100
+    },
+    {
+      "name": "GA",
+      "count": 80
+    },
+    {
+      "name": "NJ",
+      "count": 80
+    },
+    {
+      "name": "IL",
+      "count": 80
+    },
+    {
+      "name": "MI",
+      "count": 80
+    }
+  ],
+  "timely_response_rate": 1,
+  "company_responses": [
+    {
+      "name": "Closed with explanation",
+      "count": 1780
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 200
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 20
+    }
+  ],
+  "narrative_count": 300,
+  "sample_narratives": [
+    {
+      "date": "2026-03-25",
+      "product": "Checking or savings account",
+      "issue": "Managing an account",
+      "state": "NY",
+      "text": "I am reporting an issue with my bank account at Discover Bank regarding a deposit and transaction history that does not make sense. \n\nI received a deposit that shows it was made at XXXX AM, but my bank is reflecting a different time ( around XXXX PM ). Additionally, even though the deposit appeared in my account, the funds were not available for me to use. \n\nI have been using money transferred from my savings account to cover my expenses, which is reflected in my transaction history. This indicates I did not actually receive or use the deposited funds. \n\nDespite this, the bank is claiming that…"
+    },
+    {
+      "date": "2026-03-25",
+      "product": "Debt collection",
+      "issue": "Threatened to contact someone or share information improperly",
+      "state": "MO",
+      "text": "Discover is calling my family members and telling them about my owed debt without my approval."
+    },
+    {
+      "date": "2026-03-25",
+      "product": "Checking or savings account",
+      "issue": "Managing an account",
+      "state": "NY",
+      "text": "I am reporting an issue with my bank account at Discover Bank regarding a deposit and transaction history that does not make sense. \n\nI received a deposit that shows it was made at XXXX AM, but my bank is reflecting a different time ( around XXXX PM ). Additionally, even though the deposit appeared in my account, the funds were not available for me to use. \n\nI have been using money transferred from my savings account to cover my expenses, which is reflected in my transaction history. This indicates I did not actually receive or use the deposited funds. \n\nDespite this, the bank is claiming that…"
+    },
+    {
+      "date": "2026-03-25",
+      "product": "Debt collection",
+      "issue": "Threatened to contact someone or share information improperly",
+      "state": "MO",
+      "text": "Discover is calling my family members and telling them about my owed debt without my approval."
+    },
+    {
+      "date": "2026-03-25",
+      "product": "Checking or savings account",
+      "issue": "Managing an account",
+      "state": "NY",
+      "text": "I am reporting an issue with my bank account at Discover Bank regarding a deposit and transaction history that does not make sense. \n\nI received a deposit that shows it was made at XXXX AM, but my bank is reflecting a different time ( around XXXX PM ). Additionally, even though the deposit appeared in my account, the funds were not available for me to use. \n\nI have been using money transferred from my savings account to cover my expenses, which is reflected in my transaction history. This indicates I did not actually receive or use the deposited funds. \n\nDespite this, the bank is claiming that…"
+    }
+  ],
+  "signal": {
+    "score": 37,
+    "band": "Moderate",
+    "components": [
+      {
+        "key": "timeliness_gap",
+        "label": "Untimely responses",
+        "weight": 0.15,
+        "value": 0,
+        "evidence": "0% of cases not answered on time"
+      },
+      {
+        "key": "relief_gap",
+        "label": "Closed without relief",
+        "weight": 0.3,
+        "value": 89,
+        "evidence": "89% of closed cases ended without monetary or non-monetary relief"
+      },
+      {
+        "key": "issue_concentration",
+        "label": "Issue concentration",
+        "weight": 0.2,
+        "value": 23,
+        "evidence": "23% of complaints share one top issue"
+      },
+      {
+        "key": "trend",
+        "label": "Recent trend",
+        "weight": 0.2,
+        "value": 0,
+        "evidence": "last 3 months avg 0/mo vs prior 666.7/mo"
+      },
+      {
+        "key": "narrative_harm",
+        "label": "Harm language in narratives",
+        "weight": 0.15,
+        "value": 40,
+        "evidence": "40% of 300 narratives mention concrete harm"
+      }
+    ]
+  },
+  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 2,000 complaints about Discover. Volume is falling (last 3 months averaged 0 per month versus 667 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (37/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "regulatory": {
+    "data_source": "live",
+    "fdic": null,
+    "sec": null,
+    "lei": {
+      "lei": "815600825A6BD5B79839",
+      "legal_name": "DISCOVER S.R.L.",
+      "jurisdiction": "IT",
+      "status": "ACTIVE",
+      "registration_status": "ISSUED"
+    },
+    "sources": [
+      {
+        "label": "GLEIF LEI Search",
+        "url": "https://search.gleif.org/"
+      }
+    ],
+    "note": "Live public-record cross-reference from FDIC BankFind, SEC EDGAR, and GLEIF. Public records only — not a verdict."
+  }
+}

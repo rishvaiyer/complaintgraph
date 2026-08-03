@@ -1,7 +1,7 @@
 {
-  "slug": "capital-one",
-  "name": "CAPITAL ONE FINANCIAL CORPORATION",
-  "display_name": "Capital One",
+  "slug": "synchrony",
+  "name": "SYNCHRONY FINANCIAL",
+  "display_name": "Synchrony",
   "data_source": "cfpb",
   "snapshot_date": "2026-08-03",
   "window": {
@@ -90,57 +90,65 @@
   "top_products": [
     {
       "name": "Credit card",
-      "count": 940
+      "count": 960
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 600
+      "count": 480
     },
     {
       "name": "Debt collection",
-      "count": 380
+      "count": 420
     },
     {
       "name": "Checking or savings account",
       "count": 60
     },
     {
-      "name": "Debt or credit management",
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 40
+    },
+    {
+      "name": "Prepaid card",
+      "count": 20
+    },
+    {
+      "name": "Payday loan, title loan, personal loan, or advance loan",
       "count": 20
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 420
+      "count": 340
     },
     {
       "name": "Problem with a purchase shown on your statement",
-      "count": 260
-    },
-    {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 240
+      "count": 280
     },
     {
       "name": "Took or threatened to take negative or legal action",
       "count": 180
     },
     {
-      "name": "Fees or interest",
+      "name": "Getting a credit card",
       "count": 140
     },
     {
-      "name": "Other features, terms, or problems",
+      "name": "Problem with a company's investigation into an existing problem",
       "count": 120
     },
     {
-      "name": "Improper use of your report",
-      "count": 100
+      "name": "Attempts to collect debt not owed",
+      "count": 120
     },
     {
-      "name": "Closing your account",
-      "count": 80
+      "name": "Fees or interest",
+      "count": 120
+    },
+    {
+      "name": "Other features, terms, or problems",
+      "count": 100
     }
   ],
   "top_states": [
@@ -149,61 +157,65 @@
       "count": 280
     },
     {
-      "name": "TX",
-      "count": 280
+      "name": "CA",
+      "count": 220
     },
     {
-      "name": "CA",
-      "count": 260
+      "name": "TX",
+      "count": 200
     },
     {
       "name": "NY",
-      "count": 180
+      "count": 120
     },
     {
-      "name": "MD",
-      "count": 140
-    },
-    {
-      "name": "GA",
+      "name": "IL",
       "count": 100
     },
     {
-      "name": "SC",
-      "count": 80
+      "name": "NC",
+      "count": 100
     },
     {
-      "name": "TN",
-      "count": 60
+      "name": "OH",
+      "count": 100
+    },
+    {
+      "name": "WA",
+      "count": 80
     },
     {
       "name": "PA",
       "count": 60
     },
     {
-      "name": "OH",
+      "name": "NJ",
       "count": 60
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
+      "name": "In progress",
+      "count": 1460
+    },
+    {
       "name": "Closed with explanation",
-      "count": 1820
+      "count": 480
     },
     {
       "name": "Closed with non-monetary relief",
-      "count": 120
+      "count": 40
     },
     {
       "name": "Closed with monetary relief",
-      "count": 60
+      "count": 20
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 42,
+    "score": 40,
     "band": "Moderate",
     "components": [
       {
@@ -217,15 +229,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 91,
-        "evidence": "91% of closed cases ended without monetary or non-monetary relief"
+        "value": 88.9,
+        "evidence": "88.9% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 21,
-        "evidence": "21% of complaints share one top issue"
+        "value": 17,
+        "evidence": "17% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -243,21 +255,21 @@
       }
     ]
   },
-  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (21% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 91% of closed cases ended without relief. Overall risk signal: Moderate (42/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (17% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 88.9% of closed cases ended without relief. Overall risk signal: Moderate (40/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
-      "cert": 4297,
-      "name": "Capital One, National Association",
-      "city": "Mclean",
-      "state": "VA",
+      "cert": 27314,
+      "name": "Synchrony Bank",
+      "city": "Draper",
+      "state": "UT",
       "active": true,
-      "asset_thousands": 672010000,
+      "asset_thousands": 114855000,
       "established": ""
     },
     "sec": {
-      "cik": "0000927628",
-      "entity_name": "CAPITAL ONE FINANCIAL CORP",
+      "cik": "0001601712",
+      "entity_name": "Synchrony Financial",
       "recent_filings": [
         {
           "form": "144",
@@ -265,33 +277,33 @@
           "primary_doc": "xsl144X01/primary_doc.xml"
         },
         {
-          "form": "4",
+          "form": "144",
           "date": "2026-08-03",
-          "primary_doc": "xslF345X06/wk-form4_1785787808.xml"
+          "primary_doc": "xsl144X01/primary_doc.xml"
         },
         {
           "form": "144",
-          "date": "2026-07-31",
+          "date": "2026-08-03",
           "primary_doc": "xsl144X01/primary_doc.xml"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-07-31",
+          "primary_doc": "d112401d8k.htm"
         },
         {
           "form": "4",
           "date": "2026-07-30",
-          "primary_doc": "xslF345X06/wk-form4_1785444712.xml"
-        },
-        {
-          "form": "144",
-          "date": "2026-07-29",
-          "primary_doc": "xsl144X01/primary_doc.xml"
+          "primary_doc": "xslF345X06/wk-form4_1785445712.xml"
         }
       ]
     },
     "lei": {
-      "lei": "549300C70ANM18M14N91",
-      "legal_name": "CAPITAL ONE",
-      "jurisdiction": "BE",
+      "lei": "549300J34ZZXT151XD13",
+      "legal_name": "SYNCHRONY, INC.",
+      "jurisdiction": "US-DE",
       "status": "ACTIVE",
-      "registration_status": "ISSUED"
+      "registration_status": "LAPSED"
     },
     "sources": [
       {
