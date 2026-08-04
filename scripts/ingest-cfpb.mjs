@@ -27,7 +27,10 @@ const REQUEST_TIMEOUT_MS = Number(process.env.CG_REQUEST_TIMEOUT_MS || 30000);
 // Hard wall-clock budget for the whole ingest so a slow/hanging API can never
 // stall the deploy. When it trips, whatever was fetched so far is used and the
 // rest falls back to committed sample data.
-const TOTAL_BUDGET_MS = Number(process.env.CG_TOTAL_BUDGET_MS || 240000);
+// 25 minutes: the curated set has grown past a dozen companies and the CFPB
+// search API answers a 100-row page in roughly 2-4s, so a 4-minute budget
+// starved the tail of the list and aborted the whole bake.
+const TOTAL_BUDGET_MS = Number(process.env.CG_TOTAL_BUDGET_MS || 1500000);
 const START = Date.now();
 
 function isoDate(d) {
