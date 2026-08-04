@@ -3,10 +3,10 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-03",
+  "snapshot_date": "2026-08-04",
   "window": {
-    "min": "2025-02-03",
-    "max": "2026-08-03"
+    "min": "2025-02-04",
+    "max": "2026-08-04"
   },
   "total_complaints": 1300,
   "monthly": [
@@ -271,7 +271,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 1,300 complaints about Navient. Volume is rising (last 3 months averaged 390 per month versus 43 before). The most common issue is \"Dealing with your lender or servicer\" (55% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 99% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-04 and 2026-08-04, the CFPB published 1,300 complaints about Navient. Volume is rising (last 3 months averaged 390 per month versus 43 before). The most common issue is \"Dealing with your lender or servicer\" (55% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 99% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

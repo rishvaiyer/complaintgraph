@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-03",
+  "generated": "2026-08-04",
   "data_source": "cfpb",
   "window": {
-    "min": "2025-02-03",
-    "max": "2026-08-03"
+    "min": "2025-02-04",
+    "max": "2026-08-04"
   },
   "note": "Public CFPB Consumer Complaint Database snapshot. Signals are exploratory, not verdicts.",
   "companies": [
@@ -14,7 +14,24 @@
       "kind": "lender",
       "total_complaints": 1300,
       "signal_score": 61,
-      "signal_band": "Elevated"
+      "signal_band": "Elevated",
+      "prev_signal_score": 61,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.99,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        130,
+        572,
+        559,
+        39
+      ]
     },
     {
       "slug": "equifax",
@@ -23,7 +40,24 @@
       "kind": "bureau",
       "total_complaints": 2000,
       "signal_score": 48,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 48,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 1,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1800,
+        200
+      ]
     },
     {
       "slug": "capital-one",
@@ -32,7 +66,24 @@
       "kind": "card",
       "total_complaints": 2000,
       "signal_score": 42,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 42,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.91,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000,
+        0
+      ]
     },
     {
       "slug": "bank-of-america",
@@ -41,7 +92,24 @@
       "kind": "bank",
       "total_complaints": 2000,
       "signal_score": 41,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 41,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.867,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1920,
+        80
+      ]
     },
     {
       "slug": "wells-fargo",
@@ -50,7 +118,24 @@
       "kind": "bank",
       "total_complaints": 2000,
       "signal_score": 41,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 41,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.867,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000,
+        0
+      ]
     },
     {
       "slug": "synchrony",
@@ -59,7 +144,24 @@
       "kind": "card",
       "total_complaints": 2000,
       "signal_score": 40,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 40,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.889,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000,
+        0
+      ]
     },
     {
       "slug": "jpmorgan-chase",
@@ -68,7 +170,24 @@
       "kind": "bank",
       "total_complaints": 2000,
       "signal_score": 39,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 39,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.82,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000,
+        0
+      ]
     },
     {
       "slug": "discover",
@@ -77,7 +196,24 @@
       "kind": "card",
       "total_complaints": 2000,
       "signal_score": 37,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 37,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.89,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
     },
     {
       "slug": "citibank",
@@ -86,7 +222,24 @@
       "kind": "bank",
       "total_complaints": 2000,
       "signal_score": 34,
-      "signal_band": "Moderate"
+      "signal_band": "Moderate",
+      "prev_signal_score": 34,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.67,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000,
+        0
+      ]
     },
     {
       "slug": "experian",
@@ -95,7 +248,24 @@
       "kind": "bureau",
       "total_complaints": 2000,
       "signal_score": 22,
-      "signal_band": "Low"
+      "signal_band": "Low",
+      "prev_signal_score": 22,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000
+      ]
     },
     {
       "slug": "transunion",
@@ -104,7 +274,24 @@
       "kind": "bureau",
       "total_complaints": 2000,
       "signal_score": 21,
-      "signal_band": "Low"
+      "signal_band": "Low",
+      "prev_signal_score": 21,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000
+      ]
     }
   ]
 }

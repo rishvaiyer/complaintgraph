@@ -3,10 +3,10 @@
   "name": "CITIBANK, N.A.",
   "display_name": "Citibank",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-03",
+  "snapshot_date": "2026-08-04",
   "window": {
-    "min": "2025-02-03",
-    "max": "2026-08-03"
+    "min": "2025-02-04",
+    "max": "2026-08-04"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -247,7 +247,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-03 and 2026-08-03, the CFPB published 2,000 complaints about Citibank. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (20% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 67% of closed cases ended without relief. Overall risk signal: Moderate (34/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-04 and 2026-08-04, the CFPB published 2,000 complaints about Citibank. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (20% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 67% of closed cases ended without relief. Overall risk signal: Moderate (34/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
