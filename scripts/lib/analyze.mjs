@@ -270,4 +270,19 @@ export const COMPANIES = [
   { slug: 'navient', displayName: 'Navient', name: 'Navient Solutions, LLC.', kind: 'lender' },
 ];
 
+// Compact trailing-N monthly counts (numbers only, oldest→newest) for the
+// leaderboard sparkline in data/index.json — avoids shipping full
+// {month,count} objects to every row when only a shape is needed.
+export function compactMonthly(monthly, n = 12) {
+  return monthly.slice(-n).map((m) => m.count);
+}
+
+// Share of closed cases resolved WITHOUT relief, as a 0..1 rate (same scale
+// as timely_response_rate). Reads the relief_gap signal component so there is
+// a single source of truth instead of re-deriving it in each caller.
+export function closedWithoutReliefRate(signal) {
+  const c = signal.components.find((x) => x.key === 'relief_gap');
+  return c ? round(c.value / 100, 4) : null;
+}
+
 export { clamp, round };

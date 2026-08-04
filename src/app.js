@@ -83,6 +83,29 @@ function trendChart(monthly, color = 'var(--green)') {
   </div>`;
 }
 
+// Small inline sparkline for the leaderboard rows — a compact trailing-months
+// complaint-count series (plain numbers, no month labels — see
+// scripts/lib/analyze.mjs#compactMonthly). No axes; last point drawn as a
+// hollow dotted marker in the row's risk-band color so the current reading
+// stands out against the muted trend line.
+function sparkline(counts, dotColor) {
+  if (!Array.isArray(counts) || counts.length < 2) return '';
+  const w = 90, h = 24, pad = 3;
+  const max = Math.max(1, ...counts);
+  const n = counts.length;
+  const x = (i) => pad + (i / (n - 1)) * (w - pad * 2);
+  const y = (v) => h - pad - (v / max) * (h - pad * 2);
+  const pts = counts.map((v, i) => `${x(i).toFixed(2)},${y(v).toFixed(2)}`);
+  const line = `M${pts.join(' L')}`;
+  const lastX = x(n - 1).toFixed(2);
+  const lastY = y(counts[n - 1]).toFixed(2);
+  return `
+  <svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${line}" fill="none" stroke="var(--t3)" stroke-width="1.3" vector-effect="non-scaling-stroke"/>
+    <circle cx="${lastX}" cy="${lastY}" r="2.4" fill="none" stroke="${dotColor}" stroke-width="1.5" stroke-dasharray="1.4,1.6"/>
+  </svg>`;
+}
+
 // Horizontal bar list from [{name,count}].
 function barList(items, total, color) {
   const max = Math.max(1, ...items.map((i) => i.count));
@@ -233,17 +256,57 @@ function renderLeaderboard() {
     board.appendChild(el('div', 'empty', 'No matching companies.'));
     return;
   }
+  // The committed index.json only carries a `monthly` series once CI has run
+  // the updated ingest/sample scripts. Degrade gracefully: if nothing in the
+  // current result set has it, drop the sparkline column entirely rather
+  // than rendering an empty gap in every row.
+  const hasSpark = rows.some((c) => Array.isArray(c.monthly) && c.monthly.length > 1);
+  board.classList.toggle('has-spark', hasSpark);
   rows.forEach((c, i) => {
     const row = el('button', 'lb-row');
+    const spark = hasSpark
+      ? `<span class="lb-spark">${sparkline(c.monthly, bandColor(c.signal_band))}</span>` : '';
     row.innerHTML = `
       <span class="lb-rank">${String(i + 1).padStart(2, '0')}</span>
       <span class="lb-name">${esc(c.display_name)}<small>${esc(c.name)}</small></span>
+      ${spark}
       <span class="lb-vol">${fmt(c.total_complaints)}<small>complaints</small></span>
       <span class="score-pill" style="color:${bandColor(c.signal_band)};background:${bandBg(c.signal_band)}">
         ${c.signal_score}<small>${c.signal_band}</small></span>`;
     row.addEventListener('click', () => selectCompany(c.slug));
     board.appendChild(row);
   });
+}
+
+// ---------------------------------------------------------------------------
+// Week-over-week "what changed" strip — top 3 signal-score movers vs the
+// previously committed snapshot. Needs prev_signal_score on index entries
+// (written by scripts/ingest-cfpb.mjs each CI run); until that has run at
+// least twice, every value is null and the strip just stays hidden.
+// ---------------------------------------------------------------------------
+function renderWhatChanged() {
+  const box = $('#whatChanged');
+  if (!box) return;
+  const movers = state.index.companies
+    .filter((c) => typeof c.prev_signal_score === 'number' && c.prev_signal_score !== c.signal_score)
+    .map((c) => ({ ...c, delta: c.signal_score - c.prev_signal_score }))
+    .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
+    .slice(0, 3);
+  if (!movers.length) {
+    box.hidden = true;
+    box.innerHTML = '';
+    return;
+  }
+  box.hidden = false;
+  box.innerHTML = `
+    <span class="wc-label">What changed since last snapshot</span>
+    <div class="wc-list">${movers.map((m) => {
+      const up = m.delta > 0;
+      const color = up ? 'var(--red)' : 'var(--green)';
+      const sign = up ? '+' : '';
+      return `<span class="mover-chip"><b>${esc(m.display_name)}</b> ${m.signal_score}
+        <span style="color:${color}">(${sign}${m.delta})</span></span>`;
+    }).join('')}</div>`;
 }
 
 function renderChips() {
@@ -269,6 +332,35 @@ function syncChips() {
 }
 
 // ---------------------------------------------------------------------------
+// Peer comparison — client-side averages across every company in index.json.
+// Fields (timely_response_rate, closed_without_relief_rate) only exist on
+// index entries once CI has run the updated ingest/sample scripts; averaging
+// skips anything that isn't a number, and callers treat a null average as
+// "no peer data yet" so the detail page degrades to plain values.
+// ---------------------------------------------------------------------------
+function peerAverage(field) {
+  const vals = state.index.companies.map((c) => c[field]).filter((v) => typeof v === 'number');
+  return vals.length ? vals.reduce((s, v) => s + v, 0) / vals.length : null;
+}
+
+// Subtle above/below marker. `higherIsWorse` flips which direction reads as
+// "bad" (risk-style metrics like signal score and closed-without-relief rate
+// vs. timely response, where higher is good).
+function peerMark(value, avg, higherIsWorse) {
+  const eps = 1e-9;
+  if (Math.abs(value - avg) < eps) return '<span class="peer-mark flat">●</span>';
+  const above = value > avg;
+  const bad = higherIsWorse ? above : !above;
+  return `<span class="peer-mark ${bad ? 'bad' : 'good'}">${above ? '▲' : '▼'}</span>`;
+}
+
+// e.g. "peers avg 24% ▼" — returns '' when there's no peer average to show.
+function peerNote(value, avg, formatFn, higherIsWorse) {
+  if (avg == null || value == null) return '';
+  return `<div class="peer-note">peers avg ${formatFn(avg)} ${peerMark(value, avg, higherIsWorse)}</div>`;
+}
+
+// ---------------------------------------------------------------------------
 // Detail view
 // ---------------------------------------------------------------------------
 async function selectCompany(slug) {
@@ -282,6 +374,16 @@ async function selectCompany(slug) {
   const sig = c.signal;
   const color = bandColor(sig.band);
   const topIssue = c.top_issues[0];
+  const reliefComp = sig.components.find((x) => x.key === 'relief_gap');
+  const closedWithoutReliefRate = reliefComp ? reliefComp.value / 100 : null;
+  // Peer averages come from index.json (see peerAverage above) — null until
+  // CI has run the updated ingest/sample scripts, in which case every
+  // peerNote() call below just renders nothing.
+  const peers = {
+    signal_score: peerAverage('signal_score'),
+    timely_response_rate: peerAverage('timely_response_rate'),
+    closed_without_relief_rate: peerAverage('closed_without_relief_rate'),
+  };
 
   d.innerHTML = `
     <button class="back" id="backBtn">← back to leaderboard</button>
@@ -301,6 +403,7 @@ async function selectCompany(slug) {
           ${gauge(sig.score, sig.band)}
           <div>
             <span class="band-tag" style="color:${color};background:${bandBg(sig.band)}">${sig.band} signal</span>
+            ${peerNote(sig.score, peers.signal_score, (v) => Math.round(v), true)}
             <p class="gauge-note">A transparent 0–100 score blending five public-data sub-signals (below).
             Higher means more reason to look closer — <strong>not</strong> a verdict.</p>
           </div>
@@ -311,9 +414,12 @@ async function selectCompany(slug) {
         <h3>At a glance</h3>
         <div class="kpi-row">
           <div class="kpi"><div class="v">${fmt(c.total_complaints)}</div><div class="l">Complaints</div></div>
-          <div class="kpi"><div class="v">${pct(c.timely_response_rate)}</div><div class="l">Timely response</div></div>
+          <div class="kpi"><div class="v">${pct(c.timely_response_rate)}</div><div class="l">Timely response</div>
+            ${peerNote(c.timely_response_rate, peers.timely_response_rate, pct, false)}</div>
         </div>
         <div class="kpi-row" style="margin-bottom:0">
+          <div class="kpi"><div class="v">${closedWithoutReliefRate != null ? pct(closedWithoutReliefRate) : '—'}</div><div class="l">Closed w/o relief</div>
+            ${peerNote(closedWithoutReliefRate, peers.closed_without_relief_rate, pct, true)}</div>
           <div class="kpi"><div class="v">${fmt(c.narrative_count)}</div><div class="l">With narrative</div></div>
           <div class="kpi"><div class="v">${topIssue ? Math.round((topIssue.count / c.total_complaints) * 100) : 0}%</div><div class="l">Top issue share</div></div>
         </div>
@@ -434,6 +540,7 @@ async function boot() {
   }
   renderBadge();
   renderChips();
+  renderWhatChanged();
   renderLeaderboard();
 
   $('#search').addEventListener('input', renderLeaderboard);

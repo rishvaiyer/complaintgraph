@@ -13,7 +13,7 @@
 import { writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { buildCompany, COMPANIES } from './lib/analyze.mjs';
+import { buildCompany, COMPANIES, compactMonthly, closedWithoutReliefRate } from './lib/analyze.mjs';
 import { sampleRegulatory } from './lib/regulatory.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -234,6 +234,15 @@ async function main() {
       total_complaints: built.total_complaints,
       signal_score: built.signal.score,
       signal_band: built.signal.band,
+      // Sample generation is stateless (fully regenerated each run, not a
+      // cumulative snapshot series), so there is no real "previous" score to
+      // report — always null. Present so the shape matches the live index;
+      // the UI's "what changed" strip simply stays hidden when every
+      // prev_signal_score is null.
+      prev_signal_score: null,
+      timely_response_rate: built.timely_response_rate,
+      closed_without_relief_rate: closedWithoutReliefRate(built.signal),
+      monthly: compactMonthly(built.monthly),
     });
     console.log(`${company.displayName}: ${built.total_complaints} complaints, signal ${built.signal.score} (${built.signal.band})`);
   }

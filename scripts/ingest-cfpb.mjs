@@ -11,10 +11,10 @@
 //
 // Docs: https://cfpb.github.io/api/ccdb/api.html
 
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { buildCompany, COMPANIES } from './lib/analyze.mjs';
+import { buildCompany, COMPANIES, compactMonthly, closedWithoutReliefRate } from './lib/analyze.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(HERE, '..', 'data');
@@ -151,6 +151,26 @@ async function main() {
       `${JSON.stringify(b, null, 2)}\n`,
     );
   }
+
+  // Read the EXISTING committed index (this run's predecessor) before we
+  // overwrite it, so each company's prior signal_score can travel forward as
+  // prev_signal_score. This is what powers the "what changed since last
+  // snapshot" strip in the UI — no extra files, no history store, just a
+  // diff against what CI committed last time. Missing/unreadable/malformed
+  // file (first run ever, or a hand-edited local copy) just means every
+  // prev_signal_score comes back null, which the UI already treats as "no
+  // prior snapshot to compare."
+  let prevScores = new Map();
+  try {
+    const prevRaw = await readFile(join(DATA_DIR, 'index.json'), 'utf8');
+    const prevIndex = JSON.parse(prevRaw);
+    for (const c of prevIndex.companies || []) {
+      if (c && c.slug && typeof c.signal_score === 'number') prevScores.set(c.slug, c.signal_score);
+    }
+  } catch {
+    // No prior index.json (or it didn't parse) — first run. Leave map empty.
+  }
+
   const index = {
     generated: snapshotDate,
     data_source: 'cfpb',
@@ -165,6 +185,10 @@ async function main() {
         total_complaints: b.total_complaints,
         signal_score: b.signal.score,
         signal_band: b.signal.band,
+        prev_signal_score: prevScores.has(b.slug) ? prevScores.get(b.slug) : null,
+        timely_response_rate: b.timely_response_rate,
+        closed_without_relief_rate: closedWithoutReliefRate(b.signal),
+        monthly: compactMonthly(b.monthly),
       }))
       .sort((a, b) => b.signal_score - a.signal_score),
   };
