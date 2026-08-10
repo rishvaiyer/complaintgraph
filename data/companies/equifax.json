@@ -3,10 +3,10 @@
   "name": "EQUIFAX, INC.",
   "display_name": "Equifax",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-04",
+  "snapshot_date": "2026-08-10",
   "window": {
-    "min": "2025-02-04",
-    "max": "2026-08-04"
+    "min": "2025-02-10",
+    "max": "2026-08-10"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,11 +80,11 @@
     },
     {
       "month": "2026-07",
-      "count": 1800
+      "count": 0
     },
     {
       "month": "2026-08",
-      "count": 200
+      "count": 2000
     }
   ],
   "top_products": [
@@ -96,44 +96,36 @@
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 800
+      "count": 920
     },
     {
       "name": "Problem with fraud alerts or security freezes",
       "count": 500
     },
     {
-      "name": "Improper use of your report",
+      "name": "Problem with a company's investigation into an existing problem",
       "count": 360
     },
     {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 320
-    },
-    {
-      "name": "Unable to get your credit report or credit score",
-      "count": 20
+      "name": "Improper use of your report",
+      "count": 220
     }
   ],
   "top_states": [
     {
       "name": "TX",
-      "count": 340
+      "count": 440
     },
     {
       "name": "CA",
       "count": 320
     },
     {
-      "name": "GA",
-      "count": 240
-    },
-    {
       "name": "FL",
-      "count": 180
+      "count": 220
     },
     {
-      "name": "IL",
+      "name": "GA",
       "count": 140
     },
     {
@@ -145,15 +137,19 @@
       "count": 80
     },
     {
-      "name": "OH",
+      "name": "MS",
+      "count": 80
+    },
+    {
+      "name": "IL",
       "count": 60
     },
     {
-      "name": "MI",
-      "count": 60
+      "name": "TN",
+      "count": 40
     },
     {
-      "name": "NV",
+      "name": "LA",
       "count": 40
     }
   ],
@@ -161,18 +157,18 @@
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1820
+      "count": 1980
     },
     {
-      "name": "Closed with explanation",
-      "count": 180
+      "name": "Closed with non-monetary relief",
+      "count": 20
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 48,
-    "band": "Moderate",
+    "score": 19,
+    "band": "Low",
     "components": [
       {
         "key": "timeliness_gap",
@@ -185,15 +181,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 100,
-        "evidence": "100% of closed cases ended without monetary or non-monetary relief"
+        "value": 0,
+        "evidence": "0% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 40,
-        "evidence": "40% of complaints share one top issue"
+        "value": 46,
+        "evidence": "46% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -211,7 +207,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-04 and 2026-08-04, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (40% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (48/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (46% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (19/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

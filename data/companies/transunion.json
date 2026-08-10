@@ -3,10 +3,10 @@
   "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
   "display_name": "TransUnion",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-04",
+  "snapshot_date": "2026-08-10",
   "window": {
-    "min": "2025-02-04",
-    "max": "2026-08-04"
+    "min": "2025-02-10",
+    "max": "2026-08-10"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -90,70 +90,62 @@
   "top_products": [
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 1980
-    },
-    {
-      "name": "Debt collection",
-      "count": 20
+      "count": 2000
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 1060
+      "count": 1080
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 620
+      "count": 520
     },
     {
       "name": "Improper use of your report",
-      "count": 300
-    },
-    {
-      "name": "Attempts to collect debt not owed",
-      "count": 20
+      "count": 400
     }
   ],
   "top_states": [
     {
-      "name": "CA",
-      "count": 340
-    },
-    {
       "name": "FL",
-      "count": 260
+      "count": 540
     },
     {
       "name": "TX",
       "count": 200
     },
     {
-      "name": "MA",
-      "count": 160
-    },
-    {
-      "name": "NC",
+      "name": "NY",
       "count": 140
     },
     {
-      "name": "NY",
+      "name": "GA",
       "count": 120
+    },
+    {
+      "name": "MI",
+      "count": 100
+    },
+    {
+      "name": "CA",
+      "count": 100
     },
     {
       "name": "NJ",
       "count": 100
     },
     {
-      "name": "GA",
-      "count": 80
-    },
-    {
-      "name": "MS",
+      "name": "IL",
       "count": 80
     },
     {
       "name": "WA",
+      "count": 80
+    },
+    {
+      "name": "MS",
       "count": 60
     }
   ],
@@ -188,8 +180,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 53,
-        "evidence": "53% of complaints share one top issue"
+        "value": 54,
+        "evidence": "54% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -207,7 +199,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-04 and 2026-08-04, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (53% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (21/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (54% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (21/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -216,28 +208,28 @@
       "entity_name": "TransUnion",
       "recent_filings": [
         {
-          "form": "144",
-          "date": "2026-08-03",
-          "primary_doc": "xsl144X01/primary_doc.xml"
-        },
-        {
-          "form": "144",
-          "date": "2026-08-03",
-          "primary_doc": "xsl144X01/primary_doc.xml"
+          "form": "SCHEDULE 13G",
+          "date": "2026-08-06",
+          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
         },
         {
           "form": "4",
-          "date": "2026-07-29",
-          "primary_doc": "xslF345X06/wk-form4_1785361075.xml"
+          "date": "2026-08-04",
+          "primary_doc": "xslF345X06/wk-form4_1785887826.xml"
         },
         {
-          "form": "10-Q",
-          "date": "2026-07-28",
-          "primary_doc": "tru-20260630.htm"
+          "form": "4",
+          "date": "2026-08-04",
+          "primary_doc": "xslF345X06/wk-form4_1785887673.xml"
         },
         {
           "form": "144",
-          "date": "2026-07-28",
+          "date": "2026-08-03",
+          "primary_doc": "xsl144X01/primary_doc.xml"
+        },
+        {
+          "form": "144",
+          "date": "2026-08-03",
           "primary_doc": "xsl144X01/primary_doc.xml"
         }
       ]

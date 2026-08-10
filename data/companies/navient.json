@@ -3,10 +3,10 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-04",
+  "snapshot_date": "2026-08-10",
   "window": {
-    "min": "2025-02-04",
-    "max": "2026-08-04"
+    "min": "2025-02-10",
+    "max": "2026-08-10"
   },
   "total_complaints": 1300,
   "monthly": [
@@ -72,43 +72,43 @@
     },
     {
       "month": "2026-05",
-      "count": 130
+      "count": 0
     },
     {
       "month": "2026-06",
-      "count": 572
+      "count": 533
     },
     {
       "month": "2026-07",
-      "count": 559
+      "count": 650
     },
     {
       "month": "2026-08",
-      "count": 39
+      "count": 117
     }
   ],
   "top_products": [
     {
       "name": "Student loan",
-      "count": 910
+      "count": 884
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 273
+      "count": 286
     },
     {
       "name": "Debt collection",
-      "count": 117
+      "count": 130
     }
   ],
   "top_issues": [
     {
       "name": "Dealing with your lender or servicer",
-      "count": 715
+      "count": 689
     },
     {
       "name": "Incorrect information on your report",
-      "count": 221
+      "count": 208
     },
     {
       "name": "Struggling to repay your loan",
@@ -116,7 +116,15 @@
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 78
+      "count": 91
+    },
+    {
+      "name": "Getting a loan",
+      "count": 39
+    },
+    {
+      "name": "Communication tactics",
+      "count": 39
     },
     {
       "name": "Attempts to collect debt not owed",
@@ -124,56 +132,48 @@
     },
     {
       "name": "Took or threatened to take negative or legal action",
-      "count": 39
-    },
-    {
-      "name": "Getting a loan",
       "count": 26
-    },
-    {
-      "name": "False statements or representation",
-      "count": 13
     }
   ],
   "top_states": [
     {
-      "name": "TX",
-      "count": 169
+      "name": "IL",
+      "count": 182
     },
     {
       "name": "CA",
-      "count": 169
+      "count": 182
     },
     {
-      "name": "IL",
+      "name": "TX",
       "count": 156
     },
     {
+      "name": "FL",
+      "count": 91
+    },
+    {
       "name": "GA",
-      "count": 117
+      "count": 78
     },
     {
       "name": "MD",
       "count": 78
     },
     {
-      "name": "FL",
-      "count": 65
+      "name": "NV",
+      "count": 52
     },
     {
-      "name": "MS",
-      "count": 52
+      "name": "NY",
+      "count": 39
     },
     {
       "name": "MI",
       "count": 39
     },
     {
-      "name": "PA",
-      "count": 39
-    },
-    {
-      "name": "NV",
+      "name": "OH",
       "count": 39
     }
   ],
@@ -181,57 +181,53 @@
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1274
+      "count": 1287
     },
     {
       "name": "In progress",
       "count": 13
-    },
-    {
-      "name": "Closed with monetary relief",
-      "count": 13
     }
   ],
-  "narrative_count": 39,
+  "narrative_count": 26,
   "sample_narratives": [
     {
-      "date": "2026-06-01",
-      "product": "Student loan",
-      "issue": "Incorrect information on your report",
-      "state": "GA",
-      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+      "date": "2026-06-09",
+      "product": "Debt collection",
+      "issue": "Attempts to collect debt not owed",
+      "state": "MD",
+      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
     },
     {
-      "date": "2026-06-01",
-      "product": "Student loan",
-      "issue": "Incorrect information on your report",
-      "state": "GA",
-      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+      "date": "2026-06-09",
+      "product": "Debt collection",
+      "issue": "Attempts to collect debt not owed",
+      "state": "MD",
+      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
     },
     {
-      "date": "2026-06-01",
-      "product": "Student loan",
-      "issue": "Incorrect information on your report",
-      "state": "GA",
-      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+      "date": "2026-06-09",
+      "product": "Debt collection",
+      "issue": "Attempts to collect debt not owed",
+      "state": "MD",
+      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
     },
     {
-      "date": "2026-06-01",
-      "product": "Student loan",
-      "issue": "Incorrect information on your report",
-      "state": "GA",
-      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+      "date": "2026-06-09",
+      "product": "Debt collection",
+      "issue": "Attempts to collect debt not owed",
+      "state": "MD",
+      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
     },
     {
-      "date": "2026-06-01",
-      "product": "Student loan",
-      "issue": "Incorrect information on your report",
-      "state": "GA",
-      "text": "Approximately three years ago, I resolved my private student loans with Navient through a settlement agreement negotiated by my attorney. The settlement was reached around XX/XX/year>. I paid the agreed settlement amount of XXXX on XX/XX/year>, and received confirmation of payment on XX/XX/year>. After payment was completed, these private student loan accounts should have been reflected as settled and closed in accordance with the settlement terms. \n\nDespite the settlement and payment, Navient continues to report inaccurate information to the credit reporting agencies. My credit reports contin…"
+      "date": "2026-06-09",
+      "product": "Debt collection",
+      "issue": "Attempts to collect debt not owed",
+      "state": "MD",
+      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
     }
   ],
   "signal": {
-    "score": 61,
+    "score": 66,
     "band": "Elevated",
     "components": [
       {
@@ -245,33 +241,33 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 99,
-        "evidence": "99% of closed cases ended without monetary or non-monetary relief"
+        "value": 100,
+        "evidence": "100% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 55,
-        "evidence": "55% of complaints share one top issue"
+        "value": 53,
+        "evidence": "53% of complaints share one top issue"
       },
       {
         "key": "trend",
         "label": "Recent trend",
         "weight": 0.2,
-        "value": 100,
-        "evidence": "last 3 months avg 390/mo vs prior 43.3/mo"
+        "value": 50,
+        "evidence": "last 3 months avg 433.3/mo vs prior 0/mo"
       },
       {
         "key": "narrative_harm",
         "label": "Harm language in narratives",
         "weight": 0.15,
-        "value": 0,
-        "evidence": "0% of 39 narratives mention concrete harm"
+        "value": 100,
+        "evidence": "100% of 26 narratives mention concrete harm"
       }
     ]
   },
-  "summary": "Between 2025-02-04 and 2026-08-04, the CFPB published 1,300 complaints about Navient. Volume is rising (last 3 months averaged 390 per month versus 43 before). The most common issue is \"Dealing with your lender or servicer\" (55% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 99% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 1,300 complaints about Navient. Volume is steady (last 3 months averaged 433 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (53% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (66/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -279,6 +275,16 @@
       "cik": "0001593538",
       "entity_name": "NAVIENT CORP",
       "recent_filings": [
+        {
+          "form": "10-Q",
+          "date": "2026-08-07",
+          "primary_doc": "navi-20260630.htm"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-08-06",
+          "primary_doc": "navi-20260806.htm"
+        },
         {
           "form": "SCHEDULE 13G/A",
           "date": "2026-07-14",
@@ -293,16 +299,6 @@
           "form": "11-K",
           "date": "2026-06-23",
           "primary_doc": "ef20076500_11k.htm"
-        },
-        {
-          "form": "4",
-          "date": "2026-06-05",
-          "primary_doc": "xslF345X06/form4.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-06-05",
-          "primary_doc": "xslF345X06/form4.xml"
         }
       ]
     },

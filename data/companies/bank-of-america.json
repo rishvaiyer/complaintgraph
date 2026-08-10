@@ -3,10 +3,10 @@
   "name": "BANK OF AMERICA, NATIONAL ASSOCIATION",
   "display_name": "Bank of America",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-04",
+  "snapshot_date": "2026-08-10",
   "window": {
-    "min": "2025-02-04",
-    "max": "2026-08-04"
+    "min": "2025-02-10",
+    "max": "2026-08-10"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,37 +80,41 @@
     },
     {
       "month": "2026-07",
-      "count": 1920
+      "count": 1660
     },
     {
       "month": "2026-08",
-      "count": 80
+      "count": 340
     }
   ],
   "top_products": [
     {
       "name": "Checking or savings account",
-      "count": 720
+      "count": 680
     },
     {
       "name": "Credit card",
-      "count": 640
+      "count": 540
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 360
+      "count": 300
+    },
+    {
+      "name": "Debt collection",
+      "count": 160
     },
     {
       "name": "Money transfer, virtual currency, or money service",
       "count": 120
     },
     {
-      "name": "Debt collection",
-      "count": 120
+      "name": "Mortgage",
+      "count": 100
     },
     {
       "name": "Vehicle loan or lease",
-      "count": 20
+      "count": 60
     },
     {
       "name": "Payday loan, title loan, personal loan, or advance loan",
@@ -120,22 +124,26 @@
   "top_issues": [
     {
       "name": "Managing an account",
-      "count": 500
-    },
-    {
-      "name": "Problem with a purchase shown on your statement",
-      "count": 320
+      "count": 380
     },
     {
       "name": "Incorrect information on your report",
       "count": 280
     },
     {
+      "name": "Problem with a purchase shown on your statement",
+      "count": 280
+    },
+    {
+      "name": "Problem with a lender or other company charging your account",
+      "count": 140
+    },
+    {
       "name": "Other features, terms, or problems",
       "count": 100
     },
     {
-      "name": "Problem with a lender or other company charging your account",
+      "name": "Attempts to collect debt not owed",
       "count": 80
     },
     {
@@ -144,11 +152,7 @@
     },
     {
       "name": "Closing an account",
-      "count": 60
-    },
-    {
-      "name": "Opening an account",
-      "count": 60
+      "count": 80
     }
   ],
   "top_states": [
@@ -158,60 +162,60 @@
     },
     {
       "name": "FL",
-      "count": 300
-    },
-    {
-      "name": "TX",
-      "count": 180
+      "count": 320
     },
     {
       "name": "NY",
-      "count": 120
+      "count": 180
     },
     {
-      "name": "VA",
-      "count": 80
+      "name": "TX",
+      "count": 100
     },
     {
-      "name": "TN",
-      "count": 80
+      "name": "SC",
+      "count": 100
+    },
+    {
+      "name": "NJ",
+      "count": 100
     },
     {
       "name": "IL",
       "count": 80
     },
     {
-      "name": "GA",
-      "count": 80
-    },
-    {
-      "name": "WA",
+      "name": "NC",
       "count": 60
     },
     {
-      "name": "MA",
+      "name": "CO",
       "count": 60
+    },
+    {
+      "name": "PA",
+      "count": 40
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1700
+      "count": 1500
     },
     {
       "name": "Closed with explanation",
-      "count": 260
+      "count": 400
     },
     {
       "name": "Closed with monetary relief",
-      "count": 40
+      "count": 100
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 41,
+    "score": 38,
     "band": "Moderate",
     "components": [
       {
@@ -225,15 +229,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 86.7,
-        "evidence": "86.7% of closed cases ended without monetary or non-monetary relief"
+        "value": 80,
+        "evidence": "80% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 25,
-        "evidence": "25% of complaints share one top issue"
+        "value": 19,
+        "evidence": "19% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -251,7 +255,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-04 and 2026-08-04, the CFPB published 2,000 complaints about Bank of America. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (25% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 86.7% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 2,000 complaints about Bank of America. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (19% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 80% of closed cases ended without relief. Overall risk signal: Moderate (38/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -269,28 +273,28 @@
       "recent_filings": [
         {
           "form": "424B2",
-          "date": "2026-08-03",
+          "date": "2026-08-07",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-03",
+          "date": "2026-08-07",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-03",
+          "date": "2026-08-07",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-03",
+          "date": "2026-08-07",
           "primary_doc": "form424b2.htm"
         },
         {
-          "form": "424B2",
-          "date": "2026-08-03",
-          "primary_doc": "form424b2.htm"
+          "form": "FWP",
+          "date": "2026-08-07",
+          "primary_doc": "form424b2-bac.htm"
         }
       ]
     },

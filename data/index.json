@@ -1,9 +1,9 @@
 {
-  "generated": "2026-08-04",
+  "generated": "2026-08-10",
   "data_source": "cfpb",
   "window": {
-    "min": "2025-02-04",
-    "max": "2026-08-04"
+    "min": "2025-02-10",
+    "max": "2026-08-10"
   },
   "note": "Public CFPB Consumer Complaint Database snapshot. Signals are exploratory, not verdicts.",
   "companies": [
@@ -13,11 +13,11 @@
       "name": "Navient Solutions, LLC.",
       "kind": "lender",
       "total_complaints": 1300,
-      "signal_score": 61,
+      "signal_score": 66,
       "signal_band": "Elevated",
       "prev_signal_score": 61,
       "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.99,
+      "closed_without_relief_rate": 1,
       "monthly": [
         0,
         0,
@@ -27,23 +27,75 @@
         0,
         0,
         0,
-        130,
-        572,
-        559,
-        39
+        0,
+        533,
+        650,
+        117
       ]
     },
     {
-      "slug": "equifax",
-      "display_name": "Equifax",
-      "name": "EQUIFAX, INC.",
-      "kind": "bureau",
+      "slug": "synchrony",
+      "display_name": "Synchrony",
+      "name": "SYNCHRONY FINANCIAL",
+      "kind": "card",
       "total_complaints": 2000,
-      "signal_score": 48,
+      "signal_score": 44,
       "signal_band": "Moderate",
-      "prev_signal_score": 48,
+      "prev_signal_score": 40,
       "timely_response_rate": 1,
       "closed_without_relief_rate": 1,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1940,
+        60
+      ]
+    },
+    {
+      "slug": "capital-one",
+      "display_name": "Capital One",
+      "name": "CAPITAL ONE FINANCIAL CORPORATION",
+      "kind": "card",
+      "total_complaints": 2000,
+      "signal_score": 42,
+      "signal_band": "Moderate",
+      "prev_signal_score": 42,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.87,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        500,
+        1500
+      ]
+    },
+    {
+      "slug": "jpmorgan-chase",
+      "display_name": "JPMorgan Chase",
+      "name": "JPMORGAN CHASE & CO.",
+      "kind": "bank",
+      "total_complaints": 2000,
+      "signal_score": 41,
+      "signal_band": "Moderate",
+      "prev_signal_score": 39,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0.85,
       "monthly": [
         0,
         0,
@@ -60,16 +112,16 @@
       ]
     },
     {
-      "slug": "capital-one",
-      "display_name": "Capital One",
-      "name": "CAPITAL ONE FINANCIAL CORPORATION",
-      "kind": "card",
+      "slug": "wells-fargo",
+      "display_name": "Wells Fargo",
+      "name": "WELLS FARGO & COMPANY",
+      "kind": "bank",
       "total_complaints": 2000,
-      "signal_score": 42,
+      "signal_score": 40,
       "signal_band": "Moderate",
-      "prev_signal_score": 42,
+      "prev_signal_score": 41,
       "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.91,
+      "closed_without_relief_rate": 0.859,
       "monthly": [
         0,
         0,
@@ -81,8 +133,8 @@
         0,
         0,
         0,
-        2000,
-        0
+        1780,
+        220
       ]
     },
     {
@@ -91,11 +143,11 @@
       "name": "BANK OF AMERICA, NATIONAL ASSOCIATION",
       "kind": "bank",
       "total_complaints": 2000,
-      "signal_score": 41,
+      "signal_score": 38,
       "signal_band": "Moderate",
       "prev_signal_score": 41,
       "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.867,
+      "closed_without_relief_rate": 0.8,
       "monthly": [
         0,
         0,
@@ -107,86 +159,8 @@
         0,
         0,
         0,
-        1920,
-        80
-      ]
-    },
-    {
-      "slug": "wells-fargo",
-      "display_name": "Wells Fargo",
-      "name": "WELLS FARGO & COMPANY",
-      "kind": "bank",
-      "total_complaints": 2000,
-      "signal_score": 41,
-      "signal_band": "Moderate",
-      "prev_signal_score": 41,
-      "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.867,
-      "monthly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2000,
-        0
-      ]
-    },
-    {
-      "slug": "synchrony",
-      "display_name": "Synchrony",
-      "name": "SYNCHRONY FINANCIAL",
-      "kind": "card",
-      "total_complaints": 2000,
-      "signal_score": 40,
-      "signal_band": "Moderate",
-      "prev_signal_score": 40,
-      "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.889,
-      "monthly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2000,
-        0
-      ]
-    },
-    {
-      "slug": "jpmorgan-chase",
-      "display_name": "JPMorgan Chase",
-      "name": "JPMORGAN CHASE & CO.",
-      "kind": "bank",
-      "total_complaints": 2000,
-      "signal_score": 39,
-      "signal_band": "Moderate",
-      "prev_signal_score": 39,
-      "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.82,
-      "monthly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2000,
-        0
+        1660,
+        340
       ]
     },
     {
@@ -221,11 +195,11 @@
       "name": "CITIBANK, N.A.",
       "kind": "bank",
       "total_complaints": 2000,
-      "signal_score": 34,
+      "signal_score": 30,
       "signal_band": "Moderate",
       "prev_signal_score": 34,
       "timely_response_rate": 1,
-      "closed_without_relief_rate": 0.67,
+      "closed_without_relief_rate": 0.58,
       "monthly": [
         0,
         0,
@@ -237,8 +211,8 @@
         0,
         0,
         0,
-        2000,
-        0
+        1520,
+        480
       ]
     },
     {
@@ -247,7 +221,7 @@
       "name": "Experian Information Solutions Inc.",
       "kind": "bureau",
       "total_complaints": 2000,
-      "signal_score": 22,
+      "signal_score": 21,
       "signal_band": "Low",
       "prev_signal_score": 22,
       "timely_response_rate": 1,
@@ -276,6 +250,32 @@
       "signal_score": 21,
       "signal_band": "Low",
       "prev_signal_score": 21,
+      "timely_response_rate": 1,
+      "closed_without_relief_rate": 0,
+      "monthly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2000
+      ]
+    },
+    {
+      "slug": "equifax",
+      "display_name": "Equifax",
+      "name": "EQUIFAX, INC.",
+      "kind": "bureau",
+      "total_complaints": 2000,
+      "signal_score": 19,
+      "signal_band": "Low",
+      "prev_signal_score": 48,
       "timely_response_rate": 1,
       "closed_without_relief_rate": 0,
       "monthly": [
