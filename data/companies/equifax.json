@@ -3,10 +3,10 @@
   "name": "EQUIFAX, INC.",
   "display_name": "Equifax",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-10",
+  "snapshot_date": "2026-08-17",
   "window": {
-    "min": "2025-02-10",
-    "max": "2026-08-10"
+    "min": "2025-02-17",
+    "max": "2026-08-17"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -90,78 +90,82 @@
   "top_products": [
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 2000
+      "count": 1980
+    },
+    {
+      "name": "Debt collection",
+      "count": 20
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 920
+      "count": 880
     },
     {
       "name": "Problem with fraud alerts or security freezes",
-      "count": 500
-    },
-    {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 360
+      "count": 400
     },
     {
       "name": "Improper use of your report",
-      "count": 220
+      "count": 360
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 340
+    },
+    {
+      "name": "Written notification about debt",
+      "count": 20
     }
   ],
   "top_states": [
     {
       "name": "TX",
-      "count": 440
-    },
-    {
-      "name": "CA",
-      "count": 320
+      "count": 340
     },
     {
       "name": "FL",
-      "count": 220
+      "count": 260
     },
     {
-      "name": "GA",
-      "count": 140
+      "name": "CA",
+      "count": 240
     },
     {
       "name": "NY",
-      "count": 100
+      "count": 160
     },
     {
-      "name": "NC",
+      "name": "GA",
+      "count": 120
+    },
+    {
+      "name": "NJ",
       "count": 80
     },
     {
-      "name": "MS",
+      "name": "AL",
       "count": 80
+    },
+    {
+      "name": "CO",
+      "count": 60
     },
     {
       "name": "IL",
       "count": 60
     },
     {
-      "name": "TN",
-      "count": 40
-    },
-    {
-      "name": "LA",
-      "count": 40
+      "name": "NV",
+      "count": 60
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1980
-    },
-    {
-      "name": "Closed with non-monetary relief",
-      "count": 20
+      "count": 2000
     }
   ],
   "narrative_count": 0,
@@ -188,8 +192,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 46,
-        "evidence": "46% of complaints share one top issue"
+        "value": 44,
+        "evidence": "44% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -207,7 +211,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (46% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (19/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (44% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (19/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -215,6 +219,11 @@
       "cik": "0000033185",
       "entity_name": "EQUIFAX INC",
       "recent_filings": [
+        {
+          "form": "4",
+          "date": "2026-08-12",
+          "primary_doc": "xslF345X06/doc4.xml"
+        },
         {
           "form": "8-K",
           "date": "2026-07-29",
@@ -234,11 +243,6 @@
           "form": "424B2",
           "date": "2026-07-24",
           "primary_doc": "d119080d424b2.htm"
-        },
-        {
-          "form": "FWP",
-          "date": "2026-07-22",
-          "primary_doc": "d175110dfwp.htm"
         }
       ]
     },

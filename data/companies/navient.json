@@ -3,10 +3,10 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-10",
+  "snapshot_date": "2026-08-17",
   "window": {
-    "min": "2025-02-10",
-    "max": "2026-08-10"
+    "min": "2025-02-17",
+    "max": "2026-08-17"
   },
   "total_complaints": 1300,
   "monthly": [
@@ -76,39 +76,39 @@
     },
     {
       "month": "2026-06",
-      "count": 533
+      "count": 455
     },
     {
       "month": "2026-07",
-      "count": 650
+      "count": 676
     },
     {
       "month": "2026-08",
-      "count": 117
+      "count": 169
     }
   ],
   "top_products": [
     {
       "name": "Student loan",
-      "count": 884
+      "count": 858
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 286
+      "count": 299
     },
     {
       "name": "Debt collection",
-      "count": 130
+      "count": 143
     }
   ],
   "top_issues": [
     {
       "name": "Dealing with your lender or servicer",
-      "count": 689
+      "count": 663
     },
     {
       "name": "Incorrect information on your report",
-      "count": 208
+      "count": 221
     },
     {
       "name": "Struggling to repay your loan",
@@ -119,6 +119,10 @@
       "count": 91
     },
     {
+      "name": "Attempts to collect debt not owed",
+      "count": 52
+    },
+    {
       "name": "Getting a loan",
       "count": 39
     },
@@ -127,11 +131,7 @@
       "count": 39
     },
     {
-      "name": "Attempts to collect debt not owed",
-      "count": 39
-    },
-    {
-      "name": "Took or threatened to take negative or legal action",
+      "name": "False statements or representation",
       "count": 26
     }
   ],
@@ -149,6 +149,10 @@
       "count": 156
     },
     {
+      "name": "MD",
+      "count": 104
+    },
+    {
       "name": "FL",
       "count": 91
     },
@@ -157,11 +161,7 @@
       "count": 78
     },
     {
-      "name": "MD",
-      "count": 78
-    },
-    {
-      "name": "NV",
+      "name": "MI",
       "count": 52
     },
     {
@@ -169,11 +169,11 @@
       "count": 39
     },
     {
-      "name": "MI",
+      "name": "NV",
       "count": 39
     },
     {
-      "name": "OH",
+      "name": "PA",
       "count": 39
     }
   ],
@@ -188,46 +188,46 @@
       "count": 13
     }
   ],
-  "narrative_count": 26,
+  "narrative_count": 91,
   "sample_narratives": [
     {
-      "date": "2026-06-09",
+      "date": "2026-06-17",
       "product": "Debt collection",
-      "issue": "Attempts to collect debt not owed",
-      "state": "MD",
-      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
+      "issue": "Communication tactics",
+      "state": "CA",
+      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-06-17",
       "product": "Debt collection",
-      "issue": "Attempts to collect debt not owed",
-      "state": "MD",
-      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
+      "issue": "Communication tactics",
+      "state": "CA",
+      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-06-17",
       "product": "Debt collection",
-      "issue": "Attempts to collect debt not owed",
-      "state": "MD",
-      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
+      "issue": "Communication tactics",
+      "state": "CA",
+      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-06-17",
       "product": "Debt collection",
-      "issue": "Attempts to collect debt not owed",
-      "state": "MD",
-      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
+      "issue": "Communication tactics",
+      "state": "CA",
+      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
     },
     {
-      "date": "2026-06-09",
+      "date": "2026-06-17",
       "product": "Debt collection",
-      "issue": "Attempts to collect debt not owed",
-      "state": "MD",
-      "text": "XXXX XXXX XXXX  Regarding Account : Navient / Private Signature Student Loans To Whom It May Concern, I am writing in response to the recent CFPB complaint determination regarding two private student loans originally held by Sallie Mae/Navient XXXX which have allegedly been placed with your agency for collection. \n\nPlease be advised that this debt defaulted on XX/XX/year>. As such, it is well past the 7-year federal limitation for credit reporting under the FCRA. If your agency is currently reportingor intends to reportthis account to XXXX XXXX or XXXX, you are willfully violating the FCRA by …"
+      "issue": "Communication tactics",
+      "state": "CA",
+      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
     }
   ],
   "signal": {
-    "score": 66,
+    "score": 63,
     "band": "Elevated",
     "components": [
       {
@@ -248,8 +248,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 53,
-        "evidence": "53% of complaints share one top issue"
+        "value": 51,
+        "evidence": "51% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -262,12 +262,12 @@
         "key": "narrative_harm",
         "label": "Harm language in narratives",
         "weight": 0.15,
-        "value": 100,
-        "evidence": "100% of 26 narratives mention concrete harm"
+        "value": 85.7,
+        "evidence": "85.7% of 91 narratives mention concrete harm"
       }
     ]
   },
-  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 1,300 complaints about Navient. Volume is steady (last 3 months averaged 433 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (53% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (66/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 1,300 complaints about Navient. Volume is steady (last 3 months averaged 433 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (51% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (63/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

@@ -3,10 +3,10 @@
   "name": "SYNCHRONY FINANCIAL",
   "display_name": "Synchrony",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-10",
+  "snapshot_date": "2026-08-17",
   "window": {
-    "min": "2025-02-10",
-    "max": "2026-08-10"
+    "min": "2025-02-17",
+    "max": "2026-08-17"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,112 +80,112 @@
     },
     {
       "month": "2026-07",
-      "count": 1940
+      "count": 0
     },
     {
       "month": "2026-08",
-      "count": 60
+      "count": 2000
     }
   ],
   "top_products": [
     {
       "name": "Credit card",
-      "count": 1220
+      "count": 1400
     },
     {
       "name": "Debt collection",
-      "count": 360
-    },
-    {
-      "name": "Credit reporting or other personal consumer reports",
       "count": 320
     },
     {
-      "name": "Checking or savings account",
-      "count": 40
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 220
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 20
     },
     {
       "name": "Payday loan, title loan, personal loan, or advance loan",
-      "count": 40
+      "count": 20
     },
     {
-      "name": "Prepaid card",
+      "name": "Checking or savings account",
       "count": 20
     }
   ],
   "top_issues": [
     {
-      "name": "Problem with a purchase shown on your statement",
-      "count": 440
-    },
-    {
-      "name": "Took or threatened to take negative or legal action",
-      "count": 260
-    },
-    {
       "name": "Fees or interest",
+      "count": 420
+    },
+    {
+      "name": "Problem with a purchase shown on your statement",
       "count": 260
-    },
-    {
-      "name": "Incorrect information on your report",
-      "count": 260
-    },
-    {
-      "name": "Problem when making payments",
-      "count": 140
-    },
-    {
-      "name": "Getting a credit card",
-      "count": 100
-    },
-    {
-      "name": "Other features, terms, or problems",
-      "count": 80
     },
     {
       "name": "Closing your account",
+      "count": 200
+    },
+    {
+      "name": "Getting a credit card",
+      "count": 160
+    },
+    {
+      "name": "Took or threatened to take negative or legal action",
+      "count": 160
+    },
+    {
+      "name": "Problem when making payments",
+      "count": 120
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 100
+    },
+    {
+      "name": "Incorrect information on your report",
       "count": 80
     }
   ],
   "top_states": [
     {
-      "name": "TX",
-      "count": 260
-    },
-    {
       "name": "FL",
-      "count": 260
+      "count": 300
     },
     {
       "name": "CA",
       "count": 240
     },
     {
+      "name": "TX",
+      "count": 180
+    },
+    {
       "name": "NY",
-      "count": 160
-    },
-    {
-      "name": "GA",
-      "count": 100
-    },
-    {
-      "name": "CO",
-      "count": 80
-    },
-    {
-      "name": "OH",
-      "count": 80
-    },
-    {
-      "name": "NC",
-      "count": 80
-    },
-    {
-      "name": "MI",
-      "count": 60
+      "count": 140
     },
     {
       "name": "PA",
+      "count": 100
+    },
+    {
+      "name": "MI",
+      "count": 100
+    },
+    {
+      "name": "KY",
+      "count": 100
+    },
+    {
+      "name": "GA",
+      "count": 80
+    },
+    {
+      "name": "SC",
+      "count": 80
+    },
+    {
+      "name": "MA",
       "count": 60
     }
   ],
@@ -193,11 +193,11 @@
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1700
+      "count": 1780
     },
     {
       "name": "Closed with explanation",
-      "count": 300
+      "count": 220
     }
   ],
   "narrative_count": 0,
@@ -224,8 +224,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 22,
-        "evidence": "22% of complaints share one top issue"
+        "value": 21,
+        "evidence": "21% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -243,7 +243,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (22% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (44/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Fees or interest\" (21% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (44/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -260,6 +260,16 @@
       "entity_name": "Synchrony Financial",
       "recent_filings": [
         {
+          "form": "144",
+          "date": "2026-08-13",
+          "primary_doc": "xsl144X01/primary_doc.xml"
+        },
+        {
+          "form": "SCHEDULE 13G/A",
+          "date": "2026-08-12",
+          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
+        },
+        {
           "form": "4",
           "date": "2026-08-04",
           "primary_doc": "xslF345X06/wk-form4_1785874129.xml"
@@ -273,16 +283,6 @@
           "form": "4",
           "date": "2026-08-04",
           "primary_doc": "xslF345X06/wk-form4_1785874118.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-08-04",
-          "primary_doc": "xslF345X06/wk-form4_1785874110.xml"
-        },
-        {
-          "form": "144",
-          "date": "2026-08-03",
-          "primary_doc": "xsl144X01/primary_doc.xml"
         }
       ]
     },

@@ -3,10 +3,10 @@
   "name": "DISCOVER BANK",
   "display_name": "Discover",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-10",
+  "snapshot_date": "2026-08-17",
   "window": {
-    "min": "2025-02-10",
-    "max": "2026-08-10"
+    "min": "2025-02-17",
+    "max": "2026-08-17"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -283,15 +283,15 @@
       }
     ]
   },
-  "summary": "Between 2025-02-10 and 2026-08-10, the CFPB published 2,000 complaints about Discover. Volume is falling (last 3 months averaged 0 per month versus 667 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (37/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 2,000 complaints about Discover. Volume is falling (last 3 months averaged 0 per month versus 667 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (37/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
     "sec": null,
     "lei": {
-      "lei": "815600825A6BD5B79839",
-      "legal_name": "DISCOVER S.R.L.",
-      "jurisdiction": "IT",
+      "lei": "254900M4XPF0SEV6NF30",
+      "legal_name": "BLOCK DISCOVER",
+      "jurisdiction": "FR",
       "status": "ACTIVE",
       "registration_status": "ISSUED"
     },
