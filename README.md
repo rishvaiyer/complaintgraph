@@ -64,8 +64,7 @@ complaintgraph/
 ```
 
 The page reads only static JSON — there are **no runtime API calls** and no
-backend. Data is baked at build time, exactly like the Surveillance Radar's
-`ingest:atlas` step. In CI the live CFPB ingest runs and overwrites `data/`; if
+backend. Data is baked at build time. In CI the live CFPB ingest runs and overwrites `data/`; if
 it fails, the committed sample data is kept and clearly labeled in the UI.
 
 ---
