@@ -3,10 +3,10 @@
   "name": "SYNCHRONY FINANCIAL",
   "display_name": "Synchrony",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-17",
+  "snapshot_date": "2026-08-24",
   "window": {
-    "min": "2025-02-17",
-    "max": "2026-08-17"
+    "min": "2025-02-24",
+    "max": "2026-08-24"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -90,18 +90,22 @@
   "top_products": [
     {
       "name": "Credit card",
-      "count": 1400
-    },
-    {
-      "name": "Debt collection",
-      "count": 320
+      "count": 1260
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 220
+      "count": 340
     },
     {
-      "name": "Money transfer, virtual currency, or money service",
+      "name": "Debt collection",
+      "count": 260
+    },
+    {
+      "name": "Checking or savings account",
+      "count": 80
+    },
+    {
+      "name": "Prepaid card",
       "count": 20
     },
     {
@@ -109,83 +113,83 @@
       "count": 20
     },
     {
-      "name": "Checking or savings account",
+      "name": "Money transfer, virtual currency, or money service",
       "count": 20
     }
   ],
   "top_issues": [
     {
-      "name": "Fees or interest",
-      "count": 420
-    },
-    {
       "name": "Problem with a purchase shown on your statement",
-      "count": 260
+      "count": 480
     },
     {
-      "name": "Closing your account",
-      "count": 200
-    },
-    {
-      "name": "Getting a credit card",
-      "count": 160
-    },
-    {
-      "name": "Took or threatened to take negative or legal action",
-      "count": 160
-    },
-    {
-      "name": "Problem when making payments",
-      "count": 120
-    },
-    {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 100
+      "name": "Fees or interest",
+      "count": 280
     },
     {
       "name": "Incorrect information on your report",
-      "count": 80
+      "count": 200
+    },
+    {
+      "name": "Took or threatened to take negative or legal action",
+      "count": 200
+    },
+    {
+      "name": "Closing your account",
+      "count": 140
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 120
+    },
+    {
+      "name": "Other features, terms, or problems",
+      "count": 100
+    },
+    {
+      "name": "Getting a credit card",
+      "count": 100
     }
   ],
   "top_states": [
     {
-      "name": "FL",
-      "count": 300
+      "name": "NY",
+      "count": 220
     },
     {
-      "name": "CA",
-      "count": 240
+      "name": "FL",
+      "count": 220
     },
     {
       "name": "TX",
       "count": 180
     },
     {
-      "name": "NY",
+      "name": "GA",
+      "count": 160
+    },
+    {
+      "name": "WA",
       "count": 140
     },
     {
-      "name": "PA",
-      "count": 100
+      "name": "NC",
+      "count": 120
     },
     {
-      "name": "MI",
-      "count": 100
+      "name": "CA",
+      "count": 120
     },
     {
-      "name": "KY",
-      "count": 100
-    },
-    {
-      "name": "GA",
-      "count": 80
+      "name": "NJ",
+      "count": 120
     },
     {
       "name": "SC",
-      "count": 80
+      "count": 60
     },
     {
-      "name": "MA",
+      "name": "MI",
       "count": 60
     }
   ],
@@ -193,17 +197,21 @@
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1780
+      "count": 1900
     },
     {
       "name": "Closed with explanation",
-      "count": 220
+      "count": 80
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 20
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 44,
+    "score": 39,
     "band": "Moderate",
     "components": [
       {
@@ -217,15 +225,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 100,
-        "evidence": "100% of closed cases ended without monetary or non-monetary relief"
+        "value": 80,
+        "evidence": "80% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 21,
-        "evidence": "21% of complaints share one top issue"
+        "value": 24,
+        "evidence": "24% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -243,7 +251,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Fees or interest\" (21% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (44/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (24% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 80% of closed cases ended without relief. Overall risk signal: Moderate (39/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -260,29 +268,29 @@
       "entity_name": "Synchrony Financial",
       "recent_filings": [
         {
-          "form": "144",
-          "date": "2026-08-13",
-          "primary_doc": "xsl144X01/primary_doc.xml"
-        },
-        {
-          "form": "SCHEDULE 13G/A",
-          "date": "2026-08-12",
-          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
+          "form": "4",
+          "date": "2026-08-19",
+          "primary_doc": "xslF345X06/wk-form4_1787172639.xml"
         },
         {
           "form": "4",
-          "date": "2026-08-04",
-          "primary_doc": "xslF345X06/wk-form4_1785874129.xml"
+          "date": "2026-08-19",
+          "primary_doc": "xslF345X06/wk-form4_1787172633.xml"
         },
         {
           "form": "4",
-          "date": "2026-08-04",
-          "primary_doc": "xslF345X06/wk-form4_1785874124.xml"
+          "date": "2026-08-19",
+          "primary_doc": "xslF345X06/wk-form4_1787172629.xml"
         },
         {
           "form": "4",
-          "date": "2026-08-04",
-          "primary_doc": "xslF345X06/wk-form4_1785874118.xml"
+          "date": "2026-08-19",
+          "primary_doc": "xslF345X06/wk-form4_1787172623.xml"
+        },
+        {
+          "form": "4",
+          "date": "2026-08-19",
+          "primary_doc": "xslF345X06/wk-form4_1787172617.xml"
         }
       ]
     },

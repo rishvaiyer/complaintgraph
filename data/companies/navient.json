@@ -3,10 +3,10 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-17",
+  "snapshot_date": "2026-08-24",
   "window": {
-    "min": "2025-02-17",
-    "max": "2026-08-17"
+    "min": "2025-02-24",
+    "max": "2026-08-24"
   },
   "total_complaints": 1300,
   "monthly": [
@@ -76,7 +76,7 @@
     },
     {
       "month": "2026-06",
-      "count": 455
+      "count": 364
     },
     {
       "month": "2026-07",
@@ -84,17 +84,17 @@
     },
     {
       "month": "2026-08",
-      "count": 169
+      "count": 260
     }
   ],
   "top_products": [
     {
       "name": "Student loan",
-      "count": 858
+      "count": 910
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 299
+      "count": 247
     },
     {
       "name": "Debt collection",
@@ -104,23 +104,19 @@
   "top_issues": [
     {
       "name": "Dealing with your lender or servicer",
-      "count": 663
+      "count": 689
     },
     {
       "name": "Incorrect information on your report",
-      "count": 221
+      "count": 182
     },
     {
       "name": "Struggling to repay your loan",
-      "count": 130
+      "count": 156
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 91
-    },
-    {
-      "name": "Attempts to collect debt not owed",
-      "count": 52
+      "count": 78
     },
     {
       "name": "Getting a loan",
@@ -131,7 +127,11 @@
       "count": 39
     },
     {
-      "name": "False statements or representation",
+      "name": "Attempts to collect debt not owed",
+      "count": 39
+    },
+    {
+      "name": "Took or threatened to take negative or legal action",
       "count": 26
     }
   ],
@@ -142,38 +142,38 @@
     },
     {
       "name": "CA",
-      "count": 182
+      "count": 169
     },
     {
       "name": "TX",
-      "count": 156
+      "count": 117
     },
     {
-      "name": "MD",
-      "count": 104
+      "name": "GA",
+      "count": 91
     },
     {
       "name": "FL",
       "count": 91
     },
     {
-      "name": "GA",
-      "count": 78
+      "name": "MD",
+      "count": 91
+    },
+    {
+      "name": "PA",
+      "count": 52
     },
     {
       "name": "MI",
       "count": 52
     },
     {
-      "name": "NY",
+      "name": "NC",
       "count": 39
     },
     {
       "name": "NV",
-      "count": 39
-    },
-    {
-      "name": "PA",
       "count": 39
     }
   ],
@@ -191,43 +191,43 @@
   "narrative_count": 91,
   "sample_narratives": [
     {
-      "date": "2026-06-17",
-      "product": "Debt collection",
-      "issue": "Communication tactics",
-      "state": "CA",
-      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
+      "date": "2026-06-18",
+      "product": "Student loan",
+      "issue": "Dealing with your lender or servicer",
+      "state": "MD",
+      "text": "I attended XXXX XXXX XXXX and later received information regarding XXXX XXXX loan discharge eligibility involving school misconduct. My XXXX XXXX loans were serviced by XXXX/NAVIENT. \n\nDespite discharge information and/or approvals, I have continued experiencing issues involving loan servicing, balances, communication, payment demands, credit reporting, delays, confusion regarding discharge processing, and difficulty obtaining accurate information from the XXXX/NAVIENT. \n\n\n\nStudent loan servicing misconduct XXXX XXXX discharge violations Consumer protection violations Credit reporting inaccura…"
     },
     {
-      "date": "2026-06-17",
-      "product": "Debt collection",
-      "issue": "Communication tactics",
-      "state": "CA",
-      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
+      "date": "2026-06-18",
+      "product": "Student loan",
+      "issue": "Dealing with your lender or servicer",
+      "state": "MD",
+      "text": "I attended XXXX XXXX XXXX and later received information regarding XXXX XXXX loan discharge eligibility involving school misconduct. My XXXX XXXX loans were serviced by XXXX/NAVIENT. \n\nDespite discharge information and/or approvals, I have continued experiencing issues involving loan servicing, balances, communication, payment demands, credit reporting, delays, confusion regarding discharge processing, and difficulty obtaining accurate information from the XXXX/NAVIENT. \n\n\n\nStudent loan servicing misconduct XXXX XXXX discharge violations Consumer protection violations Credit reporting inaccura…"
     },
     {
-      "date": "2026-06-17",
-      "product": "Debt collection",
-      "issue": "Communication tactics",
-      "state": "CA",
-      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
+      "date": "2026-06-18",
+      "product": "Student loan",
+      "issue": "Dealing with your lender or servicer",
+      "state": "MD",
+      "text": "I attended XXXX XXXX XXXX and later received information regarding XXXX XXXX loan discharge eligibility involving school misconduct. My XXXX XXXX loans were serviced by XXXX/NAVIENT. \n\nDespite discharge information and/or approvals, I have continued experiencing issues involving loan servicing, balances, communication, payment demands, credit reporting, delays, confusion regarding discharge processing, and difficulty obtaining accurate information from the XXXX/NAVIENT. \n\n\n\nStudent loan servicing misconduct XXXX XXXX discharge violations Consumer protection violations Credit reporting inaccura…"
     },
     {
-      "date": "2026-06-17",
-      "product": "Debt collection",
-      "issue": "Communication tactics",
-      "state": "CA",
-      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
+      "date": "2026-06-18",
+      "product": "Student loan",
+      "issue": "Dealing with your lender or servicer",
+      "state": "MD",
+      "text": "I attended XXXX XXXX XXXX and later received information regarding XXXX XXXX loan discharge eligibility involving school misconduct. My XXXX XXXX loans were serviced by XXXX/NAVIENT. \n\nDespite discharge information and/or approvals, I have continued experiencing issues involving loan servicing, balances, communication, payment demands, credit reporting, delays, confusion regarding discharge processing, and difficulty obtaining accurate information from the XXXX/NAVIENT. \n\n\n\nStudent loan servicing misconduct XXXX XXXX discharge violations Consumer protection violations Credit reporting inaccura…"
     },
     {
-      "date": "2026-06-17",
-      "product": "Debt collection",
-      "issue": "Communication tactics",
-      "state": "CA",
-      "text": "Too many to list, I have severe XXXX, had a XXXX and my cosigner passed away. I have explained this in certified letters and emails : I have the exact letter I had sent and the emails as well, to which I replied explaining my situation ( they ignored it ) and that I have proof of all of this and still nothing.\n\nLetter Certified to XXXX : XXXX about the XXXX, responded with harassing phone calls ( I now have Cloaked to screen calls and yet they still persist and one call gets through ) they have sent settlement agreements but I can't afford any of them so I saved the letters from XXXX and they …"
+      "date": "2026-06-18",
+      "product": "Student loan",
+      "issue": "Dealing with your lender or servicer",
+      "state": "MD",
+      "text": "I attended XXXX XXXX XXXX and later received information regarding XXXX XXXX loan discharge eligibility involving school misconduct. My XXXX XXXX loans were serviced by XXXX/NAVIENT. \n\nDespite discharge information and/or approvals, I have continued experiencing issues involving loan servicing, balances, communication, payment demands, credit reporting, delays, confusion regarding discharge processing, and difficulty obtaining accurate information from the XXXX/NAVIENT. \n\n\n\nStudent loan servicing misconduct XXXX XXXX discharge violations Consumer protection violations Credit reporting inaccura…"
     }
   ],
   "signal": {
-    "score": 63,
+    "score": 61,
     "band": "Elevated",
     "components": [
       {
@@ -248,8 +248,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 51,
-        "evidence": "51% of complaints share one top issue"
+        "value": 53,
+        "evidence": "53% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -262,12 +262,12 @@
         "key": "narrative_harm",
         "label": "Harm language in narratives",
         "weight": 0.15,
-        "value": 85.7,
-        "evidence": "85.7% of 91 narratives mention concrete harm"
+        "value": 71.4,
+        "evidence": "71.4% of 91 narratives mention concrete harm"
       }
     ]
   },
-  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 1,300 complaints about Navient. Volume is steady (last 3 months averaged 433 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (51% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (63/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 1,300 complaints about Navient. Volume is steady (last 3 months averaged 433 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (53% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

@@ -3,10 +3,10 @@
   "name": "WELLS FARGO & COMPANY",
   "display_name": "Wells Fargo",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-17",
+  "snapshot_date": "2026-08-24",
   "window": {
-    "min": "2025-02-17",
-    "max": "2026-08-17"
+    "min": "2025-02-24",
+    "max": "2026-08-24"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -90,31 +90,31 @@
   "top_products": [
     {
       "name": "Checking or savings account",
-      "count": 800
-    },
-    {
-      "name": "Credit reporting or other personal consumer reports",
-      "count": 420
+      "count": 780
     },
     {
       "name": "Credit card",
-      "count": 240
+      "count": 300
     },
     {
       "name": "Debt collection",
-      "count": 220
+      "count": 300
     },
     {
       "name": "Money transfer, virtual currency, or money service",
-      "count": 140
+      "count": 240
     },
     {
-      "name": "Vehicle loan or lease",
-      "count": 120
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 200
     },
     {
       "name": "Mortgage",
-      "count": 40
+      "count": 100
+    },
+    {
+      "name": "Vehicle loan or lease",
+      "count": 60
     },
     {
       "name": "Payday loan, title loan, personal loan, or advance loan",
@@ -124,76 +124,76 @@
   "top_issues": [
     {
       "name": "Managing an account",
-      "count": 440
+      "count": 540
     },
     {
-      "name": "Improper use of your report",
+      "name": "Fraud or scam",
       "count": 180
     },
     {
       "name": "Incorrect information on your report",
-      "count": 180
-    },
-    {
-      "name": "Problem caused by your funds being low",
       "count": 140
     },
     {
-      "name": "Closing an account",
-      "count": 120
+      "name": "Took or threatened to take negative or legal action",
+      "count": 140
     },
     {
       "name": "Attempts to collect debt not owed",
-      "count": 100
+      "count": 120
     },
     {
-      "name": "Took or threatened to take negative or legal action",
+      "name": "Problem caused by your funds being low",
       "count": 80
     },
     {
-      "name": "Fraud or scam",
+      "name": "Opening an account",
+      "count": 80
+    },
+    {
+      "name": "Getting a credit card",
       "count": 80
     }
   ],
   "top_states": [
     {
       "name": "CA",
+      "count": 400
+    },
+    {
+      "name": "TX",
       "count": 300
     },
     {
       "name": "FL",
-      "count": 260
-    },
-    {
-      "name": "TX",
-      "count": 220
-    },
-    {
-      "name": "NY",
-      "count": 140
-    },
-    {
-      "name": "MD",
-      "count": 120
-    },
-    {
-      "name": "NC",
-      "count": 100
-    },
-    {
-      "name": "OH",
-      "count": 80
+      "count": 180
     },
     {
       "name": "GA",
-      "count": 80
+      "count": 140
     },
     {
-      "name": "IL",
-      "count": 80
+      "name": "AZ",
+      "count": 140
+    },
+    {
+      "name": "VA",
+      "count": 100
+    },
+    {
+      "name": "NY",
+      "count": 100
     },
     {
       "name": "NJ",
+      "count": 60
+    },
+    {
+      "name": "MI",
+      "count": 60
+    },
+    {
+      "name": "NC",
       "count": 60
     }
   ],
@@ -201,11 +201,11 @@
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1200
+      "count": 1180
     },
     {
       "name": "In progress",
-      "count": 620
+      "count": 600
     },
     {
       "name": "Closed with non-monetary relief",
@@ -213,7 +213,7 @@
     },
     {
       "name": "Closed with monetary relief",
-      "count": 60
+      "count": 100
     }
   ],
   "narrative_count": 0,
@@ -233,15 +233,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 87,
-        "evidence": "87% of closed cases ended without monetary or non-monetary relief"
+        "value": 84.3,
+        "evidence": "84.3% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 22,
-        "evidence": "22% of complaints share one top issue"
+        "value": 27,
+        "evidence": "27% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -259,7 +259,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 2,000 complaints about Wells Fargo. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (22% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 87% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about Wells Fargo. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (27% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 84.3% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -277,28 +277,28 @@
       "recent_filings": [
         {
           "form": "424B2",
-          "date": "2026-08-14",
-          "primary_doc": "r9990wfc_424b2-26784.htm"
+          "date": "2026-08-21",
+          "primary_doc": "r10065wfc_424b2-27594.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-14",
-          "primary_doc": "r9988wfc_424b2-26776.htm"
-        },
-        {
-          "form": "13F-HR",
-          "date": "2026-08-14",
-          "primary_doc": "xslForm13F_X02/primary_doc.xml"
+          "date": "2026-08-21",
+          "primary_doc": "r10049wfc_424b2-27443.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-14",
-          "primary_doc": "r9884wfc_424b2-26773.htm"
+          "date": "2026-08-21",
+          "primary_doc": "i1151wfc_424b2-27588.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-14",
-          "primary_doc": "r9933wfc_424b2-26677.htm"
+          "date": "2026-08-21",
+          "primary_doc": "r10050wfc_424b2-27427.htm"
+        },
+        {
+          "form": "FWP",
+          "date": "2026-08-21",
+          "primary_doc": "r10066wfc_fwp-27552.htm"
         }
       ]
     },

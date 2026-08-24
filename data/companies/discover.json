@@ -3,10 +3,10 @@
   "name": "DISCOVER BANK",
   "display_name": "Discover",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-17",
+  "snapshot_date": "2026-08-24",
   "window": {
-    "min": "2025-02-17",
-    "max": "2026-08-17"
+    "min": "2025-02-24",
+    "max": "2026-08-24"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -283,7 +283,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-17 and 2026-08-17, the CFPB published 2,000 complaints about Discover. Volume is falling (last 3 months averaged 0 per month versus 667 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (37/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about Discover. Volume is falling (last 3 months averaged 0 per month versus 667 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (37/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
