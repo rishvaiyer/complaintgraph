@@ -1,6 +1,6 @@
 # ComplaintGraph
 
-> Public complaint intelligence for consumer-finance companies — built entirely
+> Public complaint intelligence for consumer-finance companies, built entirely
 > on the public **CFPB Consumer Complaint Database**.
 
 Search a financial company → see its complaint trend, top issues, response
@@ -13,7 +13,7 @@ customer base, not just its conduct, and every score is labeled as an estimate.
 
 **Live:** https://rishva.up.railway.app/complaintgraph/
 
-**Original home:** https://unevil-warden.github.io/unevil/complaintgraph/ — my earlier GitHub account (unevil-warden), since retired; kept here as provenance.
+**Original home:** https://unevil-warden.github.io/unevil/complaintgraph/, my earlier GitHub account (unevil-warden), since retired; kept here as provenance.
 
 ![ComplaintGraph dashboard](./docs/preview.png)
 
@@ -23,12 +23,12 @@ customer base, not just its conduct, and every score is labeled as an estimate.
 
 For each company in a curated set (credit bureaus, big banks, card issuers):
 
-- **Risk leaderboard** — companies ranked by an exploratory 0–100 risk signal.
+- **Risk leaderboard**: companies ranked by an exploratory 0-100 risk signal.
 - **Complaint volume by month** over an ~18-month window.
 - **Top issues, products, and states.**
-- **Response quality** — timely-response rate and how cases were closed
+- **Response quality**: timely-response rate and how cases were closed
   (with/without relief).
-- **Transparent risk signal** — a 0–100 score blended from five interpretable
+- **Transparent risk signal**: a 0-100 score blended from five interpretable
   sub-signals, each shown with its weight and the evidence behind it:
   | Sub-signal | Weight | What it measures |
   |---|---|---|
@@ -37,8 +37,8 @@ For each company in a curated set (credit bureaus, big banks, card issuers):
   | Issue concentration | 0.20 | How dominated complaints are by one issue |
   | Recent trend | 0.20 | Last 3 months vs the prior 3 |
   | Harm language in narratives | 0.15 | Share of consumer narratives mentioning concrete harm |
-- **Consumer narratives** — public, consent-given complaint text (when available).
-- **Plain-English summary** — generated deterministically from the statistics
+- **Consumer narratives**: public, consent-given complaint text (when available).
+- **Plain-English summary**: generated deterministically from the statistics
   above. No LLM, no fabricated claims.
 
 ---
@@ -63,7 +63,7 @@ complaintgraph/
   build-site.mjs        # assemble src/ + data/ into dist/ for local preview
 ```
 
-The page reads only static JSON — there are **no runtime API calls** and no
+The page reads only static JSON: there are **no runtime API calls** and no
 backend. Data is baked at build time. In CI the live CFPB ingest runs and overwrites `data/`; if
 it fails, the committed sample data is kept and clearly labeled in the UI.
 
@@ -87,7 +87,7 @@ npm run preview
 ```
 
 Then open http://localhost:5055. Serve over HTTP rather than opening
-`index.html` directly — browsers block `fetch()` of local files over `file://`.
+`index.html` directly; browsers block `fetch()` of local files over `file://`.
 
 ---
 
@@ -106,7 +106,7 @@ plan upgrade):
 
 | Host | Settings |
 |---|---|
-| **Netlify** | Uses the committed [`netlify.toml`](./netlify.toml) — just import the repo. |
+| **Netlify** | Uses the committed [`netlify.toml`](./netlify.toml), just import the repo. |
 | **Vercel** | Root directory `complaintgraph` (reads [`vercel.json`](./vercel.json)). |
 | **Cloudflare Pages** | Root dir `complaintgraph`, build `npm run build:live`, output `dist`. |
 
@@ -118,7 +118,7 @@ get fresh data on every deploy.
 ## Data source
 
 [CFPB Consumer Complaint Database](https://www.consumerfinance.gov/data-research/consumer-complaints/)
-— a public collection of complaints about consumer financial products and
+is a public collection of complaints about consumer financial products and
 services, sent to companies for response. Complaints are published after the
 company responds and confirms a commercial relationship, or after 15 days,
 whichever comes first. Narrative text appears only when the consumer consents
@@ -129,10 +129,10 @@ API docs: <https://cfpb.github.io/api/ccdb/api.html>
 **Regulatory cross-reference sources** (merged into each company page by
 `scripts/ingest-regulatory.mjs`, all key-free public records):
 
-- [FDIC BankFind Suite](https://banks.data.fdic.gov/bankfind-suite/bankfind) — charter, location, assets
-- [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany) — filer identity + recent filings
-- [GLEIF LEI](https://search.gleif.org/) — legal-entity identifier and registration status
-- [Federal Reserve Enforcement Actions](https://www.federalreserve.gov/supervisionreg/enforcementactions.htm) — public enforcement records (counts + most recent action)
+- [FDIC BankFind Suite](https://banks.data.fdic.gov/bankfind-suite/bankfind): charter, location, assets
+- [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany): filer identity + recent filings
+- [GLEIF LEI](https://search.gleif.org/): legal-entity identifier and registration status
+- [Federal Reserve Enforcement Actions](https://www.federalreserve.gov/supervisionreg/enforcementactions.htm): public enforcement records (counts + most recent action)
 
 ---
 
@@ -142,7 +142,7 @@ API docs: <https://cfpb.github.io/api/ccdb/api.html>
   will generally have more complaints.
 - The risk signal is a **heuristic** for "where to look," not a measure of
   wrongdoing or compliance.
-- The "harm language" signal is a coarse keyword scan of consumer narratives —
+- The "harm language" signal is a coarse keyword scan of consumer narratives, 
   it reflects how consumers describe their experience, not confirmed harm.
 - Sample data is synthetic and labeled as such; it exists only so the page
   renders before/without a live ingest.
