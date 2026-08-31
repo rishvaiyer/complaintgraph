@@ -3,17 +3,13 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-24",
+  "snapshot_date": "2026-08-31",
   "window": {
-    "min": "2025-02-24",
-    "max": "2026-08-24"
+    "min": "2025-03-03",
+    "max": "2026-08-31"
   },
-  "total_complaints": 1300,
+  "total_complaints": 1200,
   "monthly": [
-    {
-      "month": "2025-02",
-      "count": 0
-    },
     {
       "month": "2025-03",
       "count": 0
@@ -76,119 +72,123 @@
     },
     {
       "month": "2026-06",
-      "count": 364
+      "count": 264
     },
     {
       "month": "2026-07",
-      "count": 676
+      "count": 624
     },
     {
       "month": "2026-08",
-      "count": 260
+      "count": 312
     }
   ],
   "top_products": [
     {
       "name": "Student loan",
-      "count": 910
+      "count": 852
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 247
+      "count": 228
     },
     {
       "name": "Debt collection",
-      "count": 143
+      "count": 108
+    },
+    {
+      "name": "Credit card",
+      "count": 12
     }
   ],
   "top_issues": [
     {
       "name": "Dealing with your lender or servicer",
-      "count": 689
+      "count": 648
     },
     {
       "name": "Incorrect information on your report",
-      "count": 182
+      "count": 180
     },
     {
       "name": "Struggling to repay your loan",
-      "count": 156
+      "count": 132
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 78
+      "count": 72
     },
     {
       "name": "Getting a loan",
-      "count": 39
+      "count": 48
     },
     {
       "name": "Communication tactics",
-      "count": 39
+      "count": 36
     },
     {
       "name": "Attempts to collect debt not owed",
-      "count": 39
+      "count": 36
     },
     {
       "name": "Took or threatened to take negative or legal action",
-      "count": 26
+      "count": 24
     }
   ],
   "top_states": [
     {
       "name": "IL",
-      "count": 182
+      "count": 168
     },
     {
       "name": "CA",
-      "count": 169
-    },
-    {
-      "name": "TX",
-      "count": 117
-    },
-    {
-      "name": "GA",
-      "count": 91
+      "count": 144
     },
     {
       "name": "FL",
-      "count": 91
+      "count": 108
+    },
+    {
+      "name": "TX",
+      "count": 108
+    },
+    {
+      "name": "GA",
+      "count": 84
     },
     {
       "name": "MD",
-      "count": 91
+      "count": 72
     },
     {
       "name": "PA",
-      "count": 52
-    },
-    {
-      "name": "MI",
-      "count": 52
-    },
-    {
-      "name": "NC",
-      "count": 39
+      "count": 60
     },
     {
       "name": "NV",
-      "count": 39
+      "count": 48
+    },
+    {
+      "name": "MI",
+      "count": 48
+    },
+    {
+      "name": "MS",
+      "count": 36
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1287
+      "count": 1188
     },
     {
       "name": "In progress",
-      "count": 13
+      "count": 12
     }
   ],
-  "narrative_count": 91,
+  "narrative_count": 48,
   "sample_narratives": [
     {
       "date": "2026-06-18",
@@ -227,7 +227,7 @@
     }
   ],
   "signal": {
-    "score": 61,
+    "score": 62,
     "band": "Elevated",
     "components": [
       {
@@ -248,26 +248,26 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 53,
-        "evidence": "53% of complaints share one top issue"
+        "value": 54,
+        "evidence": "54% of complaints share one top issue"
       },
       {
         "key": "trend",
         "label": "Recent trend",
         "weight": 0.2,
         "value": 50,
-        "evidence": "last 3 months avg 433.3/mo vs prior 0/mo"
+        "evidence": "last 3 months avg 400/mo vs prior 0/mo"
       },
       {
         "key": "narrative_harm",
         "label": "Harm language in narratives",
         "weight": 0.15,
-        "value": 71.4,
-        "evidence": "71.4% of 91 narratives mention concrete harm"
+        "value": 75,
+        "evidence": "75% of 48 narratives mention concrete harm"
       }
     ]
   },
-  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 1,300 complaints about Navient. Volume is steady (last 3 months averaged 433 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (53% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 1,200 complaints about Navient. Volume is steady (last 3 months averaged 400 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (54% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (62/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

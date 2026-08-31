@@ -3,17 +3,13 @@
   "name": "JPMORGAN CHASE & CO.",
   "display_name": "JPMorgan Chase",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-24",
+  "snapshot_date": "2026-08-31",
   "window": {
-    "min": "2025-02-24",
-    "max": "2026-08-24"
+    "min": "2025-03-03",
+    "max": "2026-08-31"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-02",
-      "count": 0
-    },
     {
       "month": "2025-03",
       "count": 0
@@ -89,23 +85,19 @@
   ],
   "top_products": [
     {
+      "name": "Credit card",
+      "count": 920
+    },
+    {
       "name": "Checking or savings account",
-      "count": 540
+      "count": 580
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 440
-    },
-    {
-      "name": "Credit card",
-      "count": 400
+      "count": 280
     },
     {
       "name": "Debt collection",
-      "count": 400
-    },
-    {
-      "name": "Mortgage",
       "count": 140
     },
     {
@@ -113,7 +105,7 @@
       "count": 60
     },
     {
-      "name": "Vehicle loan or lease",
+      "name": "Mortgage",
       "count": 20
     }
   ],
@@ -123,73 +115,73 @@
       "count": 360
     },
     {
-      "name": "Incorrect information on your report",
-      "count": 340
-    },
-    {
-      "name": "Took or threatened to take negative or legal action",
-      "count": 200
+      "name": "Other features, terms, or problems",
+      "count": 220
     },
     {
       "name": "Problem with a purchase shown on your statement",
+      "count": 200
+    },
+    {
+      "name": "Improper use of your report",
+      "count": 180
+    },
+    {
+      "name": "Incorrect information on your report",
+      "count": 140
+    },
+    {
+      "name": "Fees or interest",
+      "count": 140
+    },
+    {
+      "name": "Trouble using your card",
       "count": 120
     },
     {
-      "name": "Other features, terms, or problems",
-      "count": 100
-    },
-    {
-      "name": "Advertising and marketing, including promotional offers",
-      "count": 80
-    },
-    {
-      "name": "Trouble during payment process",
-      "count": 80
-    },
-    {
-      "name": "Problem with a lender or other company charging your account",
-      "count": 80
+      "name": "Closing an account",
+      "count": 120
     }
   ],
   "top_states": [
     {
       "name": "CA",
-      "count": 340
+      "count": 400
     },
     {
       "name": "TX",
-      "count": 260
+      "count": 360
     },
     {
       "name": "FL",
-      "count": 200
-    },
-    {
-      "name": "PA",
-      "count": 120
+      "count": 140
     },
     {
       "name": "NY",
+      "count": 140
+    },
+    {
+      "name": "IL",
       "count": 120
     },
     {
-      "name": "IN",
+      "name": "AZ",
       "count": 100
     },
     {
-      "name": "AZ",
+      "name": "NJ",
+      "count": 100
+    },
+    {
+      "name": "GA",
       "count": 80
     },
     {
-      "name": "NC",
-      "count": 80
-    },
-    {
-      "name": "WA",
+      "name": "VA",
       "count": 60
     },
     {
-      "name": "LA",
+      "name": "OH",
       "count": 60
     }
   ],
@@ -197,21 +189,21 @@
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1680
-    },
-    {
-      "name": "Closed with monetary relief",
-      "count": 160
+      "count": 1620
     },
     {
       "name": "Closed with non-monetary relief",
-      "count": 160
+      "count": 200
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 180
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 39,
+    "score": 38,
     "band": "Moderate",
     "components": [
       {
@@ -225,8 +217,8 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 84,
-        "evidence": "84% of closed cases ended without monetary or non-monetary relief"
+        "value": 81,
+        "evidence": "81% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
@@ -251,7 +243,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about JPMorgan Chase. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (18% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 84% of closed cases ended without relief. Overall risk signal: Moderate (39/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 2,000 complaints about JPMorgan Chase. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (18% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 81% of closed cases ended without relief. Overall risk signal: Moderate (38/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -260,7 +252,7 @@
       "city": "Columbus",
       "state": "OH",
       "active": true,
-      "asset_thousands": 4016571000,
+      "asset_thousands": 4091315000,
       "established": ""
     },
     "sec": {
@@ -269,28 +261,28 @@
       "recent_filings": [
         {
           "form": "424B2",
-          "date": "2026-08-21",
+          "date": "2026-08-31",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-21",
-          "primary_doc": "ea0303011-01_424b2.htm"
-        },
-        {
-          "form": "424B2",
-          "date": "2026-08-21",
+          "date": "2026-08-31",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-21",
-          "primary_doc": "ea0303068-01_424b2.htm"
+          "date": "2026-08-31",
+          "primary_doc": "form424b2.htm"
         },
         {
-          "form": "FWP",
-          "date": "2026-08-21",
-          "primary_doc": "ea0303041-01_fwp.htm"
+          "form": "424B2",
+          "date": "2026-08-31",
+          "primary_doc": "form424b2.htm"
+        },
+        {
+          "form": "424B2",
+          "date": "2026-08-31",
+          "primary_doc": "form424b2.htm"
         }
       ]
     },

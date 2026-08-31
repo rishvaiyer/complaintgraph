@@ -3,17 +3,13 @@
   "name": "BANK OF AMERICA, NATIONAL ASSOCIATION",
   "display_name": "Bank of America",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-24",
+  "snapshot_date": "2026-08-31",
   "window": {
-    "min": "2025-02-24",
-    "max": "2026-08-24"
+    "min": "2025-03-03",
+    "max": "2026-08-31"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-02",
-      "count": 0
-    },
     {
       "month": "2025-03",
       "count": 0
@@ -90,31 +86,31 @@
   "top_products": [
     {
       "name": "Credit card",
-      "count": 540
+      "count": 580
+    },
+    {
+      "name": "Checking or savings account",
+      "count": 520
     },
     {
       "name": "Credit reporting or other personal consumer reports",
       "count": 480
     },
     {
-      "name": "Checking or savings account",
-      "count": 480
-    },
-    {
       "name": "Debt collection",
-      "count": 260
-    },
-    {
-      "name": "Money transfer, virtual currency, or money service",
       "count": 120
     },
     {
       "name": "Mortgage",
-      "count": 40
+      "count": 100
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 100
     },
     {
       "name": "Vehicle loan or lease",
-      "count": 40
+      "count": 60
     },
     {
       "name": "Prepaid card",
@@ -124,102 +120,98 @@
   "top_issues": [
     {
       "name": "Managing an account",
-      "count": 360
+      "count": 400
     },
     {
       "name": "Incorrect information on your report",
-      "count": 280
+      "count": 380
     },
     {
       "name": "Problem with a purchase shown on your statement",
       "count": 200
     },
     {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 200
+      "name": "Improper use of your report",
+      "count": 120
     },
     {
-      "name": "Attempts to collect debt not owed",
-      "count": 160
-    },
-    {
-      "name": "Other features, terms, or problems",
+      "name": "Fees or interest",
       "count": 100
     },
     {
-      "name": "Took or threatened to take negative or legal action",
+      "name": "Problem with a company's investigation into an existing problem",
       "count": 80
     },
     {
-      "name": "Fraud or scam",
+      "name": "Trouble during payment process",
+      "count": 60
+    },
+    {
+      "name": "Other features, terms, or problems",
       "count": 60
     }
   ],
   "top_states": [
     {
       "name": "CA",
-      "count": 420
+      "count": 440
     },
     {
       "name": "FL",
-      "count": 380
-    },
-    {
-      "name": "GA",
-      "count": 180
+      "count": 360
     },
     {
       "name": "TX",
-      "count": 140
+      "count": 120
     },
     {
-      "name": "NY",
-      "count": 140
+      "name": "NC",
+      "count": 100
     },
     {
       "name": "MI",
+      "count": 100
+    },
+    {
+      "name": "MA",
+      "count": 80
+    },
+    {
+      "name": "GA",
+      "count": 80
+    },
+    {
+      "name": "WA",
       "count": 60
     },
     {
-      "name": "NV",
+      "name": "MD",
       "count": 60
     },
     {
-      "name": "MO",
+      "name": "NJ",
       "count": 60
-    },
-    {
-      "name": "VA",
-      "count": 40
-    },
-    {
-      "name": "CT",
-      "count": 40
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1540
+      "count": 1660
     },
     {
       "name": "Closed with explanation",
-      "count": 360
+      "count": 300
     },
     {
       "name": "Closed with monetary relief",
-      "count": 60
-    },
-    {
-      "name": "Closed with non-monetary relief",
       "count": 40
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 37,
+    "score": 40,
     "band": "Moderate",
     "components": [
       {
@@ -233,15 +225,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 78.3,
-        "evidence": "78.3% of closed cases ended without monetary or non-monetary relief"
+        "value": 88.2,
+        "evidence": "88.2% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 18,
-        "evidence": "18% of complaints share one top issue"
+        "value": 20,
+        "evidence": "20% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -259,7 +251,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about Bank of America. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (18% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 78.3% of closed cases ended without relief. Overall risk signal: Moderate (37/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 2,000 complaints about Bank of America. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (20% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 88.2% of closed cases ended without relief. Overall risk signal: Moderate (40/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -268,7 +260,7 @@
       "city": "Charlotte",
       "state": "NC",
       "active": true,
-      "asset_thousands": 2672192000,
+      "asset_thousands": 2654645000,
       "established": ""
     },
     "sec": {
@@ -277,28 +269,28 @@
       "recent_filings": [
         {
           "form": "424B2",
-          "date": "2026-08-21",
+          "date": "2026-08-31",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-21",
-          "primary_doc": "bofa424b2.htm"
-        },
-        {
-          "form": "424B2",
-          "date": "2026-08-21",
+          "date": "2026-08-31",
           "primary_doc": "form424b2.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-08-21",
+          "date": "2026-08-28",
           "primary_doc": "form424b2.htm"
         },
         {
-          "form": "N-PX",
-          "date": "2026-08-21",
-          "primary_doc": "xslN-PX_X01/primary_doc.xml"
+          "form": "424B2",
+          "date": "2026-08-28",
+          "primary_doc": "form424b2.htm"
+        },
+        {
+          "form": "424B2",
+          "date": "2026-08-28",
+          "primary_doc": "form424b2.htm"
         }
       ]
     },

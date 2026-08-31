@@ -3,17 +3,13 @@
   "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
   "display_name": "TransUnion",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-24",
+  "snapshot_date": "2026-08-31",
   "window": {
-    "min": "2025-02-24",
-    "max": "2026-08-24"
+    "min": "2025-03-03",
+    "max": "2026-08-31"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-02",
-      "count": 0
-    },
     {
       "month": "2025-03",
       "count": 0
@@ -90,70 +86,62 @@
   "top_products": [
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 1980
-    },
-    {
-      "name": "Debt collection",
-      "count": 20
+      "count": 2000
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 1080
+      "count": 880
     },
     {
       "name": "Improper use of your report",
-      "count": 460
+      "count": 800
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 440
-    },
-    {
-      "name": "Attempts to collect debt not owed",
-      "count": 20
+      "count": 320
     }
   ],
   "top_states": [
     {
-      "name": "CA",
-      "count": 360
+      "name": "GA",
+      "count": 380
     },
     {
       "name": "TX",
-      "count": 320
+      "count": 340
+    },
+    {
+      "name": "AL",
+      "count": 220
     },
     {
       "name": "FL",
-      "count": 280
-    },
-    {
-      "name": "GA",
-      "count": 140
-    },
-    {
-      "name": "MS",
-      "count": 100
+      "count": 180
     },
     {
       "name": "NY",
-      "count": 100
-    },
-    {
-      "name": "SC",
-      "count": 100
+      "count": 160
     },
     {
       "name": "NJ",
-      "count": 80
+      "count": 140
     },
     {
       "name": "LA",
+      "count": 80
+    },
+    {
+      "name": "SC",
       "count": 60
     },
     {
-      "name": "NC",
+      "name": "MS",
+      "count": 60
+    },
+    {
+      "name": "PA",
       "count": 60
     }
   ],
@@ -167,7 +155,7 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 21,
+    "score": 19,
     "band": "Low",
     "components": [
       {
@@ -188,8 +176,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 54,
-        "evidence": "54% of complaints share one top issue"
+        "value": 44,
+        "evidence": "44% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -207,7 +195,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (54% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (21/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (44% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (19/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

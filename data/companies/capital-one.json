@@ -3,17 +3,13 @@
   "name": "CAPITAL ONE FINANCIAL CORPORATION",
   "display_name": "Capital One",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-24",
+  "snapshot_date": "2026-08-31",
   "window": {
-    "min": "2025-02-24",
-    "max": "2026-08-24"
+    "min": "2025-03-03",
+    "max": "2026-08-31"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-02",
-      "count": 0
-    },
     {
       "month": "2025-03",
       "count": 0
@@ -89,111 +85,119 @@
   ],
   "top_products": [
     {
-      "name": "Credit reporting or other personal consumer reports",
-      "count": 840
+      "name": "Credit card",
+      "count": 680
     },
     {
-      "name": "Credit card",
-      "count": 700
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 620
+    },
+    {
+      "name": "Checking or savings account",
+      "count": 380
     },
     {
       "name": "Debt collection",
       "count": 240
     },
     {
-      "name": "Checking or savings account",
-      "count": 220
+      "name": "Vehicle loan or lease",
+      "count": 40
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 40
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 560
+      "count": 360
     },
     {
-      "name": "Improper use of your report",
+      "name": "Problem with a company's investigation into an existing problem",
       "count": 220
     },
     {
       "name": "Fees or interest",
-      "count": 180
+      "count": 200
+    },
+    {
+      "name": "Problem with a purchase shown on your statement",
+      "count": 200
     },
     {
       "name": "Managing an account",
       "count": 160
     },
     {
-      "name": "Problem with a purchase shown on your statement",
+      "name": "Improper use of your report",
+      "count": 140
+    },
+    {
+      "name": "Closing an account",
       "count": 120
     },
     {
-      "name": "Written notification about debt",
-      "count": 100
-    },
-    {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 100
-    },
-    {
       "name": "Other features, terms, or problems",
-      "count": 100
+      "count": 120
     }
   ],
   "top_states": [
     {
-      "name": "CA",
-      "count": 320
+      "name": "FL",
+      "count": 340
+    },
+    {
+      "name": "NY",
+      "count": 180
     },
     {
       "name": "TX",
       "count": 180
     },
     {
-      "name": "FL",
-      "count": 180
+      "name": "NJ",
+      "count": 120
+    },
+    {
+      "name": "IL",
+      "count": 120
+    },
+    {
+      "name": "MI",
+      "count": 100
+    },
+    {
+      "name": "NC",
+      "count": 100
     },
     {
       "name": "GA",
-      "count": 140
-    },
-    {
-      "name": "NJ",
       "count": 100
     },
     {
-      "name": "PA",
-      "count": 100
-    },
-    {
-      "name": "OH",
+      "name": "CA",
       "count": 80
     },
     {
       "name": "LA",
-      "count": 60
-    },
-    {
-      "name": "OK",
-      "count": 60
-    },
-    {
-      "name": "NC",
-      "count": 60
+      "count": 80
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1680
+      "count": 1840
     },
     {
       "name": "Closed with non-monetary relief",
-      "count": 240
+      "count": 100
     },
     {
       "name": "Closed with monetary relief",
-      "count": 80
+      "count": 60
     }
   ],
   "narrative_count": 0,
@@ -213,15 +217,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 84,
-        "evidence": "84% of closed cases ended without monetary or non-monetary relief"
+        "value": 92,
+        "evidence": "92% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 28,
-        "evidence": "28% of complaints share one top issue"
+        "value": 18,
+        "evidence": "18% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -239,7 +243,7 @@
       }
     ]
   },
-  "summary": "Between 2025-02-24 and 2026-08-24, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (28% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 84% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (18% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 92% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -248,13 +252,18 @@
       "city": "Mclean",
       "state": "VA",
       "active": true,
-      "asset_thousands": 672010000,
+      "asset_thousands": 662157000,
       "established": ""
     },
     "sec": {
       "cik": "0000927628",
       "entity_name": "CAPITAL ONE FINANCIAL CORP",
       "recent_filings": [
+        {
+          "form": "S-8 POS",
+          "date": "2026-08-28",
+          "primary_doc": "cof-sx8postxeffectiveamend.htm"
+        },
         {
           "form": "8-K",
           "date": "2026-08-20",
@@ -274,11 +283,6 @@
           "form": "144",
           "date": "2026-08-17",
           "primary_doc": "xsl144X01/primary_doc.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-08-17",
-          "primary_doc": "xslF345X06/wk-form4_1786997871.xml"
         }
       ]
     },
