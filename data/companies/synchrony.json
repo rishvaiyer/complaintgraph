@@ -3,10 +3,10 @@
   "name": "SYNCHRONY FINANCIAL",
   "display_name": "Synchrony",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-31",
+  "snapshot_date": "2026-09-07",
   "window": {
-    "min": "2025-03-03",
-    "max": "2026-08-31"
+    "min": "2025-03-07",
+    "max": "2026-09-07"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,58 +80,54 @@
     },
     {
       "month": "2026-08",
-      "count": 2000
+      "count": 1980
+    },
+    {
+      "month": "2026-09",
+      "count": 20
     }
   ],
   "top_products": [
     {
       "name": "Credit card",
-      "count": 1340
-    },
-    {
-      "name": "Credit reporting or other personal consumer reports",
-      "count": 400
+      "count": 1300
     },
     {
       "name": "Debt collection",
-      "count": 200
+      "count": 340
     },
     {
-      "name": "Payday loan, title loan, personal loan, or advance loan",
-      "count": 20
-    },
-    {
-      "name": "Money transfer, virtual currency, or money service",
-      "count": 20
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 300
     },
     {
       "name": "Checking or savings account",
-      "count": 20
+      "count": 60
     }
   ],
   "top_issues": [
     {
       "name": "Problem with a purchase shown on your statement",
-      "count": 520
-    },
-    {
-      "name": "Incorrect information on your report",
-      "count": 380
+      "count": 460
     },
     {
       "name": "Fees or interest",
-      "count": 180
+      "count": 300
     },
     {
-      "name": "Getting a credit card",
-      "count": 120
+      "name": "Incorrect information on your report",
+      "count": 200
     },
     {
       "name": "Other features, terms, or problems",
-      "count": 100
+      "count": 180
     },
     {
-      "name": "Advertising and marketing, including promotional offers",
+      "name": "False statements or representation",
+      "count": 120
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
       "count": 100
     },
     {
@@ -139,41 +135,41 @@
       "count": 100
     },
     {
-      "name": "Improper use of your report",
-      "count": 100
+      "name": "Closing your account",
+      "count": 80
     }
   ],
   "top_states": [
     {
-      "name": "CA",
-      "count": 380
-    },
-    {
-      "name": "FL",
-      "count": 240
+      "name": "GA",
+      "count": 220
     },
     {
       "name": "TX",
       "count": 200
     },
     {
+      "name": "FL",
+      "count": 200
+    },
+    {
       "name": "NY",
-      "count": 100
+      "count": 180
+    },
+    {
+      "name": "NC",
+      "count": 140
+    },
+    {
+      "name": "CA",
+      "count": 120
     },
     {
       "name": "OH",
       "count": 80
     },
     {
-      "name": "PA",
-      "count": 80
-    },
-    {
-      "name": "AZ",
-      "count": 80
-    },
-    {
-      "name": "GA",
+      "name": "IL",
       "count": 80
     },
     {
@@ -181,7 +177,7 @@
       "count": 80
     },
     {
-      "name": "TN",
+      "name": "NV",
       "count": 60
     }
   ],
@@ -189,11 +185,11 @@
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1920
+      "count": 1740
     },
     {
       "name": "Closed with explanation",
-      "count": 80
+      "count": 260
     }
   ],
   "narrative_count": 0,
@@ -220,8 +216,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 26,
-        "evidence": "26% of complaints share one top issue"
+        "value": 23,
+        "evidence": "23% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -239,7 +235,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (26% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (45/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-07 and 2026-09-07, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (23% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (45/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {

@@ -3,10 +3,10 @@
   "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
   "display_name": "TransUnion",
   "data_source": "cfpb",
-  "snapshot_date": "2026-08-31",
+  "snapshot_date": "2026-09-07",
   "window": {
-    "min": "2025-03-03",
-    "max": "2026-08-31"
+    "min": "2025-03-07",
+    "max": "2026-09-07"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,69 +80,85 @@
     },
     {
       "month": "2026-08",
+      "count": 0
+    },
+    {
+      "month": "2026-09",
       "count": 2000
     }
   ],
   "top_products": [
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 2000
+      "count": 1980
+    },
+    {
+      "name": "Debt or credit management",
+      "count": 20
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 880
-    },
-    {
-      "name": "Improper use of your report",
-      "count": 800
+      "count": 1160
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 320
+      "count": 520
+    },
+    {
+      "name": "Improper use of your report",
+      "count": 280
+    },
+    {
+      "name": "Problem with a company's investigation into an existing issue",
+      "count": 20
+    },
+    {
+      "name": "Confusing or missing disclosures",
+      "count": 20
     }
   ],
   "top_states": [
     {
-      "name": "GA",
-      "count": 380
+      "name": "FL",
+      "count": 440
     },
     {
       "name": "TX",
-      "count": 340
-    },
-    {
-      "name": "AL",
       "count": 220
     },
     {
-      "name": "FL",
-      "count": 180
+      "name": "TN",
+      "count": 120
+    },
+    {
+      "name": "AZ",
+      "count": 120
+    },
+    {
+      "name": "GA",
+      "count": 100
+    },
+    {
+      "name": "NC",
+      "count": 100
     },
     {
       "name": "NY",
-      "count": 160
+      "count": 100
     },
     {
-      "name": "NJ",
-      "count": 140
-    },
-    {
-      "name": "LA",
+      "name": "RI",
       "count": 80
     },
     {
-      "name": "SC",
-      "count": 60
+      "name": "CA",
+      "count": 80
     },
     {
       "name": "MS",
-      "count": 60
-    },
-    {
-      "name": "PA",
-      "count": 60
+      "count": 80
     }
   ],
   "timely_response_rate": 1,
@@ -155,7 +171,7 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 19,
+    "score": 22,
     "band": "Low",
     "components": [
       {
@@ -176,8 +192,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 44,
-        "evidence": "44% of complaints share one top issue"
+        "value": 58,
+        "evidence": "58% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -195,7 +211,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-03 and 2026-08-31, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (44% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (19/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-07 and 2026-09-07, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (58% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (22/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -204,29 +220,29 @@
       "entity_name": "TransUnion",
       "recent_filings": [
         {
-          "form": "SCHEDULE 13G/A",
-          "date": "2026-08-13",
-          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
+          "form": "4",
+          "date": "2026-09-03",
+          "primary_doc": "xslF345X06/wk-form4_1788472830.xml"
         },
         {
           "form": "4",
-          "date": "2026-08-12",
-          "primary_doc": "xslF345X06/wk-form4_1786568510.xml"
+          "date": "2026-09-03",
+          "primary_doc": "xslF345X06/wk-form4_1788472768.xml"
         },
         {
-          "form": "SCHEDULE 13G/A",
-          "date": "2026-08-12",
-          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
+          "form": "4",
+          "date": "2026-09-03",
+          "primary_doc": "xslF345X06/wk-form4_1788472704.xml"
         },
         {
-          "form": "144",
-          "date": "2026-08-11",
-          "primary_doc": "xsl144X01/primary_doc.xml"
+          "form": "4",
+          "date": "2026-09-03",
+          "primary_doc": "xslF345X06/wk-form4_1788472638.xml"
         },
         {
-          "form": "SCHEDULE 13G",
-          "date": "2026-08-06",
-          "primary_doc": "xslSCHEDULE_13G_X02/primary_doc.xml"
+          "form": "4",
+          "date": "2026-09-01",
+          "primary_doc": "xslF345X06/wk-form4_1788300082.xml"
         }
       ]
     },
