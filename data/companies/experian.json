@@ -3,10 +3,10 @@
   "name": "Experian Information Solutions Inc.",
   "display_name": "Experian",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-07",
+  "snapshot_date": "2026-09-14",
   "window": {
-    "min": "2025-03-07",
-    "max": "2026-09-07"
+    "min": "2025-03-14",
+    "max": "2026-09-14"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -95,49 +95,41 @@
   ],
   "top_issues": [
     {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 1620
+      "name": "Incorrect information on your report",
+      "count": 1200
     },
     {
-      "name": "Incorrect information on your report",
-      "count": 280
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 720
     },
     {
       "name": "Improper use of your report",
-      "count": 60
-    },
-    {
-      "name": "Problem with fraud alerts or security freezes",
-      "count": 40
+      "count": 80
     }
   ],
   "top_states": [
     {
-      "name": "FL",
+      "name": "TX",
       "count": 360
     },
     {
-      "name": "TX",
-      "count": 280
-    },
-    {
-      "name": "CA",
-      "count": 280
-    },
-    {
-      "name": "GA",
-      "count": 180
-    },
-    {
-      "name": "NC",
-      "count": 140
-    },
-    {
-      "name": "MD",
-      "count": 120
+      "name": "FL",
+      "count": 340
     },
     {
       "name": "IL",
+      "count": 220
+    },
+    {
+      "name": "LA",
+      "count": 220
+    },
+    {
+      "name": "GA",
+      "count": 120
+    },
+    {
+      "name": "AL",
       "count": 100
     },
     {
@@ -145,12 +137,16 @@
       "count": 80
     },
     {
-      "name": "IN",
+      "name": "DE",
       "count": 60
     },
     {
-      "name": "NJ",
-      "count": 40
+      "name": "NV",
+      "count": 60
+    },
+    {
+      "name": "MI",
+      "count": 60
     }
   ],
   "timely_response_rate": 1,
@@ -163,7 +159,7 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 26,
+    "score": 22,
     "band": "Low",
     "components": [
       {
@@ -184,8 +180,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 81,
-        "evidence": "81% of complaints share one top issue"
+        "value": 60,
+        "evidence": "60% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -203,7 +199,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-07 and 2026-09-07, the CFPB published 2,000 complaints about Experian. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a company's investigation into an existing problem\" (81% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (26/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-14 and 2026-09-14, the CFPB published 2,000 complaints about Experian. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (60% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (22/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

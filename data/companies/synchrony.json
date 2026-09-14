@@ -3,10 +3,10 @@
   "name": "SYNCHRONY FINANCIAL",
   "display_name": "Synchrony",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-07",
+  "snapshot_date": "2026-09-14",
   "window": {
-    "min": "2025-03-07",
-    "max": "2026-09-07"
+    "min": "2025-03-14",
+    "max": "2026-09-14"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,89 +80,97 @@
     },
     {
       "month": "2026-08",
-      "count": 1980
+      "count": 200
     },
     {
       "month": "2026-09",
-      "count": 20
+      "count": 1800
     }
   ],
   "top_products": [
     {
       "name": "Credit card",
-      "count": 1300
-    },
-    {
-      "name": "Debt collection",
-      "count": 340
+      "count": 1560
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 300
+      "count": 240
+    },
+    {
+      "name": "Debt collection",
+      "count": 140
+    },
+    {
+      "name": "Vehicle loan or lease",
+      "count": 20
     },
     {
       "name": "Checking or savings account",
-      "count": 60
+      "count": 20
+    },
+    {
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 20
     }
   ],
   "top_issues": [
     {
       "name": "Problem with a purchase shown on your statement",
-      "count": 460
+      "count": 400
     },
     {
       "name": "Fees or interest",
-      "count": 300
+      "count": 380
+    },
+    {
+      "name": "Trouble using your card",
+      "count": 160
     },
     {
       "name": "Incorrect information on your report",
-      "count": 200
+      "count": 140
     },
     {
-      "name": "Other features, terms, or problems",
-      "count": 180
-    },
-    {
-      "name": "False statements or representation",
-      "count": 120
+      "name": "Problem when making payments",
+      "count": 140
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 100
+      "count": 120
     },
     {
-      "name": "Attempts to collect debt not owed",
-      "count": 100
+      "name": "Advertising and marketing, including promotional offers",
+      "count": 120
     },
     {
       "name": "Closing your account",
-      "count": 80
+      "count": 100
     }
   ],
   "top_states": [
     {
-      "name": "GA",
-      "count": 220
-    },
-    {
-      "name": "TX",
-      "count": 200
-    },
-    {
       "name": "FL",
-      "count": 200
-    },
-    {
-      "name": "NY",
-      "count": 180
-    },
-    {
-      "name": "NC",
-      "count": 140
+      "count": 280
     },
     {
       "name": "CA",
-      "count": 120
+      "count": 240
+    },
+    {
+      "name": "NY",
+      "count": 200
+    },
+    {
+      "name": "TX",
+      "count": 160
+    },
+    {
+      "name": "GA",
+      "count": 140
+    },
+    {
+      "name": "MD",
+      "count": 80
     },
     {
       "name": "OH",
@@ -173,11 +181,11 @@
       "count": 80
     },
     {
-      "name": "NJ",
+      "name": "PA",
       "count": 80
     },
     {
-      "name": "NV",
+      "name": "AZ",
       "count": 60
     }
   ],
@@ -185,17 +193,21 @@
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1740
+      "count": 1720
     },
     {
       "name": "Closed with explanation",
       "count": 260
+    },
+    {
+      "name": "Closed with monetary relief",
+      "count": 20
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 45,
+    "score": 42,
     "band": "Moderate",
     "components": [
       {
@@ -209,15 +221,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 100,
-        "evidence": "100% of closed cases ended without monetary or non-monetary relief"
+        "value": 92.9,
+        "evidence": "92.9% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 23,
-        "evidence": "23% of complaints share one top issue"
+        "value": 20,
+        "evidence": "20% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -235,7 +247,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-07 and 2026-09-07, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (23% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (45/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-14 and 2026-09-14, the CFPB published 2,000 complaints about Synchrony. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (20% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 92.9% of closed cases ended without relief. Overall risk signal: Moderate (42/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -251,6 +263,11 @@
       "cik": "0001601712",
       "entity_name": "Synchrony Financial",
       "recent_filings": [
+        {
+          "form": "8-K",
+          "date": "2026-09-14",
+          "primary_doc": "syf-20260914.htm"
+        },
         {
           "form": "4",
           "date": "2026-08-19",
@@ -270,11 +287,6 @@
           "form": "4",
           "date": "2026-08-19",
           "primary_doc": "xslF345X06/wk-form4_1787172623.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-08-19",
-          "primary_doc": "xslF345X06/wk-form4_1787172617.xml"
         }
       ]
     },

@@ -3,10 +3,10 @@
   "name": "WELLS FARGO & COMPANY",
   "display_name": "Wells Fargo",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-07",
+  "snapshot_date": "2026-09-14",
   "window": {
-    "min": "2025-03-07",
-    "max": "2026-09-07"
+    "min": "2025-03-14",
+    "max": "2026-09-14"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,21 +80,21 @@
     },
     {
       "month": "2026-08",
-      "count": 1880
+      "count": 820
     },
     {
       "month": "2026-09",
-      "count": 120
+      "count": 1180
     }
   ],
   "top_products": [
     {
       "name": "Checking or savings account",
-      "count": 860
+      "count": 900
     },
     {
       "name": "Credit card",
-      "count": 380
+      "count": 300
     },
     {
       "name": "Credit reporting or other personal consumer reports",
@@ -102,124 +102,124 @@
     },
     {
       "name": "Money transfer, virtual currency, or money service",
-      "count": 180
-    },
-    {
-      "name": "Mortgage",
-      "count": 100
-    },
-    {
-      "name": "Vehicle loan or lease",
-      "count": 100
-    },
-    {
-      "name": "Payday loan, title loan, personal loan, or advance loan",
-      "count": 40
+      "count": 200
     },
     {
       "name": "Debt collection",
-      "count": 40
+      "count": 140
+    },
+    {
+      "name": "Mortgage",
+      "count": 80
+    },
+    {
+      "name": "Vehicle loan or lease",
+      "count": 60
+    },
+    {
+      "name": "Payday loan, title loan, personal loan, or advance loan",
+      "count": 20
     }
   ],
   "top_issues": [
     {
       "name": "Managing an account",
-      "count": 520
-    },
-    {
-      "name": "Incorrect information on your report",
-      "count": 240
-    },
-    {
-      "name": "Problem caused by your funds being low",
-      "count": 120
+      "count": 440
     },
     {
       "name": "Problem with a lender or other company charging your account",
-      "count": 120
+      "count": 240
+    },
+    {
+      "name": "Incorrect information on your report",
+      "count": 200
     },
     {
       "name": "Fraud or scam",
-      "count": 100
+      "count": 160
     },
     {
       "name": "Problem with a purchase shown on your statement",
-      "count": 100
+      "count": 160
     },
     {
-      "name": "Improper use of your report",
+      "name": "Problem caused by your funds being low",
+      "count": 140
+    },
+    {
+      "name": "Closing an account",
       "count": 80
     },
     {
-      "name": "Closing your account",
-      "count": 80
+      "name": "Took or threatened to take negative or legal action",
+      "count": 60
     }
   ],
   "top_states": [
     {
       "name": "CA",
-      "count": 340
+      "count": 440
     },
     {
       "name": "TX",
-      "count": 300
+      "count": 240
     },
     {
       "name": "GA",
-      "count": 200
-    },
-    {
-      "name": "FL",
       "count": 180
     },
     {
-      "name": "MD",
-      "count": 100
-    },
-    {
-      "name": "NC",
-      "count": 80
-    },
-    {
-      "name": "IL",
-      "count": 80
-    },
-    {
-      "name": "SC",
-      "count": 80
+      "name": "FL",
+      "count": 160
     },
     {
       "name": "AZ",
+      "count": 120
+    },
+    {
+      "name": "PA",
+      "count": 120
+    },
+    {
+      "name": "NJ",
       "count": 80
+    },
+    {
+      "name": "CO",
+      "count": 60
     },
     {
       "name": "VA",
       "count": 60
+    },
+    {
+      "name": "MA",
+      "count": 40
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1120
+      "count": 980
     },
     {
       "name": "In progress",
-      "count": 640
-    },
-    {
-      "name": "Closed with non-monetary relief",
-      "count": 160
+      "count": 780
     },
     {
       "name": "Closed with monetary relief",
-      "count": 80
+      "count": 200
+    },
+    {
+      "name": "Closed with non-monetary relief",
+      "count": 40
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 40,
+    "score": 38,
     "band": "Moderate",
     "components": [
       {
@@ -233,15 +233,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 82.4,
-        "evidence": "82.4% of closed cases ended without monetary or non-monetary relief"
+        "value": 80.3,
+        "evidence": "80.3% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 26,
-        "evidence": "26% of complaints share one top issue"
+        "value": 22,
+        "evidence": "22% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -259,7 +259,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-07 and 2026-09-07, the CFPB published 2,000 complaints about Wells Fargo. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (26% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 82.4% of closed cases ended without relief. Overall risk signal: Moderate (40/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-14 and 2026-09-14, the CFPB published 2,000 complaints about Wells Fargo. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (22% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 80.3% of closed cases ended without relief. Overall risk signal: Moderate (38/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -276,29 +276,29 @@
       "entity_name": "WELLS FARGO & COMPANY/MN",
       "recent_filings": [
         {
-          "form": "FWP",
-          "date": "2026-09-04",
-          "primary_doc": "r10150wfc_fwp-29988.htm"
+          "form": "424B2",
+          "date": "2026-09-11",
+          "primary_doc": "r10298wfc_424b2-30652.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-09-04",
-          "primary_doc": "r10150wfc_424b2-29961.htm"
+          "date": "2026-09-11",
+          "primary_doc": "r10285wfc_424b2-30551.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-09-04",
-          "primary_doc": "r10245wfc_424b2-29865.htm"
+          "date": "2026-09-11",
+          "primary_doc": "r10273wfc_424b2-30403.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-09-04",
-          "primary_doc": "r10223wfc_424b2-29908.htm"
+          "date": "2026-09-11",
+          "primary_doc": "r10286wfc_424b2-30565.htm"
         },
         {
           "form": "424B2",
-          "date": "2026-09-04",
-          "primary_doc": "r10133wfc_424b2-29889.htm"
+          "date": "2026-09-11",
+          "primary_doc": "r10233wfc_424b2-30489.htm"
         }
       ]
     },
