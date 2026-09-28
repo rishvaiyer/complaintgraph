@@ -3,10 +3,10 @@
   "name": "DISCOVER BANK",
   "display_name": "Discover",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-14",
+  "snapshot_date": "2026-09-28",
   "window": {
-    "min": "2025-03-14",
-    "max": "2026-09-14"
+    "min": "2025-03-28",
+    "max": "2026-09-28"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -204,46 +204,10 @@
       "count": 20
     }
   ],
-  "narrative_count": 300,
-  "sample_narratives": [
-    {
-      "date": "2026-03-25",
-      "product": "Checking or savings account",
-      "issue": "Managing an account",
-      "state": "NY",
-      "text": "I am reporting an issue with my bank account at Discover Bank regarding a deposit and transaction history that does not make sense. \n\nI received a deposit that shows it was made at XXXX AM, but my bank is reflecting a different time ( around XXXX PM ). Additionally, even though the deposit appeared in my account, the funds were not available for me to use. \n\nI have been using money transferred from my savings account to cover my expenses, which is reflected in my transaction history. This indicates I did not actually receive or use the deposited funds. \n\nDespite this, the bank is claiming that…"
-    },
-    {
-      "date": "2026-03-25",
-      "product": "Debt collection",
-      "issue": "Threatened to contact someone or share information improperly",
-      "state": "MO",
-      "text": "Discover is calling my family members and telling them about my owed debt without my approval."
-    },
-    {
-      "date": "2026-03-25",
-      "product": "Checking or savings account",
-      "issue": "Managing an account",
-      "state": "NY",
-      "text": "I am reporting an issue with my bank account at Discover Bank regarding a deposit and transaction history that does not make sense. \n\nI received a deposit that shows it was made at XXXX AM, but my bank is reflecting a different time ( around XXXX PM ). Additionally, even though the deposit appeared in my account, the funds were not available for me to use. \n\nI have been using money transferred from my savings account to cover my expenses, which is reflected in my transaction history. This indicates I did not actually receive or use the deposited funds. \n\nDespite this, the bank is claiming that…"
-    },
-    {
-      "date": "2026-03-25",
-      "product": "Debt collection",
-      "issue": "Threatened to contact someone or share information improperly",
-      "state": "MO",
-      "text": "Discover is calling my family members and telling them about my owed debt without my approval."
-    },
-    {
-      "date": "2026-03-25",
-      "product": "Checking or savings account",
-      "issue": "Managing an account",
-      "state": "NY",
-      "text": "I am reporting an issue with my bank account at Discover Bank regarding a deposit and transaction history that does not make sense. \n\nI received a deposit that shows it was made at XXXX AM, but my bank is reflecting a different time ( around XXXX PM ). Additionally, even though the deposit appeared in my account, the funds were not available for me to use. \n\nI have been using money transferred from my savings account to cover my expenses, which is reflected in my transaction history. This indicates I did not actually receive or use the deposited funds. \n\nDespite this, the bank is claiming that…"
-    }
-  ],
+  "narrative_count": 0,
+  "sample_narratives": [],
   "signal": {
-    "score": 47,
+    "score": 41,
     "band": "Moderate",
     "components": [
       {
@@ -278,12 +242,12 @@
         "key": "narrative_harm",
         "label": "Harm language in narratives",
         "weight": 0.15,
-        "value": 40,
-        "evidence": "40% of 300 narratives mention concrete harm"
+        "value": 0,
+        "evidence": "no consumer narratives available"
       }
     ]
   },
-  "summary": "Between 2025-03-14 and 2026-09-14, the CFPB published 2,000 complaints about Discover. Volume is steady (last 3 months averaged 0 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (47/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-28 and 2026-09-28, the CFPB published 2,000 complaints about Discover. Volume is steady (last 3 months averaged 0 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (23% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 89% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

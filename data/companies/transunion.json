@@ -3,10 +3,10 @@
   "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
   "display_name": "TransUnion",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-14",
+  "snapshot_date": "2026-09-28",
   "window": {
-    "min": "2025-03-14",
-    "max": "2026-09-14"
+    "min": "2025-03-28",
+    "max": "2026-09-28"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -90,62 +90,66 @@
   "top_products": [
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 1980
+      "count": 1960
     },
     {
-      "name": "Debt collection",
-      "count": 20
+      "name": "Credit card",
+      "count": 40
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 1220
+      "count": 1440
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 540
+      "count": 360
     },
     {
       "name": "Improper use of your report",
-      "count": 220
+      "count": 160
     },
     {
-      "name": "Attempts to collect debt not owed",
+      "name": "Getting a credit card",
+      "count": 20
+    },
+    {
+      "name": "Fees or interest",
       "count": 20
     }
   ],
   "top_states": [
     {
-      "name": "FL",
-      "count": 460
-    },
-    {
       "name": "TX",
-      "count": 340
+      "count": 500
     },
     {
-      "name": "CA",
-      "count": 220
-    },
-    {
-      "name": "GA",
-      "count": 140
-    },
-    {
-      "name": "NY",
-      "count": 100
-    },
-    {
-      "name": "OH",
-      "count": 60
-    },
-    {
-      "name": "MO",
-      "count": 60
+      "name": "FL",
+      "count": 300
     },
     {
       "name": "MS",
+      "count": 180
+    },
+    {
+      "name": "CA",
+      "count": 160
+    },
+    {
+      "name": "AL",
+      "count": 100
+    },
+    {
+      "name": "NY",
+      "count": 80
+    },
+    {
+      "name": "NC",
+      "count": 80
+    },
+    {
+      "name": "GA",
       "count": 60
     },
     {
@@ -153,7 +157,7 @@
       "count": 60
     },
     {
-      "name": "NC",
+      "name": "PA",
       "count": 60
     }
   ],
@@ -167,7 +171,7 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 22,
+    "score": 24,
     "band": "Low",
     "components": [
       {
@@ -188,8 +192,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 61,
-        "evidence": "61% of complaints share one top issue"
+        "value": 72,
+        "evidence": "72% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -207,7 +211,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-14 and 2026-09-14, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (61% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (22/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-03-28 and 2026-09-28, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (72% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (24/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -216,29 +220,29 @@
       "entity_name": "TransUnion",
       "recent_filings": [
         {
+          "form": "8-K",
+          "date": "2026-09-23",
+          "primary_doc": "d117869d8k.htm"
+        },
+        {
+          "form": "4",
+          "date": "2026-09-16",
+          "primary_doc": "xslF345X06/wk-form4_1789594378.xml"
+        },
+        {
+          "form": "4",
+          "date": "2026-09-14",
+          "primary_doc": "xslF345X06/wk-form4_1789423963.xml"
+        },
+        {
           "form": "144",
-          "date": "2026-09-10",
+          "date": "2026-09-14",
           "primary_doc": "xsl144X01/primary_doc.xml"
         },
         {
-          "form": "4",
-          "date": "2026-09-03",
-          "primary_doc": "xslF345X06/wk-form4_1788472830.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-09-03",
-          "primary_doc": "xslF345X06/wk-form4_1788472768.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-09-03",
-          "primary_doc": "xslF345X06/wk-form4_1788472704.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-09-03",
-          "primary_doc": "xslF345X06/wk-form4_1788472638.xml"
+          "form": "144",
+          "date": "2026-09-10",
+          "primary_doc": "xsl144X01/primary_doc.xml"
         }
       ]
     },
