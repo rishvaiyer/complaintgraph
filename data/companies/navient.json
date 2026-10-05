@@ -3,17 +3,13 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-28",
+  "snapshot_date": "2026-10-05",
   "window": {
-    "min": "2025-03-28",
-    "max": "2026-09-28"
+    "min": "2025-04-05",
+    "max": "2026-10-05"
   },
   "total_complaints": 1100,
   "monthly": [
-    {
-      "month": "2025-03",
-      "count": 0
-    },
     {
       "month": "2025-04",
       "count": 0
@@ -76,7 +72,7 @@
     },
     {
       "month": "2026-07",
-      "count": 495
+      "count": 440
     },
     {
       "month": "2026-08",
@@ -84,13 +80,17 @@
     },
     {
       "month": "2026-09",
-      "count": 220
+      "count": 275
+    },
+    {
+      "month": "2026-10",
+      "count": 0
     }
   ],
   "top_products": [
     {
       "name": "Student loan",
-      "count": 869
+      "count": 847
     },
     {
       "name": "Credit reporting or other personal consumer reports",
@@ -98,7 +98,7 @@
     },
     {
       "name": "Debt collection",
-      "count": 55
+      "count": 77
     },
     {
       "name": "Credit card",
@@ -108,7 +108,7 @@
   "top_issues": [
     {
       "name": "Dealing with your lender or servicer",
-      "count": 605
+      "count": 583
     },
     {
       "name": "Incorrect information on your report",
@@ -116,45 +116,45 @@
     },
     {
       "name": "Struggling to repay your loan",
-      "count": 121
+      "count": 132
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
       "count": 77
     },
     {
-      "name": "Getting a loan",
-      "count": 44
-    },
-    {
       "name": "Improper use of your report",
       "count": 33
     },
     {
-      "name": "Communication tactics",
+      "name": "Getting a loan",
+      "count": 33
+    },
+    {
+      "name": "Attempts to collect debt not owed",
       "count": 22
     },
     {
-      "name": "Issue with income share agreement",
-      "count": 11
+      "name": "Communication tactics",
+      "count": 22
     }
   ],
   "top_states": [
-    {
-      "name": "IL",
-      "count": 132
-    },
     {
       "name": "TX",
       "count": 121
     },
     {
       "name": "FL",
-      "count": 99
+      "count": 110
+    },
+    {
+      "name": "IL",
+      "count": 110
     },
     {
       "name": "CA",
-      "count": 99
+      "count": 77
     },
     {
       "name": "GA",
@@ -165,20 +165,20 @@
       "count": 55
     },
     {
-      "name": "PA",
+      "name": "IN",
       "count": 44
     },
     {
-      "name": "NC",
+      "name": "MD",
+      "count": 44
+    },
+    {
+      "name": "PA",
       "count": 44
     },
     {
       "name": "NV",
       "count": 44
-    },
-    {
-      "name": "MO",
-      "count": 33
     }
   ],
   "timely_response_rate": 1,
@@ -191,8 +191,8 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 51,
-    "band": "Moderate",
+    "score": 56,
+    "band": "Elevated",
     "components": [
       {
         "key": "timeliness_gap",
@@ -212,15 +212,15 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 55,
-        "evidence": "55% of complaints share one top issue"
+        "value": 53,
+        "evidence": "53% of complaints share one top issue"
       },
       {
         "key": "trend",
         "label": "Recent trend",
         "weight": 0.2,
-        "value": 50,
-        "evidence": "last 3 months avg 366.7/mo vs prior 0/mo"
+        "value": 75,
+        "evidence": "last 3 months avg 220/mo vs prior 146.7/mo"
       },
       {
         "key": "narrative_harm",
@@ -231,7 +231,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-28 and 2026-09-28, the CFPB published 1,100 complaints about Navient. Volume is steady (last 3 months averaged 367 per month versus 0 before). The most common issue is \"Dealing with your lender or servicer\" (55% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (51/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-04-05 and 2026-10-05, the CFPB published 1,100 complaints about Navient. Volume is rising (last 3 months averaged 220 per month versus 147 before). The most common issue is \"Dealing with your lender or servicer\" (53% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (56/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,

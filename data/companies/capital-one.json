@@ -3,17 +3,13 @@
   "name": "CAPITAL ONE FINANCIAL CORPORATION",
   "display_name": "Capital One",
   "data_source": "cfpb",
-  "snapshot_date": "2026-09-28",
+  "snapshot_date": "2026-10-05",
   "window": {
-    "min": "2025-03-28",
-    "max": "2026-09-28"
+    "min": "2025-04-05",
+    "max": "2026-10-05"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-03",
-      "count": 0
-    },
     {
       "month": "2025-04",
       "count": 0
@@ -84,126 +80,130 @@
     },
     {
       "month": "2026-09",
-      "count": 2000
+      "count": 1960
+    },
+    {
+      "month": "2026-10",
+      "count": 40
     }
   ],
   "top_products": [
     {
-      "name": "Credit reporting or other personal consumer reports",
-      "count": 700
+      "name": "Credit card",
+      "count": 620
     },
     {
-      "name": "Credit card",
-      "count": 640
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 460
+    },
+    {
+      "name": "Checking or savings account",
+      "count": 460
     },
     {
       "name": "Debt collection",
       "count": 340
     },
     {
-      "name": "Checking or savings account",
-      "count": 280
+      "name": "Money transfer, virtual currency, or money service",
+      "count": 60
     },
     {
       "name": "Vehicle loan or lease",
-      "count": 40
+      "count": 60
     }
   ],
   "top_issues": [
     {
+      "name": "Managing an account",
+      "count": 320
+    },
+    {
       "name": "Incorrect information on your report",
-      "count": 420
-    },
-    {
-      "name": "Improper use of your report",
-      "count": 200
-    },
-    {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 180
+      "count": 280
     },
     {
       "name": "Problem with a purchase shown on your statement",
-      "count": 180
-    },
-    {
-      "name": "Managing an account",
-      "count": 160
+      "count": 240
     },
     {
       "name": "Attempts to collect debt not owed",
+      "count": 160
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 140
+    },
+    {
+      "name": "Improper use of your report",
       "count": 120
+    },
+    {
+      "name": "Fees or interest",
+      "count": 80
     },
     {
       "name": "Other features, terms, or problems",
-      "count": 120
-    },
-    {
-      "name": "False statements or representation",
-      "count": 120
+      "count": 80
     }
   ],
   "top_states": [
     {
-      "name": "CA",
-      "count": 300
-    },
-    {
-      "name": "TX",
-      "count": 220
-    },
-    {
       "name": "FL",
-      "count": 220
+      "count": 320
     },
     {
-      "name": "IL",
-      "count": 100
-    },
-    {
-      "name": "OH",
-      "count": 100
+      "name": "CA",
+      "count": 240
     },
     {
       "name": "NY",
+      "count": 240
+    },
+    {
+      "name": "TX",
+      "count": 180
+    },
+    {
+      "name": "NC",
+      "count": 120
+    },
+    {
+      "name": "MD",
+      "count": 100
+    },
+    {
+      "name": "GA",
       "count": 100
     },
     {
       "name": "NJ",
-      "count": 80
+      "count": 100
     },
     {
-      "name": "MS",
-      "count": 80
+      "name": "IL",
+      "count": 60
     },
     {
-      "name": "GA",
-      "count": 80
-    },
-    {
-      "name": "AL",
-      "count": 80
+      "name": "VA",
+      "count": 60
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1720
+      "count": 1820
     },
     {
       "name": "Closed with non-monetary relief",
       "count": 180
-    },
-    {
-      "name": "Closed with monetary relief",
-      "count": 100
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 40,
+    "score": 41,
     "band": "Moderate",
     "components": [
       {
@@ -217,15 +217,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 86,
-        "evidence": "86% of closed cases ended without monetary or non-monetary relief"
+        "value": 91,
+        "evidence": "91% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 21,
-        "evidence": "21% of complaints share one top issue"
+        "value": 16,
+        "evidence": "16% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -243,7 +243,7 @@
       }
     ]
   },
-  "summary": "Between 2025-03-28 and 2026-09-28, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (21% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 86% of closed cases ended without relief. Overall risk signal: Moderate (40/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-04-05 and 2026-10-05, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (16% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 91% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
