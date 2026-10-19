@@ -3,10 +3,10 @@
   "name": "CITIBANK, N.A.",
   "display_name": "Citibank",
   "data_source": "cfpb",
-  "snapshot_date": "2026-10-05",
+  "snapshot_date": "2026-10-19",
   "window": {
-    "min": "2025-04-05",
-    "max": "2026-10-05"
+    "min": "2025-04-19",
+    "max": "2026-10-19"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -80,135 +80,131 @@
     },
     {
       "month": "2026-09",
-      "count": 1980
+      "count": 0
     },
     {
       "month": "2026-10",
-      "count": 20
+      "count": 2000
     }
   ],
   "top_products": [
     {
       "name": "Credit card",
-      "count": 1280
+      "count": 1140
     },
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 300
+      "count": 440
     },
     {
       "name": "Checking or savings account",
-      "count": 260
+      "count": 280
     },
     {
       "name": "Debt collection",
-      "count": 100
-    },
-    {
-      "name": "Money transfer, virtual currency, or money service",
-      "count": 40
-    },
-    {
-      "name": "Debt or credit management",
-      "count": 20
+      "count": 140
     }
   ],
   "top_issues": [
     {
+      "name": "Incorrect information on your report",
+      "count": 320
+    },
+    {
       "name": "Problem with a purchase shown on your statement",
-      "count": 380
+      "count": 260
     },
     {
       "name": "Fees or interest",
-      "count": 200
+      "count": 240
     },
     {
-      "name": "Closing your account",
+      "name": "Getting a credit card",
       "count": 180
     },
     {
-      "name": "Incorrect information on your report",
+      "name": "Managing an account",
       "count": 160
     },
     {
-      "name": "Managing an account",
+      "name": "Other features, terms, or problems",
       "count": 140
     },
     {
-      "name": "Other features, terms, or problems",
-      "count": 120
+      "name": "Improper use of your report",
+      "count": 140
     },
     {
-      "name": "Closing an account",
-      "count": 100
-    },
-    {
-      "name": "Problem when making payments",
+      "name": "Advertising and marketing, including promotional offers",
       "count": 100
     }
   ],
   "top_states": [
     {
       "name": "CA",
-      "count": 320
-    },
-    {
-      "name": "FL",
-      "count": 240
-    },
-    {
-      "name": "NY",
-      "count": 240
-    },
-    {
-      "name": "MD",
-      "count": 140
-    },
-    {
-      "name": "MA",
-      "count": 140
+      "count": 360
     },
     {
       "name": "TX",
-      "count": 140
+      "count": 280
     },
     {
-      "name": "IL",
-      "count": 140
+      "name": "NY",
+      "count": 260
+    },
+    {
+      "name": "FL",
+      "count": 200
+    },
+    {
+      "name": "GA",
+      "count": 120
     },
     {
       "name": "NJ",
       "count": 80
     },
     {
-      "name": "AZ",
+      "name": "MA",
+      "count": 80
+    },
+    {
+      "name": "IL",
       "count": 60
     },
     {
-      "name": "GA",
+      "name": "WI",
       "count": 60
+    },
+    {
+      "name": "LA",
+      "count": 40
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1340
+      "count": 860
     },
     {
       "name": "Closed with monetary relief",
-      "count": 400
+      "count": 380
     },
     {
       "name": "Closed with non-monetary relief",
-      "count": 260
+      "count": 380
+    },
+    {
+      "name": "In progress",
+      "count": 380
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 34,
-    "band": "Moderate",
+    "score": 29,
+    "band": "Low",
     "components": [
       {
         "key": "timeliness_gap",
@@ -221,15 +217,15 @@
         "key": "relief_gap",
         "label": "Closed without relief",
         "weight": 0.3,
-        "value": 67,
-        "evidence": "67% of closed cases ended without monetary or non-monetary relief"
+        "value": 53.1,
+        "evidence": "53.1% of closed cases ended without monetary or non-monetary relief"
       },
       {
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 19,
-        "evidence": "19% of complaints share one top issue"
+        "value": 16,
+        "evidence": "16% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -247,7 +243,7 @@
       }
     ]
   },
-  "summary": "Between 2025-04-05 and 2026-10-05, the CFPB published 2,000 complaints about Citibank. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Problem with a purchase shown on your statement\" (19% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 67% of closed cases ended without relief. Overall risk signal: Moderate (34/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-04-19 and 2026-10-19, the CFPB published 2,000 complaints about Citibank. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (16% of complaints), concentrated in credit card. The company responded on time to 100% of cases; 53.1% of closed cases ended without relief. Overall risk signal: Low (29/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -264,29 +260,29 @@
       "entity_name": "Citibank,N.A./ADR",
       "recent_filings": [
         {
-          "form": "F-6EF",
-          "date": "2026-10-01",
-          "primary_doc": "e665813_f6ef-nec.htm"
-        },
-        {
-          "form": "F-6 POS",
-          "date": "2026-09-30",
-          "primary_doc": "e665806_f6pos-lufax.htm"
-        },
-        {
-          "form": "F-6 POS",
-          "date": "2026-09-30",
-          "primary_doc": "e665812_f6pos-organo.htm"
+          "form": "F-6",
+          "date": "2026-10-16",
+          "primary_doc": "e665834_f6-opay.htm"
         },
         {
           "form": "F-6EF",
-          "date": "2026-09-29",
-          "primary_doc": "e665808_f6ef-keller.htm"
+          "date": "2026-10-15",
+          "primary_doc": "e665839_f6ef-ctc.htm"
         },
         {
           "form": "F-6 POS",
-          "date": "2026-09-24",
-          "primary_doc": "e665803_f6pos-nippon.htm"
+          "date": "2026-10-14",
+          "primary_doc": "e665836_f6pos-sitc.htm"
+        },
+        {
+          "form": "F-6 POS",
+          "date": "2026-10-13",
+          "primary_doc": "e665835_f6pos-jmsa.htm"
+        },
+        {
+          "form": "F-6EF",
+          "date": "2026-10-08",
+          "primary_doc": "e665832_f6ef-ub.htm"
         }
       ]
     },
