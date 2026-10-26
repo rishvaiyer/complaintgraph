@@ -3,10 +3,10 @@
   "name": "EQUIFAX, INC.",
   "display_name": "Equifax",
   "data_source": "cfpb",
-  "snapshot_date": "2026-10-19",
+  "snapshot_date": "2026-10-26",
   "window": {
-    "min": "2025-04-19",
-    "max": "2026-10-19"
+    "min": "2025-04-26",
+    "max": "2026-10-26"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -90,92 +90,84 @@
   "top_products": [
     {
       "name": "Credit reporting or other personal consumer reports",
-      "count": 1980
-    },
-    {
-      "name": "Debt collection",
-      "count": 20
+      "count": 2000
     }
   ],
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 1360
-    },
-    {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 300
+      "count": 1340
     },
     {
       "name": "Improper use of your report",
-      "count": 260
+      "count": 320
     },
     {
       "name": "Problem with fraud alerts or security freezes",
-      "count": 60
+      "count": 200
     },
     {
-      "name": "Attempts to collect debt not owed",
-      "count": 20
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 140
     }
   ],
   "top_states": [
     {
       "name": "TX",
-      "count": 360
-    },
-    {
-      "name": "NY",
-      "count": 280
+      "count": 440
     },
     {
       "name": "FL",
-      "count": 260
+      "count": 300
     },
     {
-      "name": "GA",
-      "count": 180
+      "name": "NY",
+      "count": 300
     },
     {
       "name": "CA",
-      "count": 120
+      "count": 180
+    },
+    {
+      "name": "GA",
+      "count": 80
+    },
+    {
+      "name": "IL",
+      "count": 80
+    },
+    {
+      "name": "AL",
+      "count": 80
     },
     {
       "name": "PA",
-      "count": 100
-    },
-    {
-      "name": "NJ",
-      "count": 80
-    },
-    {
-      "name": "SC",
-      "count": 80
+      "count": 60
     },
     {
       "name": "MI",
       "count": 60
     },
     {
-      "name": "AZ",
-      "count": 60
+      "name": "MS",
+      "count": 40
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
       "name": "In progress",
-      "count": 1180
+      "count": 1280
     },
     {
       "name": "Closed with explanation",
-      "count": 820
+      "count": 720
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 54,
+    "score": 53,
     "band": "Moderate",
     "components": [
       {
@@ -196,8 +188,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 68,
-        "evidence": "68% of complaints share one top issue"
+        "value": 67,
+        "evidence": "67% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -215,7 +207,7 @@
       }
     ]
   },
-  "summary": "Between 2025-04-19 and 2026-10-19, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (68% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (54/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-04-26 and 2026-10-26, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (67% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (53/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -224,28 +216,28 @@
       "entity_name": "EQUIFAX INC",
       "recent_filings": [
         {
-          "form": "4",
-          "date": "2026-10-02",
-          "primary_doc": "xslF345X06/doc4.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-10-02",
-          "primary_doc": "xslF345X06/doc4.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-09-08",
-          "primary_doc": "xslF345X06/doc4.xml"
-        },
-        {
           "form": "144",
-          "date": "2026-09-03",
+          "date": "2026-10-23",
           "primary_doc": "xsl144X01/primary_doc.xml"
         },
         {
+          "form": "144",
+          "date": "2026-10-23",
+          "primary_doc": "xsl144X01/primary_doc.xml"
+        },
+        {
+          "form": "10-Q",
+          "date": "2026-10-20",
+          "primary_doc": "efx-20260930.htm"
+        },
+        {
+          "form": "8-K",
+          "date": "2026-10-20",
+          "primary_doc": "efx-20261020.htm"
+        },
+        {
           "form": "4",
-          "date": "2026-08-12",
+          "date": "2026-10-02",
           "primary_doc": "xslF345X06/doc4.xml"
         }
       ]

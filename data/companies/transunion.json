@@ -3,10 +3,10 @@
   "name": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
   "display_name": "TransUnion",
   "data_source": "cfpb",
-  "snapshot_date": "2026-10-19",
+  "snapshot_date": "2026-10-26",
   "window": {
-    "min": "2025-04-19",
-    "max": "2026-10-19"
+    "min": "2025-04-26",
+    "max": "2026-10-26"
   },
   "total_complaints": 2000,
   "monthly": [
@@ -96,11 +96,11 @@
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 1280
+      "count": 1240
     },
     {
       "name": "Improper use of your report",
-      "count": 400
+      "count": 440
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
@@ -109,27 +109,27 @@
   ],
   "top_states": [
     {
-      "name": "TX",
-      "count": 360
-    },
-    {
       "name": "FL",
-      "count": 280
+      "count": 340
     },
     {
-      "name": "AL",
-      "count": 180
-    },
-    {
-      "name": "MS",
-      "count": 140
-    },
-    {
-      "name": "IL",
-      "count": 140
+      "name": "TX",
+      "count": 300
     },
     {
       "name": "NY",
+      "count": 180
+    },
+    {
+      "name": "PA",
+      "count": 160
+    },
+    {
+      "name": "NC",
+      "count": 140
+    },
+    {
+      "name": "SC",
       "count": 120
     },
     {
@@ -137,16 +137,16 @@
       "count": 100
     },
     {
-      "name": "PA",
-      "count": 100
-    },
-    {
-      "name": "CA",
+      "name": "MA",
       "count": 80
     },
     {
-      "name": "CO",
+      "name": "LA",
       "count": 80
+    },
+    {
+      "name": "WI",
+      "count": 60
     }
   ],
   "timely_response_rate": 1,
@@ -159,7 +159,7 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 23,
+    "score": 22,
     "band": "Low",
     "components": [
       {
@@ -180,8 +180,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 64,
-        "evidence": "64% of complaints share one top issue"
+        "value": 62,
+        "evidence": "62% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -199,7 +199,7 @@
       }
     ]
   },
-  "summary": "Between 2025-04-19 and 2026-10-19, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (64% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (23/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-04-26 and 2026-10-26, the CFPB published 2,000 complaints about TransUnion. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (62% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 0% of closed cases ended without relief. Overall risk signal: Low (22/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -207,6 +207,11 @@
       "cik": "0001552033",
       "entity_name": "TransUnion",
       "recent_filings": [
+        {
+          "form": "4",
+          "date": "2026-10-19",
+          "primary_doc": "xslF345X06/wk-form4_1792446810.xml"
+        },
         {
           "form": "4",
           "date": "2026-10-16",
@@ -226,11 +231,6 @@
           "form": "144",
           "date": "2026-10-15",
           "primary_doc": "xsl144X01/primary_doc.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-10-02",
-          "primary_doc": "xslF345X06/wk-form4_1790980454.xml"
         }
       ]
     },

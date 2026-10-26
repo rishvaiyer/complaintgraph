@@ -3,10 +3,10 @@
   "name": "Navient Solutions, LLC.",
   "display_name": "Navient",
   "data_source": "cfpb",
-  "snapshot_date": "2026-10-19",
+  "snapshot_date": "2026-10-26",
   "window": {
-    "min": "2025-04-19",
-    "max": "2026-10-19"
+    "min": "2025-04-26",
+    "max": "2026-10-26"
   },
   "total_complaints": 1100,
   "monthly": [
@@ -72,7 +72,7 @@
     },
     {
       "month": "2026-07",
-      "count": 209
+      "count": 121
     },
     {
       "month": "2026-08",
@@ -84,7 +84,7 @@
     },
     {
       "month": "2026-10",
-      "count": 143
+      "count": 231
     }
   ],
   "top_products": [
@@ -108,7 +108,7 @@
   "top_issues": [
     {
       "name": "Dealing with your lender or servicer",
-      "count": 583
+      "count": 572
     },
     {
       "name": "Incorrect information on your report",
@@ -116,15 +116,15 @@
     },
     {
       "name": "Struggling to repay your loan",
-      "count": 121
+      "count": 110
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 77
+      "count": 88
     },
     {
       "name": "Getting a loan",
-      "count": 44
+      "count": 55
     },
     {
       "name": "Improper use of your report",
@@ -142,38 +142,38 @@
   "top_states": [
     {
       "name": "TX",
-      "count": 154
+      "count": 143
     },
     {
       "name": "FL",
-      "count": 121
+      "count": 110
     },
     {
       "name": "GA",
+      "count": 88
+    },
+    {
+      "name": "MI",
       "count": 77
     },
     {
       "name": "NY",
-      "count": 66
-    },
-    {
-      "name": "MI",
-      "count": 55
+      "count": 77
     },
     {
       "name": "CA",
-      "count": 55
+      "count": 66
+    },
+    {
+      "name": "NC",
+      "count": 44
+    },
+    {
+      "name": "MD",
+      "count": 44
     },
     {
       "name": "NJ",
-      "count": 44
-    },
-    {
-      "name": "IN",
-      "count": 44
-    },
-    {
-      "name": "NV",
       "count": 44
     },
     {
@@ -185,13 +185,17 @@
   "company_responses": [
     {
       "name": "Closed with explanation",
-      "count": 1100
+      "count": 1089
+    },
+    {
+      "name": "In progress",
+      "count": 11
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 61,
+    "score": 60,
     "band": "Elevated",
     "components": [
       {
@@ -212,15 +216,15 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 53,
-        "evidence": "53% of complaints share one top issue"
+        "value": 52,
+        "evidence": "52% of complaints share one top issue"
       },
       {
         "key": "trend",
         "label": "Recent trend",
         "weight": 0.2,
         "value": 100,
-        "evidence": "last 3 months avg 297/mo vs prior 69.7/mo"
+        "evidence": "last 3 months avg 326.3/mo vs prior 40.3/mo"
       },
       {
         "key": "narrative_harm",
@@ -231,7 +235,7 @@
       }
     ]
   },
-  "summary": "Between 2025-04-19 and 2026-10-19, the CFPB published 1,100 complaints about Navient. Volume is rising (last 3 months averaged 297 per month versus 70 before). The most common issue is \"Dealing with your lender or servicer\" (53% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (61/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-04-26 and 2026-10-26, the CFPB published 1,100 complaints about Navient. Volume is rising (last 3 months averaged 326 per month versus 40 before). The most common issue is \"Dealing with your lender or servicer\" (52% of complaints), concentrated in student loan. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Elevated (60/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -239,6 +243,11 @@
       "cik": "0001593538",
       "entity_name": "NAVIENT CORP",
       "recent_filings": [
+        {
+          "form": "8-K",
+          "date": "2026-10-21",
+          "primary_doc": "ef20084105_8k.htm"
+        },
         {
           "form": "SCHEDULE 13G/A",
           "date": "2026-10-08",
@@ -258,11 +267,6 @@
           "form": "8-K",
           "date": "2026-09-25",
           "primary_doc": "ef20082662_8k.htm"
-        },
-        {
-          "form": "10-Q",
-          "date": "2026-08-07",
-          "primary_doc": "navi-20260630.htm"
         }
       ]
     },
