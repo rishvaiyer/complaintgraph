@@ -3,17 +3,13 @@
   "name": "EQUIFAX, INC.",
   "display_name": "Equifax",
   "data_source": "cfpb",
-  "snapshot_date": "2026-10-26",
+  "snapshot_date": "2026-11-02",
   "window": {
-    "min": "2025-04-26",
-    "max": "2026-10-26"
+    "min": "2025-05-02",
+    "max": "2026-11-02"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-04",
-      "count": 0
-    },
     {
       "month": "2025-05",
       "count": 0
@@ -85,6 +81,10 @@
     {
       "month": "2026-10",
       "count": 2000
+    },
+    {
+      "month": "2026-11",
+      "count": 0
     }
   ],
   "top_products": [
@@ -96,78 +96,82 @@
   "top_issues": [
     {
       "name": "Incorrect information on your report",
-      "count": 1340
-    },
-    {
-      "name": "Improper use of your report",
-      "count": 320
-    },
-    {
-      "name": "Problem with fraud alerts or security freezes",
-      "count": 200
+      "count": 1220
     },
     {
       "name": "Problem with a company's investigation into an existing problem",
-      "count": 140
+      "count": 260
+    },
+    {
+      "name": "Improper use of your report",
+      "count": 240
+    },
+    {
+      "name": "Problem with fraud alerts or security freezes",
+      "count": 180
+    },
+    {
+      "name": "Unable to get your credit report or credit score",
+      "count": 100
     }
   ],
   "top_states": [
     {
-      "name": "TX",
-      "count": 440
+      "name": "FL",
+      "count": 360
     },
     {
-      "name": "FL",
-      "count": 300
+      "name": "TX",
+      "count": 320
     },
     {
       "name": "NY",
-      "count": 300
-    },
-    {
-      "name": "CA",
-      "count": 180
+      "count": 220
     },
     {
       "name": "GA",
-      "count": 80
+      "count": 200
     },
     {
       "name": "IL",
+      "count": 120
+    },
+    {
+      "name": "TN",
+      "count": 120
+    },
+    {
+      "name": "NC",
       "count": 80
     },
     {
-      "name": "AL",
+      "name": "CA",
       "count": 80
     },
     {
-      "name": "PA",
+      "name": "WA",
       "count": 60
     },
     {
-      "name": "MI",
+      "name": "SC",
       "count": 60
-    },
-    {
-      "name": "MS",
-      "count": 40
     }
   ],
   "timely_response_rate": 1,
   "company_responses": [
     {
-      "name": "In progress",
-      "count": 1280
+      "name": "Closed with explanation",
+      "count": 1060
     },
     {
-      "name": "Closed with explanation",
-      "count": 720
+      "name": "In progress",
+      "count": 940
     }
   ],
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 53,
+    "score": 52,
     "band": "Moderate",
     "components": [
       {
@@ -188,8 +192,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 67,
-        "evidence": "67% of complaints share one top issue"
+        "value": 61,
+        "evidence": "61% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -207,7 +211,7 @@
       }
     ]
   },
-  "summary": "Between 2025-04-26 and 2026-10-26, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (67% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (53/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-05-02 and 2026-11-02, the CFPB published 2,000 complaints about Equifax. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (61% of complaints), concentrated in credit reporting or other personal consumer reports. The company responded on time to 100% of cases; 100% of closed cases ended without relief. Overall risk signal: Moderate (52/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": null,
@@ -215,6 +219,16 @@
       "cik": "0000033185",
       "entity_name": "EQUIFAX INC",
       "recent_filings": [
+        {
+          "form": "144",
+          "date": "2026-10-29",
+          "primary_doc": "xsl144X01/primary_doc.xml"
+        },
+        {
+          "form": "4",
+          "date": "2026-10-27",
+          "primary_doc": "xslF345X06/doc4.xml"
+        },
         {
           "form": "144",
           "date": "2026-10-23",
@@ -229,16 +243,6 @@
           "form": "10-Q",
           "date": "2026-10-20",
           "primary_doc": "efx-20260930.htm"
-        },
-        {
-          "form": "8-K",
-          "date": "2026-10-20",
-          "primary_doc": "efx-20261020.htm"
-        },
-        {
-          "form": "4",
-          "date": "2026-10-02",
-          "primary_doc": "xslF345X06/doc4.xml"
         }
       ]
     },

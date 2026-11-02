@@ -3,17 +3,13 @@
   "name": "CAPITAL ONE FINANCIAL CORPORATION",
   "display_name": "Capital One",
   "data_source": "cfpb",
-  "snapshot_date": "2026-10-26",
+  "snapshot_date": "2026-11-02",
   "window": {
-    "min": "2025-04-26",
-    "max": "2026-10-26"
+    "min": "2025-05-02",
+    "max": "2026-11-02"
   },
   "total_complaints": 2000,
   "monthly": [
-    {
-      "month": "2025-04",
-      "count": 0
-    },
     {
       "month": "2025-05",
       "count": 0
@@ -85,28 +81,28 @@
     {
       "month": "2026-10",
       "count": 2000
+    },
+    {
+      "month": "2026-11",
+      "count": 0
     }
   ],
   "top_products": [
     {
       "name": "Checking or savings account",
-      "count": 620
-    },
-    {
-      "name": "Credit reporting or other personal consumer reports",
-      "count": 560
+      "count": 840
     },
     {
       "name": "Credit card",
-      "count": 340
+      "count": 460
+    },
+    {
+      "name": "Credit reporting or other personal consumer reports",
+      "count": 460
     },
     {
       "name": "Debt collection",
-      "count": 320
-    },
-    {
-      "name": "Money transfer, virtual currency, or money service",
-      "count": 60
+      "count": 160
     },
     {
       "name": "Vehicle loan or lease",
@@ -114,83 +110,83 @@
     },
     {
       "name": "Prepaid card",
-      "count": 40
+      "count": 20
     }
   ],
   "top_issues": [
     {
-      "name": "Incorrect information on your report",
-      "count": 360
-    },
-    {
       "name": "Managing an account",
-      "count": 300
+      "count": 540
     },
     {
-      "name": "Problem with a company's investigation into an existing problem",
-      "count": 200
+      "name": "Incorrect information on your report",
+      "count": 320
     },
     {
-      "name": "Problem with a lender or other company charging your account",
-      "count": 160
+      "name": "Closing an account",
+      "count": 180
     },
     {
-      "name": "Attempts to collect debt not owed",
+      "name": "Problem with a purchase shown on your statement",
       "count": 140
     },
     {
       "name": "Improper use of your report",
-      "count": 120
+      "count": 140
     },
     {
-      "name": "Problem with a purchase shown on your statement",
-      "count": 100
-    },
-    {
-      "name": "False statements or representation",
+      "name": "Problem with a lender or other company charging your account",
       "count": 80
+    },
+    {
+      "name": "Problem with a company's investigation into an existing problem",
+      "count": 60
+    },
+    {
+      "name": "Attempts to collect debt not owed",
+      "count": 60
     }
   ],
   "top_states": [
     {
       "name": "TX",
-      "count": 360
-    },
-    {
-      "name": "NY",
-      "count": 180
+      "count": 380
     },
     {
       "name": "GA",
-      "count": 160
-    },
-    {
-      "name": "CA",
-      "count": 160
+      "count": 200
     },
     {
       "name": "FL",
+      "count": 160
+    },
+    {
+      "name": "NY",
+      "count": 140
+    },
+    {
+      "name": "CA",
       "count": 120
+    },
+    {
+      "name": "MA",
+      "count": 100
     },
     {
       "name": "NJ",
-      "count": 120
+      "count": 100
     },
     {
-      "name": "VA",
-      "count": 100
+      "name": "OH",
+      "count": 80
+    },
+    {
+      "name": "IL",
+      "count": 80
     },
     {
       "name": "PA",
       "count": 80
-    },
-    {
-      "name": "NC",
-      "count": 60
-    },
-    {
-      "name": "IL",
-      "count": 60
     }
   ],
   "timely_response_rate": 1,
@@ -211,7 +207,7 @@
   "narrative_count": 0,
   "sample_narratives": [],
   "signal": {
-    "score": 41,
+    "score": 43,
     "band": "Moderate",
     "components": [
       {
@@ -232,8 +228,8 @@
         "key": "issue_concentration",
         "label": "Issue concentration",
         "weight": 0.2,
-        "value": 18,
-        "evidence": "18% of complaints share one top issue"
+        "value": 27,
+        "evidence": "27% of complaints share one top issue"
       },
       {
         "key": "trend",
@@ -251,7 +247,7 @@
       }
     ]
   },
-  "summary": "Between 2025-04-26 and 2026-10-26, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Incorrect information on your report\" (18% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 92% of closed cases ended without relief. Overall risk signal: Moderate (41/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
+  "summary": "Between 2025-05-02 and 2026-11-02, the CFPB published 2,000 complaints about Capital One. Volume is steady (last 3 months averaged 667 per month versus 0 before). The most common issue is \"Managing an account\" (27% of complaints), concentrated in checking or savings account. The company responded on time to 100% of cases; 92% of closed cases ended without relief. Overall risk signal: Moderate (43/100). This is an exploratory signal from public complaint data, not a regulatory, legal, or investment conclusion.",
   "regulatory": {
     "data_source": "live",
     "fdic": {
@@ -268,6 +264,16 @@
       "entity_name": "CAPITAL ONE FINANCIAL CORP",
       "recent_filings": [
         {
+          "form": "4",
+          "date": "2026-10-29",
+          "primary_doc": "xslF345X06/wk-form4_1793304389.xml"
+        },
+        {
+          "form": "144",
+          "date": "2026-10-27",
+          "primary_doc": "xsl144X01/primary_doc.xml"
+        },
+        {
           "form": "8-K",
           "date": "2026-10-20",
           "primary_doc": "cof-20261020.htm"
@@ -281,16 +287,6 @@
           "form": "4",
           "date": "2026-10-19",
           "primary_doc": "xslF345X06/wk-form4_1792440344.xml"
-        },
-        {
-          "form": "4",
-          "date": "2026-10-19",
-          "primary_doc": "xslF345X06/wk-form4_1792440323.xml"
-        },
-        {
-          "form": "144",
-          "date": "2026-10-15",
-          "primary_doc": "xsl144X01/primary_doc.xml"
         }
       ]
     },
